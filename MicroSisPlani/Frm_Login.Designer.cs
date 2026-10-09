@@ -104,6 +104,7 @@
             this.pnl_titulo.Name = "pnl_titulo";
             this.pnl_titulo.Size = new System.Drawing.Size(792, 24);
             this.pnl_titulo.TabIndex = 23;
+            this.pnl_titulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
             // 
             // Label12
             // 
@@ -201,6 +202,7 @@
             this.btn_Aceptar.TextStyle.Text = "Iniciar Sesion";
             this.btn_Aceptar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Aceptar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // Label10
             // 
@@ -271,6 +273,7 @@
             this.btn_Salir.Size = new System.Drawing.Size(32, 32);
             this.btn_Salir.TabIndex = 464;
             this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Label15
             // 

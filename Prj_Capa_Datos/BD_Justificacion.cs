@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Prj_Capa_Datos
 {
-   public  class BD_Justificacion : Cls_Conexion 
+   public  class BD_Justificacion : BD_Conexion 
     {
 
       

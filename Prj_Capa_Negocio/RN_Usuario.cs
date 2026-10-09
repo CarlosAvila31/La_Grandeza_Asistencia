@@ -12,8 +12,13 @@ namespace Prj_Capa_Negocio
 {
     public  class RN_Usuario
     {
+        public bool RN_Verificar_Acceso(string Usuario, string Contraseña) 
+        {
+            BD_usuario obj = new BD_usuario();
+            return obj.BD_Verificar_Acceso(Usuario, Contraseña);
+        }
 
-     
+
 
 
     }

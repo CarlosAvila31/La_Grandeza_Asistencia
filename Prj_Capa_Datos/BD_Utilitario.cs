@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Prj_Capa_Datos
 {
-   public  class BD_Utilitario : Cls_Conexion 
+   public  class BD_Utilitario : BD_Conexion 
     {
 
      

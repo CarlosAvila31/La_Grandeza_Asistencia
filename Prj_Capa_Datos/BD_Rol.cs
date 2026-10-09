@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Prj_Capa_Datos
 {
-  public   class BD_Rol : Cls_Conexion 
+  public   class BD_Rol : BD_Conexion 
     {
 
         public DataTable BD_Buscar_Todos_Roles()

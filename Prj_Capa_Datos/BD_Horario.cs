@@ -10,7 +10,7 @@ using Prj_Capa_Entidad;
 
 namespace Prj_Capa_Datos
 {
-  public   class BD_Horario : Cls_Conexion 
+  public   class BD_Horario : BD_Conexion 
     {
 
       

@@ -50,7 +50,7 @@
     <Compile Include="BD_Personal.cs" />
     <Compile Include="BD_Rol.cs" />
     <Compile Include="BD_Utilitario.cs" />
-    <Compile Include="Cls_Conexion.cs" />
+    <Compile Include="BD_Conexion.cs" />
     <Compile Include="BD_usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

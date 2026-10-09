@@ -78,7 +78,6 @@
             this.pnl_titulo.Name = "pnl_titulo";
             this.pnl_titulo.Size = new System.Drawing.Size(797, 50);
             this.pnl_titulo.TabIndex = 8;
-           
             // 
             // label7
             // 
@@ -102,9 +101,8 @@
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(32, 32);
             this.btn_Salir.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.btn_Salir, "Salir / Cerrar Ventana");
             this.btn_Salir.UseVisualStyleBackColor = true;
-          
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // label1
             // 
@@ -358,7 +356,7 @@
             this.txt_NroCelular.Size = new System.Drawing.Size(168, 32);
             this.txt_NroCelular.TabIndex = 35;
             this.txt_NroCelular.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-           
+            this.txt_NroCelular.OnValueChanged += new System.EventHandler(this.txt_NroCelular_OnValueChanged);
             // 
             // dtp_fechaNaci
             // 
@@ -421,7 +419,7 @@
             this.Pic_persona.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pic_persona.TabIndex = 43;
             this.Pic_persona.TabStop = false;
-          
+            this.Pic_persona.Click += new System.EventHandler(this.Pic_persona_Click);
             // 
             // btn_aceptar
             // 
@@ -451,7 +449,7 @@
             this.btn_aceptar.TextStyle.Text = "Listo";
             this.btn_aceptar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_aceptar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-          
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -481,7 +479,7 @@
             this.btn_cancelar.TextStyle.Text = "Cancelar";
             this.btn_cancelar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancelar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-          
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // openFileDialog1
             // 
@@ -523,6 +521,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Personal";
             this.Load += new System.EventHandler(this.Frm_Registro_Personal_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Frm_Registro_Personal_MouseMove);
             this.pnl_titulo.ResumeLayout(false);
             this.pnl_titulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_persona)).EndInit();

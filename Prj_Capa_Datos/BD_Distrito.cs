@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace Prj_Capa_Datos
 {
-  public   class BD_Distrito : Cls_Conexion 
+  public   class BD_Distrito : BD_Conexion 
     {
 
         public static bool savedx = false;
