@@ -32,19 +32,19 @@ namespace MicroSisPlani.Msm_Forms
             this.Close();
         }
 
-        private void tocar_timbre ()
-        {
-            string ruta;
-            ruta = Application.ExecutablePath;
-            System.Media.SoundPlayer son;
-            son = new System.Media.SoundPlayer(ruta + @"\Gotaagua.wav");
-            son.Play();
+        //private void tocar_timbre ()
+        //{
+        //    string ruta;
+        //    ruta = Application.ExecutablePath;
+        //    System.Media.SoundPlayer son;
+        //    son = new System.Media.SoundPlayer(ruta + @"\Gotaagua.wav");
+        //    son.Play();
                        
-        }
+        //}
 
         private void Frm_Msm_Bueno_Load(object sender, EventArgs e)
         {
-            tocar_timbre();
+            //tocar_timbre();
         }
     }
 }

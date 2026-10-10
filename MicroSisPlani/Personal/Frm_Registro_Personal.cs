@@ -168,6 +168,9 @@ namespace MicroSisPlani.Personal
             RN_Personal obj = new RN_Personal();
             EN_Persona per = new EN_Persona();
 
+            MessageBox.Show("Entró a Guardar_Personal");
+
+
 
             try
             {
@@ -178,7 +181,7 @@ namespace MicroSisPlani.Personal
                 per.Sexo = cbo_sexo.Text;
                 per.Direccion = txt_direccion.Text;
                 per.Correo = txt_correo.Text;
-                per.Celular = Convert.ToInt32(txt_NroCelular.Text);
+                per.Celular = txt_NroCelular.Text;
                 per.IdRol = Convert.ToString(cbo_rol.SelectedValue);
                 per.xImagen = xFotoRuta;
                 per.IdDistrito = Convert.ToString(cbo_Distrito.SelectedValue);
@@ -197,8 +200,8 @@ namespace MicroSisPlani.Personal
                 }
             }
             catch (Exception ex)
-            { 
-            
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
             }
 
         }

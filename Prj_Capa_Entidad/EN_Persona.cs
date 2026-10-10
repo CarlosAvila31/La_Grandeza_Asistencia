@@ -57,11 +57,8 @@ namespace Prj_Capa_Entidad
             set { _distritoID = value; }
         }
 
-        public int Celular
-        {
-            get { return _Celular; }
-            set { _Celular = value; }
-        }
+        public string Celular { get; set; }
+
 
         public string IdSeguro
         {
