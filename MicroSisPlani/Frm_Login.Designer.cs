@@ -148,6 +148,7 @@
             this.txt_pass.ValidationStyle.PasswordChar = '\0';
             this.txt_pass.ValidationStyle.UseSystemPasswordChar = true;
             this.txt_pass.Value = "";
+            this.txt_pass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_pass_KeyDown);
             // 
             // txt_usu
             // 
@@ -168,6 +169,7 @@
             this.txt_usu.TabIndex = 450;
             this.txt_usu.ValidationStyle.PasswordChar = '\0';
             this.txt_usu.Value = "";
+            this.txt_usu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_usu_KeyDown);
             // 
             // btn_Aceptar
             // 

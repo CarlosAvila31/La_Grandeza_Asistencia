@@ -42,5 +42,13 @@ namespace Prj_Capa_Negocio
             BD_Personal obj = new BD_Personal();
             return obj.BD_Buscar_Personal_xValor(valor);
         }
+
+
+
+        public bool RN_Verificar_DniPersonal(string dni)
+        {
+            BD_Personal obj = new BD_Personal();
+            return obj.BD_Verificar_DniPersonal(dni);
+        }
     }
 }

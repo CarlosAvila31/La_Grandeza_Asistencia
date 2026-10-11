@@ -252,5 +252,34 @@ namespace MicroSisPlani
                 Cargar_Todo_Personal();
             }
         }
+
+        private void bt_editarPersonal_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Registro_Personal per = new Frm_Registro_Personal();
+
+            if (lsv_person.SelectedIndices.Count == 0)
+            {
+                //Mostrar mensajes
+
+
+            }
+            else
+            {
+                var lsv = lsv_person.SelectedItems[0];
+                string IdPersona = lsv.SubItems[0].Text;
+
+                fil.Show();
+                per.SeVaEditar = true;
+                per.Buscar_Personal_ParaEditar(IdPersona);
+                per.ShowDialog();
+                fil.Hide();
+
+                if (Convert.ToString(per.Tag) == "A")
+                {
+                    Cargar_Todo_Personal();
+                }
+            }
+        }
     }
 }

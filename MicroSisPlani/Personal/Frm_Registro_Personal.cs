@@ -23,12 +23,18 @@ namespace MicroSisPlani.Personal
             InitializeComponent();
         }
 
+        public bool SeVaEditar = false;
+
         //public bool editPerso = false;
       
         private void Frm_Registro_Personal_Load(object sender, EventArgs e)
         {
-            Cargar_rol();
-            Cargar_Distrito();
+            if (SeVaEditar == false)
+            {
+                Cargar_rol();
+                Cargar_Distrito();
+            }
+            
         }
 
         private void Cargar_rol()
@@ -158,7 +164,22 @@ namespace MicroSisPlani.Personal
 
             if (ValidarCajasTexto() == false) return;
 
-            Guardar_Personal();
+            if (xedit == false)
+            {
+                if (objper.RN_Verificar_DniPersonal(txt_Dni.Text) == true)
+                {
+                    MessageBox.Show("El curp ya existe en la Base de Datos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+               
+                Guardar_Personal();
+            }
+            else
+            {
+                Editar_Personal();
+            }
+
+            
         }
 
         private void Guardar_Personal()
@@ -168,7 +189,6 @@ namespace MicroSisPlani.Personal
             RN_Personal obj = new RN_Personal();
             EN_Persona per = new EN_Persona();
 
-            MessageBox.Show("Entró a Guardar_Personal");
 
 
 
@@ -205,6 +225,61 @@ namespace MicroSisPlani.Personal
             }
 
         }
+
+
+
+
+        //EDITAR PERSONAL
+
+        private void Editar_Personal()
+        {
+            Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+            Frm_Filtro fil = new Frm_Filtro();
+            RN_Personal obj = new RN_Personal();
+            EN_Persona per = new EN_Persona();
+
+
+
+
+            try
+            {
+                per.Idpersonal = txt_IdPersona.Text;
+                per.Dni = txt_Dni.Text;
+                per.Nombres = txt_nombres.Text;
+                per.anoNacimiento = dtp_fecha.Value;
+                per.Sexo = cbo_sexo.Text;
+                per.Direccion = txt_direccion.Text;
+                per.Correo = txt_correo.Text;
+                per.Celular = txt_NroCelular.Text;
+                per.IdRol = Convert.ToString(cbo_rol.SelectedValue);
+                per.xImagen = xFotoRuta;
+                per.IdDistrito = Convert.ToString(cbo_Distrito.SelectedValue);
+
+                obj.RN_Editar_Personal(per);
+
+                if (BD_Personal.edited == true)
+                {
+                    fil.Show();
+                    ok.Lbl_msm1.Text = "los datos del personal se han editado de forma correcta";
+                    ok.ShowDialog();
+                    fil.Hide();
+
+                    this.Tag = "A";
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
+
+        }
+
+
+
+
+
+
 
         string xFotoRuta;
         private void Pic_persona_Click(object sender, EventArgs e)
@@ -259,6 +334,44 @@ namespace MicroSisPlani.Personal
                 xcar1 = Convert.ToString(txt_Dni.Text).Substring(3,5);
                 xcar2 = Convert.ToString(txt_Dni.Text).Substring(1, 4);
                 txt_IdPersona.Text = xcar1 + "-" + xcar2;
+            }
+        }
+
+
+        public void Buscar_Personal_ParaEditar(string idpersonal)
+        {
+            try
+            {
+                RN_Personal obj = new RN_Personal();
+                DataTable data = new DataTable();
+
+                Cargar_rol();
+                Cargar_Distrito();
+
+                data = obj.RN_Buscar_Personal_xValor(idpersonal);
+                if (data.Rows.Count == 0) return;
+                {
+                    txt_Dni.Text = Convert.ToString(data.Rows[0]["DNIPR"]);
+                    txt_nombres.Text = Convert.ToString(data.Rows[0]["Nombre_Completo"]);
+                    txt_direccion.Text = Convert.ToString(data.Rows[0]["Domicilio"]);
+                    txt_correo.Text = Convert.ToString(data.Rows[0]["Correo"]);
+                    txt_NroCelular.Text = Convert.ToString(data.Rows[0]["Celular"]);
+                    dtp_fechaNaci.Value = Convert.ToDateTime(data.Rows[0]["Fec_Naci"]);
+                    cbo_sexo.Text = Convert.ToString(data.Rows[0]["Sexo"]);
+                    cbo_rol.SelectedValue = data.Rows[0]["Id_rol"];
+                    cbo_Distrito.SelectedValue = data.Rows[0]["Id_Distrito"];
+                    txt_IdPersona.Text = Convert.ToString(data.Rows[0]["Id_Pernl"]);
+                    xFotoRuta = Convert.ToString(data.Rows[0]["Foto"]);
+
+                }
+
+                xedit = true;
+                btn_aceptar.Enabled = true;
+                Pic_persona.Load(xFotoRuta);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar los datos: " + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

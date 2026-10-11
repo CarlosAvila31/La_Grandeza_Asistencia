@@ -73,10 +73,11 @@ namespace Prj_Capa_Datos
                 cmd.Parameters.AddWithValue("@Id_Person", per.Idpersonal);
                 cmd.Parameters.AddWithValue("@dni", per.Dni);
                 cmd.Parameters.AddWithValue("@nombreComplto", per.Nombres);
-                cmd.Parameters.AddWithValue("@FechaNacmiento", per.anoNacimiento);
+                cmd.Parameters.AddWithValue("@FechaNacmnto", per.anoNacimiento);
                 cmd.Parameters.AddWithValue("@sexo", per.Sexo);
                 cmd.Parameters.AddWithValue("@Domicilio", per.Direccion);
                 cmd.Parameters.AddWithValue("@Correo", per.Correo);
+                cmd.Parameters.AddWithValue("@Celular", per.Celular);
                 cmd.Parameters.AddWithValue("@Id_rol", per.IdRol);
                 cmd.Parameters.AddWithValue("@Foto", per.xImagen);
                 cmd.Parameters.AddWithValue("@Id_Distrito", per.IdDistrito);
@@ -191,6 +192,58 @@ namespace Prj_Capa_Datos
                 }
             }
 
-        }
+        public bool BD_Verificar_DniPersonal(string dni)
+        {
+            bool functionReturnValue = false;
+            Int32 xfil = 0;
+
+            SqlConnection Cn = new SqlConnection();
+            SqlCommand Cmd = new SqlCommand();
+            Cn.ConnectionString = Conectar();
+            var _with1 = Cmd;
+            _with1.CommandText = "Sp_Validar_Dni";
+            _with1.Connection = Cn;
+            _with1.CommandTimeout = 20;
+            _with1.CommandType = CommandType.StoredProcedure;
+            //Parametros de entrada chambales
+            _with1.Parameters.AddWithValue("@Dni", dni);
+
+            try
+            {
+                Cn.Open();
+                xfil = (Int32)Cmd.ExecuteScalar();
+                if (xfil > 0)
+                {
+                    functionReturnValue = true;
+                }
+                else
+                {
+                    functionReturnValue = false;
+                }
+
+                Cmd.Parameters.Clear();
+                Cmd.Dispose();
+                Cmd = null;
+                Cn.Close();
+                Cn = null;
+            }
+            catch (Exception ex)
+            {
+                if (Cn.State == ConnectionState.Open)
+                {
+                    Cn.Close();
+                    Cmd.Dispose();
+                    Cmd = null;
+                    Cn.Close();
+                    Cn = null;
+                }
+                MessageBox.Show(ex.Message, "Error al verificar acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return functionReturnValue;
+        } //Fin de la funcion BD_Verificar_Acceso
+
+
+
+    }
     }
 
