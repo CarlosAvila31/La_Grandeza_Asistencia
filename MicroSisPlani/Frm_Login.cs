@@ -73,11 +73,26 @@ namespace MicroSisPlani
                 // Acceso permitido
                 //LLENAR EL DATATABLE CON LOS DATOS DEL USUARIO
 
-                MessageBox.Show("Bienvenido al sistema.", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Bienvenido al sistema.", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Frm_Principal prin = new Frm_Principal();
+                Cls_Libreria.Usuario = usu;
+
+                dt = obj.RN_Leer_Datos_Usuarios(usu);
+
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow dr = dt.Rows[0];
+                    Cls_Libreria.IdRol = Convert.ToString(dr["Id_Usu"]);
+                    Cls_Libreria.Apellidos = Convert.ToString(dr["Nombre_Completo"]);
+                    Cls_Libreria.IdRol = Convert.ToString(dr["Id_Rol"]);
+                    Cls_Libreria.Rol = Convert.ToString(dr["NomRol"]);
+                    Cls_Libreria.Foto = Convert.ToString(dr["Avatar"]);
+                }
+
                 this.Hide();
-                prin.Show();
+                Frm_Principal xMenuPrincipal = new Frm_Principal();
+                xMenuPrincipal.Show();
+                xMenuPrincipal.Cargar_Datos_Usuario();
             }
             else
             {

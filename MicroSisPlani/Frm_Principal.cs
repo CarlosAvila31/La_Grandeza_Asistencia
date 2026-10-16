@@ -12,6 +12,7 @@ using Prj_Capa_Datos;
 using Prj_Capa_Entidad;
 using Prj_Capa_Negocio;
 using MicroSisPlani.Msm_Forms;
+using System.IO;
 
 namespace MicroSisPlani
 {
@@ -27,7 +28,39 @@ namespace MicroSisPlani
             ConfigurationListView();
         }
 
+        public void Cargar_Datos_Usuario()
+        {
+            try
+            {
+                Frm_Filtro xfil = new Frm_Filtro();
 
+                xfil.Show();
+                MessageBox.Show("Bienvenido: " + Cls_Libreria.Apellidos, "Bienvenido al Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                xfil.Hide();
+
+                Lbl_NomUsu.Text = Cls_Libreria.Apellidos;
+                lbl_rolNom.Text = Cls_Libreria.Rol;
+
+                if (Cls_Libreria.Foto.Trim().Length == 0 | Cls_Libreria.Foto == null)
+                {
+                    return;
+                }
+
+                if (File.Exists(Cls_Libreria.Foto) == true)
+                {
+                    pic_user.Load(Cls_Libreria.Foto);
+                }
+                else
+                {
+                    //Sino tiene foto cargamos una por defecto que teneos en los recursos del proyecto
+                    pic_user.Image = Properties.Resources.user;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
 
         private void pnl_titu_MouseMove(object sender, MouseEventArgs e)
         {
@@ -69,9 +102,23 @@ namespace MicroSisPlani
 
         private void Frm_Principal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
-       
+            Frm_Filtro fil = new Frm_Filtro();
+            //El formulario que se muestra cuando quieres confirmar la salida del programa
+            Frm_Sino sino = new Frm_Sino();
 
+            fil.Show();
+            sino.Lbl_msm1.Text = "¿Estás seguro de Salir y Abandonar el sistema?";
+            sino.ShowDialog();
+            fil.Hide();
+
+            if (Convert.ToString(sino.Tag) == "Si")
+            {
+                Application.ExitThread();
+            } 
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void btn_nuevoAsis_Click(object sender, EventArgs e)
@@ -327,9 +374,9 @@ namespace MicroSisPlani
 
             if (data.Rows.Count == 0) return;
 
-            lbl_idHorario .Text = Convert.ToString(data.Rows[0]["Id_Hor"]);
+            lbl_idHorario .Text = Convert.ToString(data.Rows[0]["IdHorario"]);
             dtp_horaIngre.Value = Convert.ToDateTime(data.Rows[0]["HoEntrada"]);
-            dtp_hora_tolercia.Value = Convert.ToDateTime(data.Rows[0]["MiTolrncia"]);
+            dtp_hora_tolercia.Value = Convert.ToDateTime(data.Rows[0]["MinuToleran"]);
             Dtp_Hora_Limite.Value = Convert.ToDateTime(data.Rows[0]["HoLimite"]);
             dtp_horaSalida.Value = Convert.ToDateTime(data.Rows[0]["HoSalida"]);
         }
