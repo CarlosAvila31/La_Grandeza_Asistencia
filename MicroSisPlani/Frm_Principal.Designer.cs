@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle133 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle134 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle135 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle136 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle137 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle138 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle139 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle140 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle141 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle142 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle143 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle144 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle145 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle146 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle147 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle148 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle149 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle150 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle151 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle152 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle153 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle154 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle67 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle68 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle69 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle70 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle71 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle72 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle73 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle74 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle75 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle76 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle77 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle78 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle79 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle80 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle81 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle82 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle83 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle84 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle85 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle86 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle87 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle88 = new Klik.Windows.Forms.v1.Common.PaintStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnl_titu = new System.Windows.Forms.Panel();
             this.lbl_rolNom = new System.Windows.Forms.Label();
@@ -288,8 +288,9 @@
             this.pnl_titu.Controls.Add(this.btn_Salir);
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_titu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1242, 70);
+            this.pnl_titu.Size = new System.Drawing.Size(1863, 108);
             this.pnl_titu.TabIndex = 5;
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
             // 
@@ -297,9 +298,10 @@
             // 
             this.lbl_rolNom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_rolNom.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_rolNom.Location = new System.Drawing.Point(918, 36);
+            this.lbl_rolNom.Location = new System.Drawing.Point(1377, 55);
+            this.lbl_rolNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_rolNom.Name = "lbl_rolNom";
-            this.lbl_rolNom.Size = new System.Drawing.Size(166, 20);
+            this.lbl_rolNom.Size = new System.Drawing.Size(249, 31);
             this.lbl_rolNom.TabIndex = 7;
             this.lbl_rolNom.Text = "Admin";
             this.lbl_rolNom.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -308,9 +310,10 @@
             // 
             this.Lbl_NomUsu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_NomUsu.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_NomUsu.Location = new System.Drawing.Point(915, 9);
+            this.Lbl_NomUsu.Location = new System.Drawing.Point(1372, 14);
+            this.Lbl_NomUsu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_NomUsu.Name = "Lbl_NomUsu";
-            this.Lbl_NomUsu.Size = new System.Drawing.Size(168, 18);
+            this.Lbl_NomUsu.Size = new System.Drawing.Size(252, 28);
             this.Lbl_NomUsu.TabIndex = 6;
             this.Lbl_NomUsu.Text = "La Grandeza";
             this.Lbl_NomUsu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -318,9 +321,10 @@
             // pic_user
             // 
             this.pic_user.Image = global::MicroSisPlani.Properties.Resources.user;
-            this.pic_user.Location = new System.Drawing.Point(1089, 5);
+            this.pic_user.Location = new System.Drawing.Point(1634, 8);
+            this.pic_user.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pic_user.Name = "pic_user";
-            this.pic_user.Size = new System.Drawing.Size(51, 54);
+            this.pic_user.Size = new System.Drawing.Size(76, 83);
             this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_user.TabIndex = 5;
             this.pic_user.TabStop = false;
@@ -328,9 +332,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-110, -58);
+            this.pictureBox1.Location = new System.Drawing.Point(-165, -89);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(426, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(639, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -343,9 +348,10 @@
             this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mini.ForeColor = System.Drawing.Color.White;
             this.btn_mini.Image = ((System.Drawing.Image)(resources.GetObject("btn_mini.Image")));
-            this.btn_mini.Location = new System.Drawing.Point(1161, 5);
+            this.btn_mini.Location = new System.Drawing.Point(1742, 8);
+            this.btn_mini.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_mini.Name = "btn_mini";
-            this.btn_mini.Size = new System.Drawing.Size(32, 32);
+            this.btn_mini.Size = new System.Drawing.Size(48, 49);
             this.btn_mini.TabIndex = 3;
             this.btn_mini.UseVisualStyleBackColor = true;
             this.btn_mini.Click += new System.EventHandler(this.btn_mini_Click);
@@ -357,9 +363,10 @@
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(1199, 5);
+            this.btn_Salir.Location = new System.Drawing.Point(1798, 8);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(32, 32);
+            this.btn_Salir.Size = new System.Drawing.Size(48, 49);
             this.btn_Salir.TabIndex = 2;
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -369,10 +376,11 @@
             this.elTab1.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.elTab1.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
             this.elTab1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.elTab1.Location = new System.Drawing.Point(0, 70);
+            this.elTab1.Location = new System.Drawing.Point(0, 108);
+            this.elTab1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTab1.Name = "elTab1";
             this.elTab1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.elTab1.Size = new System.Drawing.Size(1242, 518);
+            this.elTab1.Size = new System.Drawing.Size(1863, 797);
             this.elTab1.TabButtonStyle.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.elTab1.TabButtonStyle.BackgroundStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
             this.elTab1.TabButtonStyle.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -419,17 +427,20 @@
             this.elTabPage1.Controls.Add(this.label1);
             this.elTabPage1.Controls.Add(this.pnl_titulo1);
             this.elTabPage1.Location = new System.Drawing.Point(1, 36);
+            this.elTabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTabPage1.Name = "elTabPage1";
-            this.elTabPage1.Size = new System.Drawing.Size(1240, 481);
+            this.elTabPage1.Size = new System.Drawing.Size(1861, 760);
+            this.elTabPage1.Click += new System.EventHandler(this.elTabPage1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(910, 281);
+            this.label5.Location = new System.Drawing.Point(1365, 432);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 19);
+            this.label5.Size = new System.Drawing.Size(177, 28);
             this.label5.TabIndex = 15;
             this.label5.Text = "Configuración";
             // 
@@ -438,9 +449,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(716, 281);
+            this.label4.Location = new System.Drawing.Point(1074, 432);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 19);
+            this.label4.Size = new System.Drawing.Size(182, 28);
             this.label4.TabIndex = 14;
             this.label4.Text = "Justificaciones";
             // 
@@ -449,9 +461,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(451, 281);
+            this.label3.Location = new System.Drawing.Point(676, 432);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 19);
+            this.label3.Size = new System.Drawing.Size(301, 28);
             this.label3.TabIndex = 13;
             this.label3.Text = "Explorador de Asistencia";
             // 
@@ -460,9 +473,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(219, 281);
+            this.label2.Location = new System.Drawing.Point(328, 432);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 19);
+            this.label2.Size = new System.Drawing.Size(280, 28);
             this.label2.TabIndex = 12;
             this.label2.Text = "Explorador de Personal";
             // 
@@ -482,11 +496,12 @@
             this.bt_Config.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.bt_Config.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.confi;
             this.bt_Config.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_Config.Location = new System.Drawing.Point(904, 149);
+            this.bt_Config.Location = new System.Drawing.Point(1356, 229);
+            this.bt_Config.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_Config.Name = "bt_Config";
             this.bt_Config.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.bt_Config.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_Config.Size = new System.Drawing.Size(126, 126);
+            this.bt_Config.Size = new System.Drawing.Size(189, 194);
             this.bt_Config.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_Config.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_Config.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -497,6 +512,7 @@
             this.bt_Config.TextStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.bt_Config.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bt_Config.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.bt_Config.Click += new System.EventHandler(this.bt_Config_Click);
             // 
             // bt_exploJusti
             // 
@@ -514,11 +530,12 @@
             this.bt_exploJusti.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.bt_exploJusti.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.justifi2;
             this.bt_exploJusti.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_exploJusti.Location = new System.Drawing.Point(706, 149);
+            this.bt_exploJusti.Location = new System.Drawing.Point(1059, 229);
+            this.bt_exploJusti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_exploJusti.Name = "bt_exploJusti";
             this.bt_exploJusti.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.bt_exploJusti.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_exploJusti.Size = new System.Drawing.Size(126, 126);
+            this.bt_exploJusti.Size = new System.Drawing.Size(189, 194);
             this.bt_exploJusti.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_exploJusti.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_exploJusti.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -546,11 +563,12 @@
             this.bt_Explo_Asis.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.bt_Explo_Asis.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.huella;
             this.bt_Explo_Asis.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_Explo_Asis.Location = new System.Drawing.Point(478, 149);
+            this.bt_Explo_Asis.Location = new System.Drawing.Point(717, 229);
+            this.bt_Explo_Asis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_Explo_Asis.Name = "bt_Explo_Asis";
             this.bt_Explo_Asis.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.bt_Explo_Asis.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_Explo_Asis.Size = new System.Drawing.Size(126, 126);
+            this.bt_Explo_Asis.Size = new System.Drawing.Size(189, 194);
             this.bt_Explo_Asis.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_Explo_Asis.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_Explo_Asis.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -579,11 +597,12 @@
             this.bt_personal.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.bt_personal.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.personal;
             this.bt_personal.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_personal.Location = new System.Drawing.Point(251, 149);
+            this.bt_personal.Location = new System.Drawing.Point(376, 229);
+            this.bt_personal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_personal.Name = "bt_personal";
             this.bt_personal.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.bt_personal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_personal.Size = new System.Drawing.Size(126, 126);
+            this.bt_personal.Size = new System.Drawing.Size(189, 194);
             this.bt_personal.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_personal.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_personal.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -601,9 +620,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(341, 49);
+            this.label1.Location = new System.Drawing.Point(512, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(513, 41);
+            this.label1.Size = new System.Drawing.Size(789, 63);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sistema Control de Asistencia";
             // 
@@ -612,8 +632,9 @@
             this.pnl_titulo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pnl_titulo1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titulo1.Location = new System.Drawing.Point(0, 0);
+            this.pnl_titulo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnl_titulo1.Name = "pnl_titulo1";
-            this.pnl_titulo1.Size = new System.Drawing.Size(1240, 5);
+            this.pnl_titulo1.Size = new System.Drawing.Size(1861, 8);
             this.pnl_titulo1.TabIndex = 1;
             // 
             // elTabPage2
@@ -642,8 +663,9 @@
             this.elTabPage2.Controls.Add(this.Bt_NewPerso);
             this.elTabPage2.Controls.Add(this.elDivider1);
             this.elTabPage2.Location = new System.Drawing.Point(1, 36);
+            this.elTabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTabPage2.Name = "elTabPage2";
-            this.elTabPage2.Size = new System.Drawing.Size(1240, 481);
+            this.elTabPage2.Size = new System.Drawing.Size(1861, 760);
             this.elTabPage2.Visible = false;
             // 
             // ElLabel7
@@ -655,12 +677,13 @@
             this.ElLabel7.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel7.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel7.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle133.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle133.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel7.FlashStyle = paintStyle133;
-            this.ElLabel7.Location = new System.Drawing.Point(650, 109);
+            paintStyle67.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle67.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel7.FlashStyle = paintStyle67;
+            this.ElLabel7.Location = new System.Drawing.Point(975, 168);
+            this.ElLabel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel7.Name = "ElLabel7";
-            this.ElLabel7.Size = new System.Drawing.Size(100, 24);
+            this.ElLabel7.Size = new System.Drawing.Size(150, 37);
             this.ElLabel7.TabIndex = 448;
             this.ElLabel7.TabStop = false;
             this.ElLabel7.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -677,12 +700,13 @@
             this.ElLabel6.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel6.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel6.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle134.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle134.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel6.FlashStyle = paintStyle134;
-            this.ElLabel6.Location = new System.Drawing.Point(751, 109);
+            paintStyle68.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle68.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel6.FlashStyle = paintStyle68;
+            this.ElLabel6.Location = new System.Drawing.Point(1126, 168);
+            this.ElLabel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel6.Name = "ElLabel6";
-            this.ElLabel6.Size = new System.Drawing.Size(133, 24);
+            this.ElLabel6.Size = new System.Drawing.Size(200, 37);
             this.ElLabel6.TabIndex = 447;
             this.ElLabel6.TabStop = false;
             this.ElLabel6.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -700,12 +724,13 @@
             this.ElLabel5.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel5.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel5.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle135.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle135.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel5.FlashStyle = paintStyle135;
-            this.ElLabel5.Location = new System.Drawing.Point(530, 109);
+            paintStyle69.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle69.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel5.FlashStyle = paintStyle69;
+            this.ElLabel5.Location = new System.Drawing.Point(795, 168);
+            this.ElLabel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel5.Name = "ElLabel5";
-            this.ElLabel5.Size = new System.Drawing.Size(120, 24);
+            this.ElLabel5.Size = new System.Drawing.Size(180, 37);
             this.ElLabel5.TabIndex = 446;
             this.ElLabel5.TabStop = false;
             this.ElLabel5.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -723,12 +748,13 @@
             this.ElLabel4.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle136.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle136.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel4.FlashStyle = paintStyle136;
-            this.ElLabel4.Location = new System.Drawing.Point(420, 109);
+            paintStyle70.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle70.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel4.FlashStyle = paintStyle70;
+            this.ElLabel4.Location = new System.Drawing.Point(630, 168);
+            this.ElLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel4.Name = "ElLabel4";
-            this.ElLabel4.Size = new System.Drawing.Size(110, 24);
+            this.ElLabel4.Size = new System.Drawing.Size(165, 37);
             this.ElLabel4.TabIndex = 445;
             this.ElLabel4.TabStop = false;
             this.ElLabel4.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -746,12 +772,13 @@
             this.ElLabel2.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle137.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle137.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel2.FlashStyle = paintStyle137;
-            this.ElLabel2.Location = new System.Drawing.Point(104, 109);
+            paintStyle71.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle71.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel2.FlashStyle = paintStyle71;
+            this.ElLabel2.Location = new System.Drawing.Point(156, 168);
+            this.ElLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel2.Name = "ElLabel2";
-            this.ElLabel2.Size = new System.Drawing.Size(316, 24);
+            this.ElLabel2.Size = new System.Drawing.Size(474, 37);
             this.ElLabel2.TabIndex = 443;
             this.ElLabel2.TabStop = false;
             this.ElLabel2.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -768,12 +795,13 @@
             this.ElLabel1.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel1.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel1.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle138.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle138.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel1.FlashStyle = paintStyle138;
-            this.ElLabel1.Location = new System.Drawing.Point(9, 109);
+            paintStyle72.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle72.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel1.FlashStyle = paintStyle72;
+            this.ElLabel1.Location = new System.Drawing.Point(14, 168);
+            this.ElLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ElLabel1.Name = "ElLabel1";
-            this.ElLabel1.Size = new System.Drawing.Size(95, 24);
+            this.ElLabel1.Size = new System.Drawing.Size(142, 37);
             this.ElLabel1.TabIndex = 442;
             this.ElLabel1.TabStop = false;
             this.ElLabel1.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -787,9 +815,10 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.lbl_lupaPerso);
             this.panel4.Controls.Add(this.txt_Buscar);
-            this.panel4.Location = new System.Drawing.Point(925, 18);
+            this.panel4.Location = new System.Drawing.Point(1388, 28);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(256, 38);
+            this.panel4.Size = new System.Drawing.Size(384, 58);
             this.panel4.TabIndex = 12;
             // 
             // lbl_lupaPerso
@@ -798,9 +827,10 @@
             this.lbl_lupaPerso.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupaPerso.ForeColor = System.Drawing.Color.White;
             this.lbl_lupaPerso.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaPerso.Image")));
-            this.lbl_lupaPerso.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupaPerso.Location = new System.Drawing.Point(339, 15);
+            this.lbl_lupaPerso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupaPerso.Name = "lbl_lupaPerso";
-            this.lbl_lupaPerso.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupaPerso.Size = new System.Drawing.Size(36, 37);
             this.lbl_lupaPerso.TabIndex = 32;
             // 
             // txt_Buscar
@@ -815,10 +845,10 @@
             this.txt_Buscar.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Buscar.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txt_Buscar.LineThickness = 2;
-            this.txt_Buscar.Location = new System.Drawing.Point(6, 4);
-            this.txt_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Buscar.Location = new System.Drawing.Point(9, 6);
+            this.txt_Buscar.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txt_Buscar.Name = "txt_Buscar";
-            this.txt_Buscar.Size = new System.Drawing.Size(244, 32);
+            this.txt_Buscar.Size = new System.Drawing.Size(366, 51);
             this.txt_Buscar.TabIndex = 31;
             this.txt_Buscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_Buscar.OnValueChanged += new System.EventHandler(this.txt_Buscar_OnValueChanged);
@@ -831,14 +861,16 @@
             this.lsv_person.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsv_person.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lsv_person.HideSelection = false;
-            this.lsv_person.Location = new System.Drawing.Point(11, 136);
+            this.lsv_person.Location = new System.Drawing.Point(16, 209);
+            this.lsv_person.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lsv_person.Name = "lsv_person";
-            this.lsv_person.Size = new System.Drawing.Size(873, 331);
+            this.lsv_person.Size = new System.Drawing.Size(1310, 509);
             this.lsv_person.TabIndex = 11;
             this.lsv_person.UseCompatibleStateImageBehavior = false;
             // 
             // SubMenu_Person
             // 
+            this.SubMenu_Person.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.SubMenu_Person.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bt_nuevoPersonal,
             this.toolStripSeparator1,
@@ -854,96 +886,96 @@
             this.toolStripSeparator7,
             this.bt_solicitarJustificacion});
             this.SubMenu_Person.Name = "contextMenuStrip1";
-            this.SubMenu_Person.Size = new System.Drawing.Size(209, 244);
+            this.SubMenu_Person.Size = new System.Drawing.Size(285, 264);
             // 
             // bt_nuevoPersonal
             // 
             this.bt_nuevoPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_nuevoPersonal.Image")));
             this.bt_nuevoPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_nuevoPersonal.Name = "bt_nuevoPersonal";
-            this.bt_nuevoPersonal.Size = new System.Drawing.Size(208, 26);
+            this.bt_nuevoPersonal.Size = new System.Drawing.Size(284, 32);
             this.bt_nuevoPersonal.Text = "Nuevo Personal";
             this.bt_nuevoPersonal.Click += new System.EventHandler(this.bt_nuevoPersonal_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_editarPersonal
             // 
             this.bt_editarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_editarPersonal.Image")));
             this.bt_editarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_editarPersonal.Name = "bt_editarPersonal";
-            this.bt_editarPersonal.Size = new System.Drawing.Size(208, 26);
+            this.bt_editarPersonal.Size = new System.Drawing.Size(284, 32);
             this.bt_editarPersonal.Text = "Editar Personal";
             this.bt_editarPersonal.Click += new System.EventHandler(this.bt_editarPersonal_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_registrarHuellaDigital
             // 
             this.bt_registrarHuellaDigital.Image = ((System.Drawing.Image)(resources.GetObject("bt_registrarHuellaDigital.Image")));
             this.bt_registrarHuellaDigital.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_registrarHuellaDigital.Name = "bt_registrarHuellaDigital";
-            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(208, 26);
+            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(284, 32);
             this.bt_registrarHuellaDigital.Text = "Registrar Huella Digital";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_eliminarPersonal
             // 
             this.bt_eliminarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_eliminarPersonal.Image")));
             this.bt_eliminarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_eliminarPersonal.Name = "bt_eliminarPersonal";
-            this.bt_eliminarPersonal.Size = new System.Drawing.Size(208, 26);
+            this.bt_eliminarPersonal.Size = new System.Drawing.Size(284, 32);
             this.bt_eliminarPersonal.Text = "Eliminar Personal";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_mostrarTodoElPersonal
             // 
             this.bt_mostrarTodoElPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarTodoElPersonal.Image")));
             this.bt_mostrarTodoElPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_mostrarTodoElPersonal.Name = "bt_mostrarTodoElPersonal";
-            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(208, 26);
+            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(284, 32);
             this.bt_mostrarTodoElPersonal.Text = "Mostrar Todo el Personal";
             this.bt_mostrarTodoElPersonal.Click += new System.EventHandler(this.bt_mostrarTodoElPersonal_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_copiarNroDNI
             // 
             this.bt_copiarNroDNI.Image = ((System.Drawing.Image)(resources.GetObject("bt_copiarNroDNI.Image")));
             this.bt_copiarNroDNI.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_copiarNroDNI.Name = "bt_copiarNroDNI";
-            this.bt_copiarNroDNI.Size = new System.Drawing.Size(208, 26);
+            this.bt_copiarNroDNI.Size = new System.Drawing.Size(284, 32);
             this.bt_copiarNroDNI.Text = "Copiar Nro DNI";
             this.bt_copiarNroDNI.Click += new System.EventHandler(this.bt_copiarNroDNI_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(281, 6);
             // 
             // bt_solicitarJustificacion
             // 
             this.bt_solicitarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_solicitarJustificacion.Image")));
             this.bt_solicitarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_solicitarJustificacion.Name = "bt_solicitarJustificacion";
-            this.bt_solicitarJustificacion.Size = new System.Drawing.Size(208, 26);
+            this.bt_solicitarJustificacion.Size = new System.Drawing.Size(284, 32);
             this.bt_solicitarJustificacion.Text = "Solicitar Justificacion";
             // 
             // Lbl_total
@@ -952,9 +984,10 @@
             this.Lbl_total.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_total.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_total.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_total.Location = new System.Drawing.Point(902, 28);
+            this.Lbl_total.Location = new System.Drawing.Point(1353, 43);
+            this.Lbl_total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_total.Name = "Lbl_total";
-            this.Lbl_total.Size = new System.Drawing.Size(17, 20);
+            this.Lbl_total.Size = new System.Drawing.Size(25, 27);
             this.Lbl_total.TabIndex = 441;
             this.Lbl_total.Text = "0";
             // 
@@ -968,18 +1001,20 @@
             this.btn_VerTodoPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_VerTodoPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_VerTodoPerso.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodoPerso.Image")));
-            this.btn_VerTodoPerso.Location = new System.Drawing.Point(902, 227);
+            this.btn_VerTodoPerso.Location = new System.Drawing.Point(1353, 349);
+            this.btn_VerTodoPerso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_VerTodoPerso.Name = "btn_VerTodoPerso";
-            this.btn_VerTodoPerso.Size = new System.Drawing.Size(31, 34);
+            this.btn_VerTodoPerso.Size = new System.Drawing.Size(46, 52);
             this.btn_VerTodoPerso.TabIndex = 434;
             this.btn_VerTodoPerso.UseVisualStyleBackColor = true;
             // 
             // PictureBox2
             // 
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(11, 17);
+            this.PictureBox2.Location = new System.Drawing.Point(16, 26);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(63, 53);
+            this.PictureBox2.Size = new System.Drawing.Size(94, 82);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox2.TabIndex = 437;
             this.PictureBox2.TabStop = false;
@@ -994,9 +1029,10 @@
             this.Btn_Cerrar_TabPers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.Btn_Cerrar_TabPers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cerrar_TabPers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_TabPers.Image")));
-            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1201, 20);
+            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1802, 31);
+            this.Btn_Cerrar_TabPers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_Cerrar_TabPers.Name = "Btn_Cerrar_TabPers";
-            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(31, 34);
+            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(46, 52);
             this.Btn_Cerrar_TabPers.TabIndex = 434;
             this.Btn_Cerrar_TabPers.UseVisualStyleBackColor = true;
             this.Btn_Cerrar_TabPers.Click += new System.EventHandler(this.Btn_Cerrar_TabPers_Click);
@@ -1006,8 +1042,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 5);
+            this.panel1.Size = new System.Drawing.Size(1861, 8);
             this.panel1.TabIndex = 2;
             // 
             // Btn_EditPerso
@@ -1020,9 +1057,10 @@
             this.Btn_EditPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.Btn_EditPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_EditPerso.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EditPerso.Image")));
-            this.Btn_EditPerso.Location = new System.Drawing.Point(902, 176);
+            this.Btn_EditPerso.Location = new System.Drawing.Point(1353, 271);
+            this.Btn_EditPerso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_EditPerso.Name = "Btn_EditPerso";
-            this.Btn_EditPerso.Size = new System.Drawing.Size(31, 34);
+            this.Btn_EditPerso.Size = new System.Drawing.Size(46, 52);
             this.Btn_EditPerso.TabIndex = 433;
             this.Btn_EditPerso.UseVisualStyleBackColor = true;
             // 
@@ -1031,9 +1069,10 @@
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label9.ForeColor = System.Drawing.Color.DimGray;
-            this.Label9.Location = new System.Drawing.Point(77, 37);
+            this.Label9.Location = new System.Drawing.Point(116, 57);
+            this.Label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(293, 24);
+            this.Label9.Size = new System.Drawing.Size(433, 37);
             this.Label9.TabIndex = 2;
             this.Label9.Text = "Listado de Personal Registrado";
             // 
@@ -1047,9 +1086,10 @@
             this.Bt_NewPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.Bt_NewPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bt_NewPerso.Image = ((System.Drawing.Image)(resources.GetObject("Bt_NewPerso.Image")));
-            this.Bt_NewPerso.Location = new System.Drawing.Point(902, 136);
+            this.Bt_NewPerso.Location = new System.Drawing.Point(1353, 209);
+            this.Bt_NewPerso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Bt_NewPerso.Name = "Bt_NewPerso";
-            this.Bt_NewPerso.Size = new System.Drawing.Size(31, 34);
+            this.Bt_NewPerso.Size = new System.Drawing.Size(46, 52);
             this.Bt_NewPerso.TabIndex = 432;
             this.Bt_NewPerso.UseVisualStyleBackColor = true;
             // 
@@ -1057,9 +1097,10 @@
             // 
             this.elDivider1.FadeStyle = Klik.Windows.Forms.v1.EntryLib.DividerFadeStyles.Center;
             this.elDivider1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.elDivider1.Location = new System.Drawing.Point(9, 67);
+            this.elDivider1.Location = new System.Drawing.Point(14, 103);
+            this.elDivider1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elDivider1.Name = "elDivider1";
-            this.elDivider1.Size = new System.Drawing.Size(1232, 23);
+            this.elDivider1.Size = new System.Drawing.Size(1848, 35);
             this.elDivider1.TabIndex = 450;
             this.elDivider1.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
@@ -1090,8 +1131,9 @@
             this.elTabPage3.Controls.Add(this.btn_cerrarEx_Asis);
             this.elTabPage3.Controls.Add(this.elDivider2);
             this.elTabPage3.Location = new System.Drawing.Point(1, 36);
+            this.elTabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTabPage3.Name = "elTabPage3";
-            this.elTabPage3.Size = new System.Drawing.Size(1240, 481);
+            this.elTabPage3.Size = new System.Drawing.Size(1861, 760);
             this.elTabPage3.Visible = false;
             // 
             // panel5
@@ -1099,9 +1141,10 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.lbl_lupaAsis);
             this.panel5.Controls.Add(this.txt_buscarAsis);
-            this.panel5.Location = new System.Drawing.Point(854, 14);
+            this.panel5.Location = new System.Drawing.Point(1281, 22);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(256, 38);
+            this.panel5.Size = new System.Drawing.Size(384, 58);
             this.panel5.TabIndex = 467;
             // 
             // lbl_lupaAsis
@@ -1110,9 +1153,10 @@
             this.lbl_lupaAsis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupaAsis.ForeColor = System.Drawing.Color.White;
             this.lbl_lupaAsis.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaAsis.Image")));
-            this.lbl_lupaAsis.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupaAsis.Location = new System.Drawing.Point(339, 15);
+            this.lbl_lupaAsis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupaAsis.Name = "lbl_lupaAsis";
-            this.lbl_lupaAsis.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupaAsis.Size = new System.Drawing.Size(36, 37);
             this.lbl_lupaAsis.TabIndex = 32;
             // 
             // txt_buscarAsis
@@ -1127,10 +1171,10 @@
             this.txt_buscarAsis.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_buscarAsis.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txt_buscarAsis.LineThickness = 2;
-            this.txt_buscarAsis.Location = new System.Drawing.Point(6, 4);
-            this.txt_buscarAsis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_buscarAsis.Location = new System.Drawing.Point(9, 6);
+            this.txt_buscarAsis.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txt_buscarAsis.Name = "txt_buscarAsis";
-            this.txt_buscarAsis.Size = new System.Drawing.Size(244, 32);
+            this.txt_buscarAsis.Size = new System.Drawing.Size(366, 51);
             this.txt_buscarAsis.TabIndex = 31;
             this.txt_buscarAsis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1144,9 +1188,10 @@
             this.btn_Asis_With_Huella.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_Asis_With_Huella.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Asis_With_Huella.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_With_Huella.Image")));
-            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1116, 19);
+            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1674, 29);
+            this.btn_Asis_With_Huella.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Asis_With_Huella.Name = "btn_Asis_With_Huella";
-            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(31, 34);
+            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(46, 52);
             this.btn_Asis_With_Huella.TabIndex = 465;
             this.btn_Asis_With_Huella.UseVisualStyleBackColor = true;
             // 
@@ -1156,14 +1201,16 @@
             this.lsv_asis.ContextMenuStrip = this.subMenuAsistencia;
             this.lsv_asis.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lsv_asis.HideSelection = false;
-            this.lsv_asis.Location = new System.Drawing.Point(9, 115);
+            this.lsv_asis.Location = new System.Drawing.Point(14, 177);
+            this.lsv_asis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lsv_asis.Name = "lsv_asis";
-            this.lsv_asis.Size = new System.Drawing.Size(1024, 363);
+            this.lsv_asis.Size = new System.Drawing.Size(1536, 558);
             this.lsv_asis.TabIndex = 463;
             this.lsv_asis.UseCompatibleStateImageBehavior = false;
             // 
             // subMenuAsistencia
             // 
+            this.subMenuAsistencia.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.subMenuAsistencia.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripSeparator11,
@@ -1179,72 +1226,72 @@
             this.toolStripSeparator15,
             this.bt_imprimirAsistenciaDelMes});
             this.subMenuAsistencia.Name = "contextMenuStrip1";
-            this.subMenuAsistencia.Size = new System.Drawing.Size(253, 242);
+            this.subMenuAsistencia.Size = new System.Drawing.Size(364, 290);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(252, 26);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(363, 32);
             this.toolStripMenuItem1.Text = "Marcar Asistencia Manual";
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(249, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(360, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(252, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(363, 32);
             this.toolStripMenuItem2.Text = "Marcar Asistencia Biometrico";
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(249, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(360, 6);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(252, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(363, 32);
             this.toolStripMenuItem3.Text = "Eliminar Asistencia";
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(249, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(360, 6);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(252, 26);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(363, 32);
             this.toolStripMenuItem4.Text = "Mostrar Todo Asistencia";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(249, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(360, 6);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
             this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(252, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(363, 32);
             this.toolStripMenuItem5.Text = "Copiar Nro Dni";
             // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(363, 32);
             this.reportesToolStripMenuItem.Text = "**********Reportes ***************";
             // 
             // bt_imprimirAsistenciaPorPersonal
@@ -1252,20 +1299,20 @@
             this.bt_imprimirAsistenciaPorPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaPorPersonal.Image")));
             this.bt_imprimirAsistenciaPorPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_imprimirAsistenciaPorPersonal.Name = "bt_imprimirAsistenciaPorPersonal";
-            this.bt_imprimirAsistenciaPorPersonal.Size = new System.Drawing.Size(252, 26);
+            this.bt_imprimirAsistenciaPorPersonal.Size = new System.Drawing.Size(363, 32);
             this.bt_imprimirAsistenciaPorPersonal.Text = "Imprimir Asistencia por Personal";
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(249, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(360, 6);
             // 
             // bt_imprimirAsistenciaDelMes
             // 
             this.bt_imprimirAsistenciaDelMes.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaDelMes.Image")));
             this.bt_imprimirAsistenciaDelMes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_imprimirAsistenciaDelMes.Name = "bt_imprimirAsistenciaDelMes";
-            this.bt_imprimirAsistenciaDelMes.Size = new System.Drawing.Size(252, 26);
+            this.bt_imprimirAsistenciaDelMes.Size = new System.Drawing.Size(363, 32);
             this.bt_imprimirAsistenciaDelMes.Text = "Imprimir Asistencia Del Mes";
             // 
             // elLabel15
@@ -1277,12 +1324,13 @@
             this.elLabel15.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel15.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel15.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle139.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle139.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel15.FlashStyle = paintStyle139;
-            this.elLabel15.Location = new System.Drawing.Point(671, 90);
+            paintStyle73.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle73.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel15.FlashStyle = paintStyle73;
+            this.elLabel15.Location = new System.Drawing.Point(1006, 138);
+            this.elLabel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel15.Name = "elLabel15";
-            this.elLabel15.Size = new System.Drawing.Size(70, 24);
+            this.elLabel15.Size = new System.Drawing.Size(105, 37);
             this.elLabel15.TabIndex = 462;
             this.elLabel15.TabStop = false;
             this.elLabel15.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1300,12 +1348,13 @@
             this.elLabel14.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel14.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel14.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle140.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle140.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel14.FlashStyle = paintStyle140;
-            this.elLabel14.Location = new System.Drawing.Point(742, 90);
+            paintStyle74.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle74.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel14.FlashStyle = paintStyle74;
+            this.elLabel14.Location = new System.Drawing.Point(1113, 138);
+            this.elLabel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel14.Name = "elLabel14";
-            this.elLabel14.Size = new System.Drawing.Size(90, 24);
+            this.elLabel14.Size = new System.Drawing.Size(135, 37);
             this.elLabel14.TabIndex = 461;
             this.elLabel14.TabStop = false;
             this.elLabel14.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1323,12 +1372,13 @@
             this.elLabel13.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel13.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel13.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle141.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle141.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel13.FlashStyle = paintStyle141;
-            this.elLabel13.Location = new System.Drawing.Point(580, 90);
+            paintStyle75.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle75.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel13.FlashStyle = paintStyle75;
+            this.elLabel13.Location = new System.Drawing.Point(870, 138);
+            this.elLabel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel13.Name = "elLabel13";
-            this.elLabel13.Size = new System.Drawing.Size(90, 24);
+            this.elLabel13.Size = new System.Drawing.Size(135, 37);
             this.elLabel13.TabIndex = 460;
             this.elLabel13.TabStop = false;
             this.elLabel13.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1346,12 +1396,13 @@
             this.elLabel3.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel3.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel3.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle142.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle142.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel3.FlashStyle = paintStyle142;
-            this.elLabel3.Location = new System.Drawing.Point(833, 90);
+            paintStyle76.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle76.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel3.FlashStyle = paintStyle76;
+            this.elLabel3.Location = new System.Drawing.Point(1250, 138);
+            this.elLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel3.Name = "elLabel3";
-            this.elLabel3.Size = new System.Drawing.Size(90, 24);
+            this.elLabel3.Size = new System.Drawing.Size(135, 37);
             this.elLabel3.TabIndex = 459;
             this.elLabel3.TabStop = false;
             this.elLabel3.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1368,12 +1419,13 @@
             this.elLabel8.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel8.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel8.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle143.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle143.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel8.FlashStyle = paintStyle143;
-            this.elLabel8.Location = new System.Drawing.Point(923, 90);
+            paintStyle77.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle77.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel8.FlashStyle = paintStyle77;
+            this.elLabel8.Location = new System.Drawing.Point(1384, 138);
+            this.elLabel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel8.Name = "elLabel8";
-            this.elLabel8.Size = new System.Drawing.Size(110, 24);
+            this.elLabel8.Size = new System.Drawing.Size(165, 37);
             this.elLabel8.TabIndex = 458;
             this.elLabel8.TabStop = false;
             this.elLabel8.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1391,12 +1443,13 @@
             this.elLabel9.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel9.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel9.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle144.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle144.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel9.FlashStyle = paintStyle144;
-            this.elLabel9.Location = new System.Drawing.Point(499, 90);
+            paintStyle78.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle78.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel9.FlashStyle = paintStyle78;
+            this.elLabel9.Location = new System.Drawing.Point(748, 138);
+            this.elLabel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel9.Name = "elLabel9";
-            this.elLabel9.Size = new System.Drawing.Size(80, 24);
+            this.elLabel9.Size = new System.Drawing.Size(120, 37);
             this.elLabel9.TabIndex = 457;
             this.elLabel9.TabStop = false;
             this.elLabel9.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1414,12 +1467,13 @@
             this.elLabel10.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel10.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel10.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle145.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle145.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel10.FlashStyle = paintStyle145;
-            this.elLabel10.Location = new System.Drawing.Point(408, 90);
+            paintStyle79.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle79.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel10.FlashStyle = paintStyle79;
+            this.elLabel10.Location = new System.Drawing.Point(612, 138);
+            this.elLabel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel10.Name = "elLabel10";
-            this.elLabel10.Size = new System.Drawing.Size(90, 24);
+            this.elLabel10.Size = new System.Drawing.Size(135, 37);
             this.elLabel10.TabIndex = 456;
             this.elLabel10.TabStop = false;
             this.elLabel10.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1437,12 +1491,13 @@
             this.elLabel11.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel11.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel11.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle146.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle146.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel11.FlashStyle = paintStyle146;
-            this.elLabel11.Location = new System.Drawing.Point(90, 90);
+            paintStyle80.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle80.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel11.FlashStyle = paintStyle80;
+            this.elLabel11.Location = new System.Drawing.Point(135, 138);
+            this.elLabel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel11.Name = "elLabel11";
-            this.elLabel11.Size = new System.Drawing.Size(316, 24);
+            this.elLabel11.Size = new System.Drawing.Size(474, 37);
             this.elLabel11.TabIndex = 455;
             this.elLabel11.TabStop = false;
             this.elLabel11.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1459,12 +1514,13 @@
             this.elLabel12.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel12.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel12.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle147.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle147.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel12.FlashStyle = paintStyle147;
-            this.elLabel12.Location = new System.Drawing.Point(9, 90);
+            paintStyle81.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle81.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel12.FlashStyle = paintStyle81;
+            this.elLabel12.Location = new System.Drawing.Point(14, 138);
+            this.elLabel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel12.Name = "elLabel12";
-            this.elLabel12.Size = new System.Drawing.Size(80, 24);
+            this.elLabel12.Size = new System.Drawing.Size(120, 37);
             this.elLabel12.TabIndex = 454;
             this.elLabel12.TabStop = false;
             this.elLabel12.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1476,9 +1532,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(16, 17);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox3.Size = new System.Drawing.Size(94, 82);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 452;
             this.pictureBox3.TabStop = false;
@@ -1488,9 +1545,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(77, 31);
+            this.label6.Location = new System.Drawing.Point(116, 48);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(341, 24);
+            this.label6.Size = new System.Drawing.Size(502, 37);
             this.label6.TabIndex = 451;
             this.label6.Text = "Relacion de Asistencias Registradas";
             // 
@@ -1499,8 +1557,9 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1240, 5);
+            this.panel2.Size = new System.Drawing.Size(1861, 8);
             this.panel2.TabIndex = 2;
             // 
             // btn_Asis_Manual
@@ -1513,9 +1572,10 @@
             this.btn_Asis_Manual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_Asis_Manual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Asis_Manual.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_Manual.Image")));
-            this.btn_Asis_Manual.Location = new System.Drawing.Point(1160, 19);
+            this.btn_Asis_Manual.Location = new System.Drawing.Point(1740, 29);
+            this.btn_Asis_Manual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Asis_Manual.Name = "btn_Asis_Manual";
-            this.btn_Asis_Manual.Size = new System.Drawing.Size(31, 34);
+            this.btn_Asis_Manual.Size = new System.Drawing.Size(46, 52);
             this.btn_Asis_Manual.TabIndex = 432;
             this.btn_Asis_Manual.UseVisualStyleBackColor = true;
             this.btn_Asis_Manual.Click += new System.EventHandler(this.btn_nuevoAsis_Click);
@@ -1530,9 +1590,10 @@
             this.btn_cerrarEx_Asis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btn_cerrarEx_Asis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrarEx_Asis.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrarEx_Asis.Image")));
-            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1199, 19);
+            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1798, 29);
+            this.btn_cerrarEx_Asis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_cerrarEx_Asis.Name = "btn_cerrarEx_Asis";
-            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(31, 34);
+            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(46, 52);
             this.btn_cerrarEx_Asis.TabIndex = 434;
             this.btn_cerrarEx_Asis.UseVisualStyleBackColor = true;
             this.btn_cerrarEx_Asis.Click += new System.EventHandler(this.btn_cerrarEx_Asis_Click);
@@ -1541,9 +1602,10 @@
             // 
             this.elDivider2.FadeStyle = Klik.Windows.Forms.v1.EntryLib.DividerFadeStyles.Center;
             this.elDivider2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.elDivider2.Location = new System.Drawing.Point(9, 61);
+            this.elDivider2.Location = new System.Drawing.Point(14, 94);
+            this.elDivider2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elDivider2.Name = "elDivider2";
-            this.elDivider2.Size = new System.Drawing.Size(1232, 23);
+            this.elDivider2.Size = new System.Drawing.Size(1848, 35);
             this.elDivider2.TabIndex = 453;
             this.elDivider2.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
@@ -1566,16 +1628,18 @@
             this.elTabPage4.Controls.Add(this.groupBox1);
             this.elTabPage4.Controls.Add(this.btn_cancel_horio);
             this.elTabPage4.Location = new System.Drawing.Point(1, 36);
+            this.elTabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTabPage4.Name = "elTabPage4";
-            this.elTabPage4.Size = new System.Drawing.Size(1240, 481);
+            this.elTabPage4.Size = new System.Drawing.Size(1861, 760);
             this.elTabPage4.Visible = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(9, 18);
+            this.pictureBox5.Location = new System.Drawing.Point(14, 28);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox5.Size = new System.Drawing.Size(94, 82);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 455;
             this.pictureBox5.TabStop = false;
@@ -1585,9 +1649,10 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(75, 38);
+            this.label17.Location = new System.Drawing.Point(112, 58);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(250, 24);
+            this.label17.Size = new System.Drawing.Size(369, 37);
             this.label17.TabIndex = 454;
             this.label17.Text = "Configuracion del Sistema";
             // 
@@ -1595,9 +1660,10 @@
             // 
             this.elDivider4.FadeStyle = Klik.Windows.Forms.v1.EntryLib.DividerFadeStyles.Center;
             this.elDivider4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.elDivider4.Location = new System.Drawing.Point(7, 68);
+            this.elDivider4.Location = new System.Drawing.Point(10, 105);
+            this.elDivider4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elDivider4.Name = "elDivider4";
-            this.elDivider4.Size = new System.Drawing.Size(1232, 23);
+            this.elDivider4.Size = new System.Drawing.Size(1848, 35);
             this.elDivider4.TabIndex = 456;
             this.elDivider4.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
@@ -1609,9 +1675,11 @@
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.lbl_Cont);
-            this.groupBox3.Location = new System.Drawing.Point(838, 98);
+            this.groupBox3.Location = new System.Drawing.Point(1257, 151);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(169, 308);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(254, 474);
             this.groupBox3.TabIndex = 54;
             this.groupBox3.TabStop = false;
             // 
@@ -1619,9 +1687,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(27, 24);
+            this.label15.Location = new System.Drawing.Point(40, 37);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 21);
+            this.label15.Size = new System.Drawing.Size(189, 30);
             this.label15.TabIndex = 132;
             this.label15.Text = "Registrar Faltas";
             // 
@@ -1630,13 +1699,14 @@
             this.lbl_totalPer.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.lbl_totalPer.BackgroundStyle.SolidColor = System.Drawing.Color.White;
             this.lbl_totalPer.BorderStyle.SolidColor = System.Drawing.Color.Gainsboro;
-            paintStyle148.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle148.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.lbl_totalPer.FlashStyle = paintStyle148;
+            paintStyle82.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle82.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.lbl_totalPer.FlashStyle = paintStyle82;
             this.lbl_totalPer.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbl_totalPer.Location = new System.Drawing.Point(101, 147);
+            this.lbl_totalPer.Location = new System.Drawing.Point(152, 226);
+            this.lbl_totalPer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbl_totalPer.Name = "lbl_totalPer";
-            this.lbl_totalPer.Size = new System.Drawing.Size(54, 32);
+            this.lbl_totalPer.Size = new System.Drawing.Size(81, 49);
             this.lbl_totalPer.TabIndex = 129;
             this.lbl_totalPer.TabStop = false;
             this.lbl_totalPer.TextStyle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1657,9 +1727,10 @@
             this.bt_regFalta.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.bt_regFalta.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.bt_regFalta.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_regFalta.Location = new System.Drawing.Point(22, 244);
+            this.bt_regFalta.Location = new System.Drawing.Point(33, 375);
+            this.bt_regFalta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_regFalta.Name = "bt_regFalta";
-            this.bt_regFalta.Size = new System.Drawing.Size(138, 34);
+            this.bt_regFalta.Size = new System.Drawing.Size(207, 52);
             this.bt_regFalta.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_regFalta.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_regFalta.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1679,9 +1750,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(13, 199);
+            this.label13.Location = new System.Drawing.Point(20, 306);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 17);
+            this.label13.Size = new System.Drawing.Size(210, 23);
             this.label13.TabIndex = 57;
             this.label13.Text = "Registrando Faltas ...";
             // 
@@ -1689,9 +1761,10 @@
             // 
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label14.Location = new System.Drawing.Point(75, 151);
+            this.label14.Location = new System.Drawing.Point(112, 232);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(22, 28);
+            this.label14.Size = new System.Drawing.Size(33, 43);
             this.label14.TabIndex = 130;
             this.label14.Text = "/";
             // 
@@ -1700,13 +1773,14 @@
             this.lbl_Cont.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.lbl_Cont.BackgroundStyle.SolidColor = System.Drawing.Color.White;
             this.lbl_Cont.BorderStyle.SolidColor = System.Drawing.Color.Gainsboro;
-            paintStyle149.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle149.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.lbl_Cont.FlashStyle = paintStyle149;
+            paintStyle83.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle83.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.lbl_Cont.FlashStyle = paintStyle83;
             this.lbl_Cont.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbl_Cont.Location = new System.Drawing.Point(16, 147);
+            this.lbl_Cont.Location = new System.Drawing.Point(24, 226);
+            this.lbl_Cont.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbl_Cont.Name = "lbl_Cont";
-            this.lbl_Cont.Size = new System.Drawing.Size(54, 32);
+            this.lbl_Cont.Size = new System.Drawing.Size(81, 49);
             this.lbl_Cont.TabIndex = 128;
             this.lbl_Cont.TabStop = false;
             this.lbl_Cont.TextStyle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1723,9 +1797,11 @@
             this.groupBox2.Controls.Add(this.rdb_ActivarRobot);
             this.groupBox2.Controls.Add(this.btn_Savedrobot);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Location = new System.Drawing.Point(478, 98);
+            this.groupBox2.Location = new System.Drawing.Point(717, 151);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(340, 308);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(510, 474);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
@@ -1733,18 +1809,20 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(11, 60);
+            this.label12.Location = new System.Drawing.Point(16, 92);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(299, 17);
+            this.label12.Size = new System.Drawing.Size(450, 23);
             this.label12.TabIndex = 56;
             this.label12.Text = "El Robot registra automaticamente las Faltas";
             // 
             // PictureBox10
             // 
             this.PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox10.Image")));
-            this.PictureBox10.Location = new System.Drawing.Point(132, 147);
+            this.PictureBox10.Location = new System.Drawing.Point(198, 226);
+            this.PictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PictureBox10.Name = "PictureBox10";
-            this.PictureBox10.Size = new System.Drawing.Size(70, 65);
+            this.PictureBox10.Size = new System.Drawing.Size(105, 100);
             this.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox10.TabIndex = 55;
             this.PictureBox10.TabStop = false;
@@ -1753,9 +1831,10 @@
             // 
             this.rdb_Desact_Robot.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.rdb_Desact_Robot.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.rdb_Desact_Robot.Location = new System.Drawing.Point(193, 99);
+            this.rdb_Desact_Robot.Location = new System.Drawing.Point(290, 152);
+            this.rdb_Desact_Robot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdb_Desact_Robot.Name = "rdb_Desact_Robot";
-            this.rdb_Desact_Robot.Size = new System.Drawing.Size(79, 30);
+            this.rdb_Desact_Robot.Size = new System.Drawing.Size(118, 46);
             this.rdb_Desact_Robot.TabIndex = 7;
             this.rdb_Desact_Robot.TextStyle.Text = "Desactivar";
             this.rdb_Desact_Robot.Value = false;
@@ -1764,9 +1843,10 @@
             // 
             this.rdb_ActivarRobot.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.rdb_ActivarRobot.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.rdb_ActivarRobot.Location = new System.Drawing.Point(65, 99);
+            this.rdb_ActivarRobot.Location = new System.Drawing.Point(98, 152);
+            this.rdb_ActivarRobot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdb_ActivarRobot.Name = "rdb_ActivarRobot";
-            this.rdb_ActivarRobot.Size = new System.Drawing.Size(83, 30);
+            this.rdb_ActivarRobot.Size = new System.Drawing.Size(124, 46);
             this.rdb_ActivarRobot.TabIndex = 6;
             this.rdb_ActivarRobot.TextStyle.Text = "Activar";
             this.rdb_ActivarRobot.Value = false;
@@ -1783,9 +1863,10 @@
             this.btn_Savedrobot.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.btn_Savedrobot.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_Savedrobot.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Savedrobot.Location = new System.Drawing.Point(102, 244);
+            this.btn_Savedrobot.Location = new System.Drawing.Point(153, 375);
+            this.btn_Savedrobot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Savedrobot.Name = "btn_Savedrobot";
-            this.btn_Savedrobot.Size = new System.Drawing.Size(138, 34);
+            this.btn_Savedrobot.Size = new System.Drawing.Size(207, 52);
             this.btn_Savedrobot.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Savedrobot.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Savedrobot.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1805,9 +1886,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 24);
+            this.label11.Location = new System.Drawing.Point(26, 37);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(293, 21);
+            this.label11.Size = new System.Drawing.Size(438, 30);
             this.label11.TabIndex = 5;
             this.label11.Text = "Activar / Desactivar Robot de faltas";
             // 
@@ -1816,8 +1898,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1240, 5);
+            this.panel3.Size = new System.Drawing.Size(1861, 8);
             this.panel3.TabIndex = 2;
             // 
             // groupBox1
@@ -1834,9 +1917,11 @@
             this.groupBox1.Controls.Add(this.Label26);
             this.groupBox1.Controls.Add(this.Label27);
             this.groupBox1.Controls.Add(this.Dtp_Hora_Limite);
-            this.groupBox1.Location = new System.Drawing.Point(41, 96);
+            this.groupBox1.Location = new System.Drawing.Point(62, 148);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(421, 310);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(632, 477);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             // 
@@ -1844,18 +1929,20 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(106, 224);
+            this.label10.Location = new System.Drawing.Point(159, 345);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(222, 16);
+            this.label10.Size = new System.Drawing.Size(340, 23);
             this.label10.TabIndex = 23;
             this.label10.Text = "¡¡ Establecer Formato de 24 horas";
             // 
             // lbl_idHorario
             // 
             this.lbl_idHorario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_idHorario.Location = new System.Drawing.Point(225, 57);
+            this.lbl_idHorario.Location = new System.Drawing.Point(338, 88);
+            this.lbl_idHorario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_idHorario.Name = "lbl_idHorario";
-            this.lbl_idHorario.Size = new System.Drawing.Size(111, 20);
+            this.lbl_idHorario.Size = new System.Drawing.Size(166, 31);
             this.lbl_idHorario.TabIndex = 53;
             this.lbl_idHorario.Text = "00";
             // 
@@ -1871,9 +1958,10 @@
             this.btn_SaveHorario.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.btn_SaveHorario.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_SaveHorario.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_SaveHorario.Location = new System.Drawing.Point(151, 246);
+            this.btn_SaveHorario.Location = new System.Drawing.Point(226, 378);
+            this.btn_SaveHorario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_SaveHorario.Name = "btn_SaveHorario";
-            this.btn_SaveHorario.Size = new System.Drawing.Size(123, 34);
+            this.btn_SaveHorario.Size = new System.Drawing.Size(184, 52);
             this.btn_SaveHorario.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_SaveHorario.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_SaveHorario.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1888,23 +1976,26 @@
             this.btn_SaveHorario.TextStyle.Text = "Listo";
             this.btn_SaveHorario.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_SaveHorario.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_SaveHorario.Click += new System.EventHandler(this.btn_SaveHorario_Click);
             // 
             // dtp_hora_tolercia
             // 
             this.dtp_hora_tolercia.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_hora_tolercia.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_hora_tolercia.Location = new System.Drawing.Point(224, 115);
+            this.dtp_hora_tolercia.Location = new System.Drawing.Point(336, 177);
+            this.dtp_hora_tolercia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtp_hora_tolercia.Name = "dtp_hora_tolercia";
-            this.dtp_hora_tolercia.Size = new System.Drawing.Size(112, 26);
+            this.dtp_hora_tolercia.Size = new System.Drawing.Size(166, 35);
             this.dtp_hora_tolercia.TabIndex = 21;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(74, 26);
+            this.label7.Location = new System.Drawing.Point(111, 40);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(240, 21);
+            this.label7.Size = new System.Drawing.Size(363, 30);
             this.label7.TabIndex = 4;
             this.label7.Text = "Configurar Horario de Trabajo";
             // 
@@ -1912,9 +2003,10 @@
             // 
             this.Label24.AutoSize = true;
             this.Label24.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label24.Location = new System.Drawing.Point(78, 154);
+            this.Label24.Location = new System.Drawing.Point(117, 237);
+            this.Label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label24.Name = "Label24";
-            this.Label24.Size = new System.Drawing.Size(84, 20);
+            this.Label24.Size = new System.Drawing.Size(133, 27);
             this.Label24.TabIndex = 20;
             this.Label24.Text = "hora limite";
             // 
@@ -1922,18 +2014,20 @@
             // 
             this.dtp_horaSalida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_horaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_horaSalida.Location = new System.Drawing.Point(224, 183);
+            this.dtp_horaSalida.Location = new System.Drawing.Point(336, 282);
+            this.dtp_horaSalida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtp_horaSalida.Name = "dtp_horaSalida";
-            this.dtp_horaSalida.Size = new System.Drawing.Size(112, 26);
+            this.dtp_horaSalida.Size = new System.Drawing.Size(166, 35);
             this.dtp_horaSalida.TabIndex = 15;
             // 
             // Label25
             // 
             this.Label25.AutoSize = true;
             this.Label25.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label25.Location = new System.Drawing.Point(77, 120);
+            this.Label25.Location = new System.Drawing.Point(116, 185);
+            this.Label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label25.Name = "Label25";
-            this.Label25.Size = new System.Drawing.Size(74, 20);
+            this.Label25.Size = new System.Drawing.Size(115, 27);
             this.Label25.TabIndex = 18;
             this.Label25.Text = "tolrancia";
             // 
@@ -1941,18 +2035,20 @@
             // 
             this.dtp_horaIngre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_horaIngre.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_horaIngre.Location = new System.Drawing.Point(224, 81);
+            this.dtp_horaIngre.Location = new System.Drawing.Point(336, 125);
+            this.dtp_horaIngre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtp_horaIngre.Name = "dtp_horaIngre";
-            this.dtp_horaIngre.Size = new System.Drawing.Size(112, 26);
+            this.dtp_horaIngre.Size = new System.Drawing.Size(166, 35);
             this.dtp_horaIngre.TabIndex = 14;
             // 
             // Label26
             // 
             this.Label26.AutoSize = true;
             this.Label26.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label26.Location = new System.Drawing.Point(78, 188);
+            this.Label26.Location = new System.Drawing.Point(117, 289);
+            this.Label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label26.Name = "Label26";
-            this.Label26.Size = new System.Drawing.Size(89, 20);
+            this.Label26.Size = new System.Drawing.Size(139, 27);
             this.Label26.TabIndex = 17;
             this.Label26.Text = "hora salida";
             // 
@@ -1960,9 +2056,10 @@
             // 
             this.Label27.AutoSize = true;
             this.Label27.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label27.Location = new System.Drawing.Point(78, 86);
+            this.Label27.Location = new System.Drawing.Point(117, 132);
+            this.Label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label27.Name = "Label27";
-            this.Label27.Size = new System.Drawing.Size(100, 20);
+            this.Label27.Size = new System.Drawing.Size(151, 27);
             this.Label27.TabIndex = 16;
             this.Label27.Text = "hora ingreso";
             // 
@@ -1970,9 +2067,10 @@
             // 
             this.Dtp_Hora_Limite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtp_Hora_Limite.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.Dtp_Hora_Limite.Location = new System.Drawing.Point(224, 149);
+            this.Dtp_Hora_Limite.Location = new System.Drawing.Point(336, 229);
+            this.Dtp_Hora_Limite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dtp_Hora_Limite.Name = "Dtp_Hora_Limite";
-            this.Dtp_Hora_Limite.Size = new System.Drawing.Size(112, 26);
+            this.Dtp_Hora_Limite.Size = new System.Drawing.Size(166, 35);
             this.Dtp_Hora_Limite.TabIndex = 19;
             // 
             // btn_cancel_horio
@@ -1987,9 +2085,10 @@
             this.btn_cancel_horio.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.btn_cancel_horio.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_cancel_horio.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel_horio.Location = new System.Drawing.Point(1106, 28);
+            this.btn_cancel_horio.Location = new System.Drawing.Point(1659, 43);
+            this.btn_cancel_horio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_cancel_horio.Name = "btn_cancel_horio";
-            this.btn_cancel_horio.Size = new System.Drawing.Size(123, 34);
+            this.btn_cancel_horio.Size = new System.Drawing.Size(184, 52);
             this.btn_cancel_horio.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.White;
             this.btn_cancel_horio.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.White;
             this.btn_cancel_horio.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
@@ -2026,16 +2125,18 @@
             this.elTabPage5.Controls.Add(this.label16);
             this.elTabPage5.Controls.Add(this.elDivider3);
             this.elTabPage5.Location = new System.Drawing.Point(1, 36);
+            this.elTabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elTabPage5.Name = "elTabPage5";
-            this.elTabPage5.Size = new System.Drawing.Size(1240, 481);
+            this.elTabPage5.Size = new System.Drawing.Size(1861, 760);
             this.elTabPage5.Visible = false;
             // 
             // dtp_fechajusti
             // 
             this.dtp_fechajusti.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fechajusti.Location = new System.Drawing.Point(1116, 90);
+            this.dtp_fechajusti.Location = new System.Drawing.Point(1674, 138);
+            this.dtp_fechajusti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtp_fechajusti.Name = "dtp_fechajusti";
-            this.dtp_fechajusti.Size = new System.Drawing.Size(98, 20);
+            this.dtp_fechajusti.Size = new System.Drawing.Size(145, 26);
             this.dtp_fechajusti.TabIndex = 470;
             // 
             // panel6
@@ -2043,9 +2144,10 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.lbl_lupajusti);
             this.panel6.Controls.Add(this.txt_buscarjusti);
-            this.panel6.Location = new System.Drawing.Point(921, 9);
+            this.panel6.Location = new System.Drawing.Point(1382, 14);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(256, 38);
+            this.panel6.Size = new System.Drawing.Size(384, 58);
             this.panel6.TabIndex = 466;
             // 
             // lbl_lupajusti
@@ -2054,9 +2156,10 @@
             this.lbl_lupajusti.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupajusti.ForeColor = System.Drawing.Color.White;
             this.lbl_lupajusti.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupajusti.Image")));
-            this.lbl_lupajusti.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupajusti.Location = new System.Drawing.Point(339, 15);
+            this.lbl_lupajusti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupajusti.Name = "lbl_lupajusti";
-            this.lbl_lupajusti.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupajusti.Size = new System.Drawing.Size(36, 37);
             this.lbl_lupajusti.TabIndex = 32;
             // 
             // txt_buscarjusti
@@ -2071,10 +2174,10 @@
             this.txt_buscarjusti.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_buscarjusti.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txt_buscarjusti.LineThickness = 2;
-            this.txt_buscarjusti.Location = new System.Drawing.Point(6, 4);
-            this.txt_buscarjusti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_buscarjusti.Location = new System.Drawing.Point(9, 6);
+            this.txt_buscarjusti.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txt_buscarjusti.Name = "txt_buscarjusti";
-            this.txt_buscarjusti.Size = new System.Drawing.Size(244, 32);
+            this.txt_buscarjusti.Size = new System.Drawing.Size(366, 51);
             this.txt_buscarjusti.TabIndex = 31;
             this.txt_buscarjusti.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -2084,9 +2187,10 @@
             this.lbl_totaljusti.BackColor = System.Drawing.Color.Transparent;
             this.lbl_totaljusti.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_totaljusti.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_totaljusti.Location = new System.Drawing.Point(898, 19);
+            this.lbl_totaljusti.Location = new System.Drawing.Point(1347, 29);
+            this.lbl_totaljusti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_totaljusti.Name = "lbl_totaljusti";
-            this.lbl_totaljusti.Size = new System.Drawing.Size(17, 20);
+            this.lbl_totaljusti.Size = new System.Drawing.Size(25, 27);
             this.lbl_totaljusti.TabIndex = 468;
             this.lbl_totaljusti.Text = "0";
             // 
@@ -2100,9 +2204,10 @@
             this.bt_cerrarjusti.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.bt_cerrarjusti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cerrarjusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_cerrarjusti.Image")));
-            this.bt_cerrarjusti.Location = new System.Drawing.Point(1197, 11);
+            this.bt_cerrarjusti.Location = new System.Drawing.Point(1796, 17);
+            this.bt_cerrarjusti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_cerrarjusti.Name = "bt_cerrarjusti";
-            this.bt_cerrarjusti.Size = new System.Drawing.Size(31, 34);
+            this.bt_cerrarjusti.Size = new System.Drawing.Size(46, 52);
             this.bt_cerrarjusti.TabIndex = 467;
             this.bt_cerrarjusti.UseVisualStyleBackColor = true;
             // 
@@ -2115,12 +2220,13 @@
             this.elLabel19.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel19.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel19.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle150.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle150.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel19.FlashStyle = paintStyle150;
-            this.elLabel19.Location = new System.Drawing.Point(563, 90);
+            paintStyle84.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle84.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel19.FlashStyle = paintStyle84;
+            this.elLabel19.Location = new System.Drawing.Point(844, 138);
+            this.elLabel19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel19.Name = "elLabel19";
-            this.elLabel19.Size = new System.Drawing.Size(120, 24);
+            this.elLabel19.Size = new System.Drawing.Size(180, 37);
             this.elLabel19.TabIndex = 465;
             this.elLabel19.TabStop = false;
             this.elLabel19.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2133,9 +2239,10 @@
             // 
             this.lbl_Detalle.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Detalle.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_Detalle.Location = new System.Drawing.Point(824, 117);
+            this.lbl_Detalle.Location = new System.Drawing.Point(1236, 180);
+            this.lbl_Detalle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Detalle.Name = "lbl_Detalle";
-            this.lbl_Detalle.Size = new System.Drawing.Size(244, 281);
+            this.lbl_Detalle.Size = new System.Drawing.Size(366, 432);
             this.lbl_Detalle.TabIndex = 464;
             this.lbl_Detalle.Text = "-";
             // 
@@ -2146,14 +2253,16 @@
             this.lsv_justifi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsv_justifi.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lsv_justifi.HideSelection = false;
-            this.lsv_justifi.Location = new System.Drawing.Point(15, 116);
+            this.lsv_justifi.Location = new System.Drawing.Point(22, 178);
+            this.lsv_justifi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lsv_justifi.Name = "lsv_justifi";
-            this.lsv_justifi.Size = new System.Drawing.Size(789, 351);
+            this.lsv_justifi.Size = new System.Drawing.Size(1184, 540);
             this.lsv_justifi.TabIndex = 463;
             this.lsv_justifi.UseCompatibleStateImageBehavior = false;
             // 
             // subMenuJusti
             // 
+            this.subMenuJusti.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.subMenuJusti.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bt_aprobarJustificacion,
             this.toolStripSeparator6,
@@ -2167,79 +2276,79 @@
             this.aprobarJustificacionToolStripMenuItem,
             this.bt_desaprobarJustificacion});
             this.subMenuJusti.Name = "contextMenuStrip1";
-            this.subMenuJusti.Size = new System.Drawing.Size(234, 190);
+            this.subMenuJusti.Size = new System.Drawing.Size(321, 226);
             // 
             // bt_aprobarJustificacion
             // 
             this.bt_aprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_aprobarJustificacion.Image")));
             this.bt_aprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_aprobarJustificacion.Name = "bt_aprobarJustificacion";
-            this.bt_aprobarJustificacion.Size = new System.Drawing.Size(233, 26);
+            this.bt_aprobarJustificacion.Size = new System.Drawing.Size(320, 32);
             this.bt_aprobarJustificacion.Text = "Aprobar Justificacion";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(317, 6);
             // 
             // bt_editJusti
             // 
             this.bt_editJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_editJusti.Image")));
             this.bt_editJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_editJusti.Name = "bt_editJusti";
-            this.bt_editJusti.Size = new System.Drawing.Size(233, 26);
+            this.bt_editJusti.Size = new System.Drawing.Size(320, 32);
             this.bt_editJusti.Text = "Editar Justificacion";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(317, 6);
             // 
             // bt_ElimiJusti
             // 
             this.bt_ElimiJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_ElimiJusti.Image")));
             this.bt_ElimiJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_ElimiJusti.Name = "bt_ElimiJusti";
-            this.bt_ElimiJusti.Size = new System.Drawing.Size(233, 26);
+            this.bt_ElimiJusti.Size = new System.Drawing.Size(320, 32);
             this.bt_ElimiJusti.Text = "Eliminar Justificacion";
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(317, 6);
             // 
             // bt_mostrarJusti
             // 
             this.bt_mostrarJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarJusti.Image")));
             this.bt_mostrarJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_mostrarJusti.Name = "bt_mostrarJusti";
-            this.bt_mostrarJusti.Size = new System.Drawing.Size(233, 26);
+            this.bt_mostrarJusti.Size = new System.Drawing.Size(320, 32);
             this.bt_mostrarJusti.Text = "Mostrar Todo las Justificacion";
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(317, 6);
             // 
             // bt_CopiarNroJusti
             // 
             this.bt_CopiarNroJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_CopiarNroJusti.Image")));
             this.bt_CopiarNroJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_CopiarNroJusti.Name = "bt_CopiarNroJusti";
-            this.bt_CopiarNroJusti.Size = new System.Drawing.Size(233, 26);
+            this.bt_CopiarNroJusti.Size = new System.Drawing.Size(320, 32);
             this.bt_CopiarNroJusti.Text = "Copiar Nro Justificacion";
             // 
             // aprobarJustificacionToolStripMenuItem
             // 
             this.aprobarJustificacionToolStripMenuItem.Name = "aprobarJustificacionToolStripMenuItem";
-            this.aprobarJustificacionToolStripMenuItem.Size = new System.Drawing.Size(230, 6);
+            this.aprobarJustificacionToolStripMenuItem.Size = new System.Drawing.Size(317, 6);
             // 
             // bt_desaprobarJustificacion
             // 
             this.bt_desaprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_desaprobarJustificacion.Image")));
             this.bt_desaprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_desaprobarJustificacion.Name = "bt_desaprobarJustificacion";
-            this.bt_desaprobarJustificacion.Size = new System.Drawing.Size(233, 26);
+            this.bt_desaprobarJustificacion.Size = new System.Drawing.Size(320, 32);
             this.bt_desaprobarJustificacion.Text = "Desaprobar Justificacion";
             // 
             // elLabel16
@@ -2250,12 +2359,13 @@
             this.elLabel16.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel16.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel16.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle151.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle151.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel16.FlashStyle = paintStyle151;
-            this.elLabel16.Location = new System.Drawing.Point(684, 90);
+            paintStyle85.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle85.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel16.FlashStyle = paintStyle85;
+            this.elLabel16.Location = new System.Drawing.Point(1026, 138);
+            this.elLabel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel16.Name = "elLabel16";
-            this.elLabel16.Size = new System.Drawing.Size(120, 24);
+            this.elLabel16.Size = new System.Drawing.Size(180, 37);
             this.elLabel16.TabIndex = 462;
             this.elLabel16.TabStop = false;
             this.elLabel16.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2273,12 +2383,13 @@
             this.elLabel17.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel17.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel17.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle152.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle152.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel17.FlashStyle = paintStyle152;
-            this.elLabel17.Location = new System.Drawing.Point(442, 90);
+            paintStyle86.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle86.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel17.FlashStyle = paintStyle86;
+            this.elLabel17.Location = new System.Drawing.Point(663, 138);
+            this.elLabel17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel17.Name = "elLabel17";
-            this.elLabel17.Size = new System.Drawing.Size(120, 24);
+            this.elLabel17.Size = new System.Drawing.Size(180, 37);
             this.elLabel17.TabIndex = 461;
             this.elLabel17.TabStop = false;
             this.elLabel17.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2296,12 +2407,13 @@
             this.elLabel18.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel18.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel18.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle153.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle153.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel18.FlashStyle = paintStyle153;
-            this.elLabel18.Location = new System.Drawing.Point(332, 90);
+            paintStyle87.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle87.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel18.FlashStyle = paintStyle87;
+            this.elLabel18.Location = new System.Drawing.Point(498, 138);
+            this.elLabel18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel18.Name = "elLabel18";
-            this.elLabel18.Size = new System.Drawing.Size(110, 24);
+            this.elLabel18.Size = new System.Drawing.Size(165, 37);
             this.elLabel18.TabIndex = 460;
             this.elLabel18.TabStop = false;
             this.elLabel18.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2318,12 +2430,13 @@
             this.elLabel20.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel20.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel20.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle154.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle154.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel20.FlashStyle = paintStyle154;
-            this.elLabel20.Location = new System.Drawing.Point(15, 90);
+            paintStyle88.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle88.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel20.FlashStyle = paintStyle88;
+            this.elLabel20.Location = new System.Drawing.Point(22, 138);
+            this.elLabel20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elLabel20.Name = "elLabel20";
-            this.elLabel20.Size = new System.Drawing.Size(316, 24);
+            this.elLabel20.Size = new System.Drawing.Size(474, 37);
             this.elLabel20.TabIndex = 458;
             this.elLabel20.TabStop = false;
             this.elLabel20.TextStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2335,9 +2448,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(9, 6);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox4.Size = new System.Drawing.Size(94, 82);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 455;
             this.pictureBox4.TabStop = false;
@@ -2347,9 +2461,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(72, 19);
+            this.label16.Location = new System.Drawing.Point(108, 29);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(258, 24);
+            this.label16.Size = new System.Drawing.Size(380, 37);
             this.label16.TabIndex = 454;
             this.label16.Text = "Relacion de Justificaciones";
             // 
@@ -2357,9 +2472,10 @@
             // 
             this.elDivider3.FadeStyle = Klik.Windows.Forms.v1.EntryLib.DividerFadeStyles.Center;
             this.elDivider3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.elDivider3.Location = new System.Drawing.Point(4, 54);
+            this.elDivider3.Location = new System.Drawing.Point(6, 83);
+            this.elDivider3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.elDivider3.Name = "elDivider3";
-            this.elDivider3.Size = new System.Drawing.Size(1232, 23);
+            this.elDivider3.Size = new System.Drawing.Size(1848, 35);
             this.elDivider3.TabIndex = 456;
             this.elDivider3.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
@@ -2367,9 +2483,10 @@
             // 
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label8.Location = new System.Drawing.Point(0, 595);
+            this.label8.Location = new System.Drawing.Point(0, 915);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1242, 5);
+            this.label8.Size = new System.Drawing.Size(1863, 8);
             this.label8.TabIndex = 7;
             this.label8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -2379,19 +2496,21 @@
             // 
             // Frm_Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1242, 600);
+            this.ClientSize = new System.Drawing.Size(1863, 923);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.elTab1);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Principal_FormClosing);
             this.Load += new System.EventHandler(this.Frm_Principal_Load);
             this.pnl_titu.ResumeLayout(false);

@@ -12,8 +12,16 @@ namespace Prj_Capa_Negocio
 {
   public   class RN_Horario
     {
+        public void RN_Actualizar_Horario(EN_Horario P)
+        {
+            BD_Horario obj = new BD_Horario();
+            obj.BD_Actualizar_Horario(P);
+        }
 
-      
-
+        public DataTable RN_Leer_Horarios()
+        {
+            BD_Horario obj = new BD_Horario();
+            return obj.BD_Leer_Horarios();
+        }
     }
 }

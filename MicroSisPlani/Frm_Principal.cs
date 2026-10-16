@@ -24,8 +24,6 @@ namespace MicroSisPlani
 
         private void Frm_Principal_Load(object sender, EventArgs e)
         {
-
-
             ConfigurationListView();
         }
 
@@ -280,6 +278,72 @@ namespace MicroSisPlani
                     Cargar_Todo_Personal();
                 }
             }
+        }
+
+        private void btn_SaveHorario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Clases
+                RN_Horario hor = new RN_Horario();
+                EN_Horario por = new EN_Horario();
+
+                Frm_Filtro fis = new Frm_Filtro();
+                Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+                Frm_Advertencia adver = new Frm_Advertencia();
+
+                //Propiedades de la Clase
+                por.Idhora = lbl_idHorario.Text;
+                por.HoEntrada = dtp_horaIngre.Value;
+                por.HoTole = dtp_hora_tolercia.Value;
+                por.HoLimite = Dtp_Hora_Limite.Value;
+                por.HoSalida = dtp_horaSalida.Value;
+
+                hor.RN_Actualizar_Horario(por);
+
+                if (BD_Horario.saved == true)
+                {
+                    fis.Show();
+                    ok.Lbl_msm1.Text = "El Horario fue actualizado";
+                    ok.ShowDialog();
+                    fis.Hide();
+
+                    elTabPage4.Visible = false;
+                    elTab1.SelectedTabPageIndex = 0;
+                }
+            }
+            catch 
+            {
+
+            }
+        }
+
+        private void CargarHorarios()
+        {
+            RN_Horario obj = new RN_Horario();
+            DataTable data = new DataTable();
+
+            data = obj.RN_Leer_Horarios();
+
+            if (data.Rows.Count == 0) return;
+
+            lbl_idHorario .Text = Convert.ToString(data.Rows[0]["Id_Hor"]);
+            dtp_horaIngre.Value = Convert.ToDateTime(data.Rows[0]["HoEntrada"]);
+            dtp_hora_tolercia.Value = Convert.ToDateTime(data.Rows[0]["MiTolrncia"]);
+            Dtp_Hora_Limite.Value = Convert.ToDateTime(data.Rows[0]["HoLimite"]);
+            dtp_horaSalida.Value = Convert.ToDateTime(data.Rows[0]["HoSalida"]);
+        }
+
+        private void bt_Config_Click(object sender, EventArgs e)
+        {
+            elTabPage4.Visible = true;
+            elTab1.SelectedTabPageIndex = 3;
+            CargarHorarios();
+        }
+
+        private void elTabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
