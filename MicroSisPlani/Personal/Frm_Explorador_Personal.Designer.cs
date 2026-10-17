@@ -44,14 +44,14 @@
             this.bt_nuevoPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bt_editarPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bt_registrarHuellaDigital = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bt_eliminarPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.bt_mostrarTodoElPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bt_registrarHuellaDigital = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.pnl_titulo.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +76,6 @@
             this.pnl_titulo.Name = "pnl_titulo";
             this.pnl_titulo.Size = new System.Drawing.Size(1250, 50);
             this.pnl_titulo.TabIndex = 9;
-            
             // 
             // Lbl_total
             // 
@@ -90,7 +89,6 @@
             this.Lbl_total.TabIndex = 31;
             this.Lbl_total.Text = "0";
             this.toolTip1.SetToolTip(this.Lbl_total, "Total de Personal Encontrado");
-           
             // 
             // lbl_lupa
             // 
@@ -102,7 +100,6 @@
             this.lbl_lupa.Name = "lbl_lupa";
             this.lbl_lupa.Size = new System.Drawing.Size(24, 24);
             this.lbl_lupa.TabIndex = 30;
-           
             // 
             // txt_Buscar
             // 
@@ -122,7 +119,6 @@
             this.txt_Buscar.Size = new System.Drawing.Size(244, 32);
             this.txt_Buscar.TabIndex = 29;
             this.txt_Buscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-           
             // 
             // btn_mini
             // 
@@ -135,7 +131,6 @@
             this.btn_mini.Size = new System.Drawing.Size(32, 32);
             this.btn_mini.TabIndex = 10;
             this.btn_mini.UseVisualStyleBackColor = true;
-           
             // 
             // label7
             // 
@@ -160,7 +155,6 @@
             this.btn_Salir.Size = new System.Drawing.Size(32, 32);
             this.btn_Salir.TabIndex = 1;
             this.btn_Salir.UseVisualStyleBackColor = true;
-          
             // 
             // label1
             // 
@@ -174,6 +168,7 @@
             // lsv_person
             // 
             this.lsv_person.ContextMenuStrip = this.contextMenuStrip1;
+            this.lsv_person.HideSelection = false;
             this.lsv_person.Location = new System.Drawing.Point(3, 56);
             this.lsv_person.Name = "lsv_person";
             this.lsv_person.Size = new System.Drawing.Size(1235, 453);
@@ -193,55 +188,65 @@
             this.toolStripSeparator3,
             this.bt_mostrarTodoElPersonal});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 158);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(209, 158);
             // 
             // bt_nuevoPersonal
             // 
             this.bt_nuevoPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_nuevoPersonal.Image")));
             this.bt_nuevoPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_nuevoPersonal.Name = "bt_nuevoPersonal";
-            this.bt_nuevoPersonal.Size = new System.Drawing.Size(210, 26);
+            this.bt_nuevoPersonal.Size = new System.Drawing.Size(208, 26);
             this.bt_nuevoPersonal.Text = "Nuevo Personal";
-           
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(205, 6);
             // 
             // bt_editarPersonal
             // 
             this.bt_editarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_editarPersonal.Image")));
             this.bt_editarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_editarPersonal.Name = "bt_editarPersonal";
-            this.bt_editarPersonal.Size = new System.Drawing.Size(210, 26);
+            this.bt_editarPersonal.Size = new System.Drawing.Size(208, 26);
             this.bt_editarPersonal.Text = "Editar Personal";
-          
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(205, 6);
+            // 
+            // bt_registrarHuellaDigital
+            // 
+            this.bt_registrarHuellaDigital.Image = ((System.Drawing.Image)(resources.GetObject("bt_registrarHuellaDigital.Image")));
+            this.bt_registrarHuellaDigital.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_registrarHuellaDigital.Name = "bt_registrarHuellaDigital";
+            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(208, 26);
+            this.bt_registrarHuellaDigital.Text = "Registrar Huella Digital";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(205, 6);
             // 
             // bt_eliminarPersonal
             // 
             this.bt_eliminarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_eliminarPersonal.Image")));
             this.bt_eliminarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bt_eliminarPersonal.Name = "bt_eliminarPersonal";
-            this.bt_eliminarPersonal.Size = new System.Drawing.Size(210, 26);
+            this.bt_eliminarPersonal.Size = new System.Drawing.Size(208, 26);
             this.bt_eliminarPersonal.Text = "Eliminar Personal";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(205, 6);
             // 
             // bt_mostrarTodoElPersonal
             // 
             this.bt_mostrarTodoElPersonal.Name = "bt_mostrarTodoElPersonal";
-            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(210, 26);
+            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(208, 26);
             this.bt_mostrarTodoElPersonal.Text = "Mostrar Todo el Personal";
-          
             // 
             // toolTip1
             // 
@@ -252,20 +257,6 @@
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
             this.consultasToolStripMenuItem.Text = "***************** Consultas ******";
-            // 
-            // bt_registrarHuellaDigital
-            // 
-            this.bt_registrarHuellaDigital.Image = ((System.Drawing.Image)(resources.GetObject("bt_registrarHuellaDigital.Image")));
-            this.bt_registrarHuellaDigital.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_registrarHuellaDigital.Name = "bt_registrarHuellaDigital";
-            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(210, 26);
-            this.bt_registrarHuellaDigital.Text = "Registrar Huella Digital";
-           
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(207, 6);
             // 
             // Frm_Explorador_Personal
             // 

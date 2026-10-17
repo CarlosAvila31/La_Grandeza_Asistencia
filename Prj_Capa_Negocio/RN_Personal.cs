@@ -50,5 +50,11 @@ namespace Prj_Capa_Negocio
             BD_Personal obj = new BD_Personal();
             return obj.BD_Verificar_DniPersonal(dni);
         }
+
+        public void BD_Registrar_Huella_Personal(string idper, object finguer)
+        {
+            BD_Personal obj = new BD_Personal();
+            obj.BD_Registrar_Huella_Personal(idper, finguer);
+        }
     }
 }

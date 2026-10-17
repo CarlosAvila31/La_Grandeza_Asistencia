@@ -13,6 +13,7 @@ using Prj_Capa_Entidad;
 using Prj_Capa_Negocio;
 using MicroSisPlani.Msm_Forms;
 using System.IO;
+using MicroSisPlani.Informes;
 
 namespace MicroSisPlani
 {
@@ -26,6 +27,7 @@ namespace MicroSisPlani
         private void Frm_Principal_Load(object sender, EventArgs e)
         {
             ConfigurationListView();
+            ConfigurarListview_Asis();
         }
 
         public void Cargar_Datos_Usuario()
@@ -128,8 +130,9 @@ namespace MicroSisPlani
 
         private void bt_Explo_Asis_Click(object sender, EventArgs e)
         {
-           
-           
+            elTabPage3.Visible = true;
+            elTab1.SelectedTabPageIndex = 2;
+            Cargar_Asistencias_delDia(dtp_fechadeldia.Value);
 
         }
 
@@ -388,9 +391,187 @@ namespace MicroSisPlani
             CargarHorarios();
         }
 
+
+        #region "asistencia"
+        private void ConfigurarListview_Asis()
+        {
+            var lis = lsv_asis;
+            lis.Columns.Clear();
+            lis.Items.Clear();
+            lis.View = View.Details;
+            lis.GridLines = false;
+            lis.FullRowSelect = true;
+            lis.Scrollable = true;
+            lis.HideSelection = false; //todo lo de aqui a arriba tambien se puede hacer desde propiedades
+            //Configuración de anchos y nombres de las columnas
+            lis.Columns.Add("Id Asis", 0, HorizontalAlignment.Left); //Se oculta una columna con ancho 0
+            lis.Columns.Add("Dni", 80, HorizontalAlignment.Left);
+            lis.Columns.Add("Nombres del personal", 316, HorizontalAlignment.Left);
+            lis.Columns.Add("Fecha", 90, HorizontalAlignment.Left);
+            lis.Columns.Add("Día", 80, HorizontalAlignment.Left);
+            lis.Columns.Add("Ho Ingreso", 90, HorizontalAlignment.Left);
+            lis.Columns.Add("Tardanza", 70, HorizontalAlignment.Center);
+            lis.Columns.Add("Ho Salida", 90, HorizontalAlignment.Left);
+            lis.Columns.Add("Adelant", 90, HorizontalAlignment.Left);
+            lis.Columns.Add("Justificacion", 0, HorizontalAlignment.Left);
+            lis.Columns.Add("Estado", 100, HorizontalAlignment.Left);
+        }
+
+
+        private void LlenarListView_Asis(DataTable data)
+        {
+            lsv_asis.Items.Clear();
+
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                DataRow dr = data.Rows[i];
+                ListViewItem list = new ListViewItem(dr["Id_asis"].ToString()); //la cabecera del listview
+                list.SubItems.Add(dr["DNIPR"].ToString());
+                list.SubItems.Add(dr["Nombre_Completo"].ToString());
+                list.SubItems.Add(dr["FechaAsis"].ToString());
+                list.SubItems.Add(dr["Nombre_dia"].ToString());
+                list.SubItems.Add(dr["HoIngreso"].ToString());
+                list.SubItems.Add(dr["Tardanzas"].ToString());
+                list.SubItems.Add(dr["HoSalida"].ToString());
+                list.SubItems.Add(dr["Adelanto"].ToString());
+
+                list.SubItems.Add(dr["Justifacion"].ToString());
+                list.SubItems.Add(dr["EstadoAsis"].ToString());
+                lsv_asis.Items.Add(list); //si no ponemos esto el listview nunca se llenara
+            }
+            Lbl_total.Text = Convert.ToString(lsv_asis.Items.Count);
+        }
+
+
+        private void Cargar_todas_Asistencias()
+        {
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = new DataTable();
+
+            dt = obj.RN_Ver_Todas_Asistencia();
+            if (dt.Rows.Count > 0)
+            {
+                //Lammamos al metodo llenar listview
+                LlenarListView_Asis(dt);
+            }
+        }
+
+        private void Cargar_Asistencias_delDia(DateTime fechas)
+        {
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = new DataTable();
+
+            dt = obj.RN_Ver_Todas_Asistencias_Deldia(fechas);
+            if (dt.Rows.Count > 0)
+            {
+                //Lammamos al metodo llenar listview
+                LlenarListView_Asis(dt);
+            }
+        }
+
+
+        private void Cargar_Asistencias_delMes(DateTime fechas)
+        {
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = new DataTable();
+
+            dt = obj.RN_Ver_Todas_Asistencias_DelMes(fechas);
+            if (dt.Rows.Count > 0)
+            {
+                //Lammamos al metodo llenar listview
+                LlenarListView_Asis(dt);
+            }
+        }
+
+
+
+        private void Cargar_Asistencias_porValor(String xvalor)
+        {
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = new DataTable();
+
+            dt = obj.RN_Ver_Todas_Asistencias_ParaExplorador(xvalor);
+            if (dt.Rows.Count > 0)
+            {
+                //Lammamos al metodo llenar listview
+                LlenarListView_Asis(dt);
+            }
+        }
+
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Cargar_todas_Asistencias();
+        }
+
+
+        private void txt_buscarAsis_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Cargar_Asistencias_porValor(txt_Buscar.Text);
+            }
+
+        }
+
+        private void lbl_lupaAsis_Click(object sender, EventArgs e)
+        {
+            Cargar_todas_Asistencias();
+        }
+
+
+        private void bt_verAsistenciasDelDiaT_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
+
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (Convert.ToString(solo.Tag) == "") return;
+
+            DateTime xfecha = solo.dtp_fecha.Value;
+
+            Cargar_Asistencias_delDia(xfecha);
+        }
+
+        #endregion
+
+
+
+
         private void elTabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_registrarHuellaDigital_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Regis_Huella per = new Frm_Regis_Huella();
+
+            //Primero vamos a obtener el ID del personal
+            if (lsv_person.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("Selecciona el personal para registrar su huella", "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                var lsv = lsv_person.SelectedItems[0]; //si no selecciono nada nada hacemos  podemos lanzar un mensaje
+                string xidsocio = lsv.SubItems[0].Text; //obtenemos el ID del empleado de la primera columna de list view
+
+                fil.Show();
+                per.Buscar_Personal_ParaEditar(xidsocio);
+                per.ShowDialog();
+                fil.Hide();
+
+                if (Convert.ToString(per.Tag) == "")
+                    return;
+                {
+                    Cargar_Todo_Personal();
+                }
+            }
         }
     }
 }

@@ -116,7 +116,7 @@ namespace Prj_Capa_Datos
                 cmd.CommandTimeout = 20;
                 cmd.CommandType = CommandType.StoredProcedure;
                 //PARAMETROS PARA EL SP
-                cmd.Parameters.AddWithValue("@Id_Persona", idper);
+                cmd.Parameters.AddWithValue("@IdPersona", idper);
                 cmd.Parameters.AddWithValue("@finguerPrint", finguer);
                 cn.Open();
                 cmd.ExecuteNonQuery();
