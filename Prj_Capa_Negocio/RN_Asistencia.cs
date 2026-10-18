@@ -36,5 +36,45 @@ namespace Prj_Capa_Negocio
             BD_Asistencia obj = new BD_Asistencia();
             return obj.BD_Ver_Todas_Asistencias_ParaExplorador(xvalor);
         }
+
+
+        public void RN_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado);
+        }
+
+        public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, double Totalhora)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            obj.BD_Registrar_Salida_Personal(idAsis, idPerso, HoSalida, Totalhora);
+        }
+
+        public bool RN_Checar_SiPersonal_YaMarco_Asistencia(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_YaMarco_Asistencia(xidPerso);
+        }
+
+
+        public bool RN_Checar_SiPersonal_YaMarco_suEntrada(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_YaMarco_suEntrada(xidPerso);
+        }
+
+        public bool RN_Verificar_Justificacion_Aprobado(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Verificar_Justificacion_Aprobado(xidPerso);
+        }
+
+        public DataTable RN_Buscar_Asistencia_deEntrada(String idperso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Buscar_Asistencia_deEntrada(idperso);
+        }
+
+
     }
 }
