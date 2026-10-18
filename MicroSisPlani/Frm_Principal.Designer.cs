@@ -860,7 +860,7 @@
             this.toolStripSeparator7,
             this.bt_solicitarJustificacion});
             this.SubMenu_Person.Name = "contextMenuStrip1";
-            this.SubMenu_Person.Size = new System.Drawing.Size(209, 244);
+            this.SubMenu_Person.Size = new System.Drawing.Size(209, 222);
             // 
             // bt_nuevoPersonal
             // 
@@ -2429,7 +2429,6 @@
             this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Principal_FormClosing);
             this.Load += new System.EventHandler(this.Frm_Principal_Load);
             this.pnl_titu.ResumeLayout(false);
