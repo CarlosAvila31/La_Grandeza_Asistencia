@@ -583,5 +583,10 @@ namespace MicroSisPlani
             asis.ShowDialog();
             fis.Hide();
         }
+
+        private void txt_buscarAsis_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
