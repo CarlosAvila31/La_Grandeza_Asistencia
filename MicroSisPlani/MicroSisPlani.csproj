@@ -94,6 +94,12 @@
     <Compile Include="Frm_Explo_Asistencia.designer.cs">
       <DependentUpon>Frm_Explo_Asistencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Inicio_Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Inicio_Asistencia.Designer.cs">
+      <DependentUpon>Frm_Inicio_Asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </Compile>
     <EmbeddedResource Include="Frm_Explo_Asistencia.resx">
       <DependentUpon>Frm_Explo_Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Inicio_Asistencia.resx">
+      <DependentUpon>Frm_Inicio_Asistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
