@@ -147,7 +147,7 @@ namespace Prj_Capa_Datos
 
 
         //REGISTRO:
-        public void BD_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado)
+        public void BD_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado, string dia)
         {
             SqlConnection cn = new SqlConnection(Conectar());
             SqlCommand cmd = new SqlCommand("Sp_Registrar_Entrada", cn);
@@ -156,14 +156,18 @@ namespace Prj_Capa_Datos
             {
                 cmd.CommandTimeout = 20;
                 cmd.CommandType = CommandType.StoredProcedure;
+                Console.WriteLine($"{idAsis}, {idPerso}, {HoIngreso}, {tarde}, {Totalhora}, {justificado}, {dia}");
 
                 //agregar los parametros
                 cmd.Parameters.AddWithValue("@IdAsis", idAsis);
                 cmd.Parameters.AddWithValue("@Id_Persol", idPerso);
+                cmd.Parameters.AddWithValue("@nomdia", dia);
                 cmd.Parameters.AddWithValue("@Hoingre", HoIngreso);
+                cmd.Parameters.AddWithValue("@HoraSalida", "00:00:00");
                 cmd.Parameters.AddWithValue("@tardanza", tarde);
-                cmd.Parameters.AddWithValue("@TotalHora", Totalhora);
-                cmd.Parameters.AddWithValue("justificado", justificado);
+                cmd.Parameters.AddWithValue("@TotalHora", Convert.ToDouble(0));
+                cmd.Parameters.AddWithValue("@justificado", justificado);
+                cmd.Parameters.AddWithValue("@EstadoAsis", "Entrada");
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
@@ -363,8 +367,129 @@ namespace Prj_Capa_Datos
             return functionReturnValue;
         }//Fin verificar 3:
 
+        public bool BD_Checar_SiPersonal_TieneAsistencia_Registrada(string xidPerso)
+        {
+            bool functionReturnValue = false;
+            Int32 xfil = 0;
 
+            SqlConnection Cn = new SqlConnection();
+            SqlCommand Cmd = new SqlCommand();
+            Cn.ConnectionString = Conectar();
+            var _with1 = Cmd;
+            _with1.CommandText = "Sp_Ver_sihay_Registro";
+            _with1.Connection = Cn;
+            _with1.CommandTimeout = 20;
+            _with1.CommandType = CommandType.StoredProcedure;
+            _with1.Parameters.AddWithValue("@Id_Personal", xidPerso);
 
-       
+            try
+            {
+                Cn.Open();
+                xfil = (Int32)Cmd.ExecuteScalar();
+                if (xfil > 0)
+                {
+                    functionReturnValue = true;
+                } else
+                {
+                    functionReturnValue = false;
+                }
+
+                Cmd.Parameters.Clear();
+                Cmd.Dispose();
+                Cmd = null;
+                Cn.Close();
+                Cn = null;
+            }
+            catch (Exception ex)
+            {
+                if (Cn.State == ConnectionState.Open)
+                    Cn.Close();
+                Cmd.Dispose();
+                Cmd = null;
+                Cn.Close();
+                Cn = null;
+                MessageBox.Show("Algo malo paso" + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return functionReturnValue;
+        }
+
+        public bool BD_Checar_SiPersonal_YaMarco_suFalta(string xidPerso)
+        {
+            bool functionReturnValue = false;
+            Int32 xfil = 0;
+
+            SqlConnection Cn = new SqlConnection();
+            SqlCommand Cmd = new SqlCommand();
+            Cn.ConnectionString = Conectar();
+            var _with1 = Cmd;
+            _with1.CommandText = "Sp_Verificar_siMarco_Falta";
+            _with1.Connection = Cn;
+            _with1.CommandTimeout = 20;
+            _with1.CommandType = CommandType.StoredProcedure;
+            _with1.Parameters.AddWithValue("@Id_Personal", xidPerso);
+
+            try
+            {
+                Cn.Open();
+                xfil = (Int32)Cmd.ExecuteScalar();
+                if (xfil > 0)
+                {
+                    functionReturnValue = true;
+                }
+                else
+                {
+                    functionReturnValue = false;
+                }
+
+                Cmd.Parameters.Clear();
+                Cmd.Dispose();
+                Cmd = null;
+                Cn.Close();
+                Cn = null;
+            }
+            catch (Exception ex)
+            {
+                if (Cn.State == ConnectionState.Open)
+                    Cn.Close();
+                Cmd.Dispose();
+                Cmd = null;
+                Cn.Close();
+                Cn = null;
+                MessageBox.Show("Algo malo paso" + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return functionReturnValue;
+        }
+
+        public static bool faltasaved = false;
+
+        public void BD_Registrar_Falta_Personal(string idAsis, string idPerso)
+        {
+            SqlConnection cn = new SqlConnection(Conectar());
+            SqlCommand Cmd = new SqlCommand("Sp_Registrar_Falta", cn);
+
+            try
+            {
+                Cmd.CommandTimeout = 20;
+                Cmd.CommandType = CommandType.StoredProcedure;
+
+                Cmd.Parameters.AddWithValue("@IdAsis",idAsis);
+                Cmd.Parameters.AddWithValue("@Id_Personal",idPerso);
+
+                cn.Open();
+                Cmd.ExecuteNonQuery();
+                cn.Close();
+
+                faltasaved = true;
+            }
+            catch (Exception ex)
+            {
+                faltasaved = false;
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+                MessageBox.Show("Falla en registrar la falta" + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

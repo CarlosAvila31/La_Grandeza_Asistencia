@@ -26,11 +26,11 @@ namespace Prj_Capa_Datos
                 cmd.CommandTimeout = 20; /*Si pasa los 20 segundos va a saltar a la excepcion*/
 
                 //parametros
-                cmd.Parameters.AddWithValue("@Idhora", P.Idhora);
+                cmd.Parameters.AddWithValue("@Idhor", P.Idhora);
                 cmd.Parameters.AddWithValue("@HoEntrada", P.HoEntrada);
-                cmd.Parameters.AddWithValue("@HoTole", P.HoTole);
-                cmd.Parameters.AddWithValue("@HoLimite", P.HoLimite);
-                cmd.Parameters.AddWithValue("@HoSalida", P.HoSalida);
+                cmd.Parameters.AddWithValue("@HoTolere", P.HoTole);
+                cmd.Parameters.AddWithValue("@Holimite", P.HoLimite);
+                cmd.Parameters.AddWithValue("@HoraSalida", P.HoSalida);
 
                 //Abrimos la cadena de conexion y ejecutamos el comando
                 cn.Open();

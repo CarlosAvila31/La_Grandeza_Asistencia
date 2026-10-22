@@ -38,10 +38,10 @@ namespace Prj_Capa_Negocio
         }
 
 
-        public void RN_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado)
+        public void RN_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado, string dia)
         {
             BD_Asistencia obj = new BD_Asistencia();
-            obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado);
+            obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado, dia);
         }
 
         public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, double Totalhora)
@@ -75,6 +75,22 @@ namespace Prj_Capa_Negocio
             return obj.BD_Buscar_Asistencia_deEntrada(idperso);
         }
 
+        public bool RN_Checar_SiPersonal_TieneAsistencia_Registrada(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_TieneAsistencia_Registrada(xidPerso);
+        }
 
+        public bool RN_Checar_SiPersonal_YaMarco_suFalta(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_YaMarco_suFalta(xidPerso);
+        }
+
+        public void RN_Registrar_Falta_Personal(string idAsis, string idPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            obj.BD_Registrar_Falta_Personal(idAsis, idPerso);
+        }
     }
 }

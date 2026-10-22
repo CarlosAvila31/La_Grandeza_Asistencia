@@ -63,8 +63,9 @@
             this.pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titulo.ForeColor = System.Drawing.Color.Transparent;
             this.pnl_titulo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_titulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_titulo.Name = "pnl_titulo";
-            this.pnl_titulo.Size = new System.Drawing.Size(792, 24);
+            this.pnl_titulo.Size = new System.Drawing.Size(1056, 30);
             this.pnl_titulo.TabIndex = 23;
             this.pnl_titulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
             // 
@@ -74,9 +75,10 @@
             this.Label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label12.ForeColor = System.Drawing.Color.SkyBlue;
             this.Label12.Image = ((System.Drawing.Image)(resources.GetObject("Label12.Image")));
-            this.Label12.Location = new System.Drawing.Point(40, 184);
+            this.Label12.Location = new System.Drawing.Point(53, 226);
+            this.Label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label12.Name = "Label12";
-            this.Label12.Size = new System.Drawing.Size(20, 20);
+            this.Label12.Size = new System.Drawing.Size(27, 25);
             this.Label12.TabIndex = 452;
             // 
             // Label13
@@ -85,9 +87,10 @@
             this.Label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label13.ForeColor = System.Drawing.Color.SkyBlue;
             this.Label13.Image = ((System.Drawing.Image)(resources.GetObject("Label13.Image")));
-            this.Label13.Location = new System.Drawing.Point(40, 258);
+            this.Label13.Location = new System.Drawing.Point(53, 318);
+            this.Label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(20, 20);
+            this.Label13.Size = new System.Drawing.Size(27, 25);
             this.Label13.TabIndex = 454;
             // 
             // txt_pass
@@ -103,9 +106,10 @@
             this.txt_pass.EditBoxStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_pass.EditBoxStyle.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.txt_pass.EditBoxStyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_pass.Location = new System.Drawing.Point(34, 248);
+            this.txt_pass.Location = new System.Drawing.Point(45, 305);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(288, 38);
+            this.txt_pass.Size = new System.Drawing.Size(384, 45);
             this.txt_pass.TabIndex = 453;
             this.txt_pass.ValidationStyle.PasswordChar = '\0';
             this.txt_pass.ValidationStyle.UseSystemPasswordChar = true;
@@ -124,13 +128,14 @@
             this.txt_usu.EditBoxStyle.BorderStyle.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(70)))));
             this.txt_usu.EditBoxStyle.BorderStyle.GradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(15)))));
             this.txt_usu.EditBoxStyle.BorderStyle.SolidColor = System.Drawing.Color.Black;
-            this.txt_usu.EditBoxStyle.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usu.EditBoxStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usu.EditBoxStyle.ForeColor = System.Drawing.Color.Black;
             this.txt_usu.EditBoxStyle.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.txt_usu.EditBoxStyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_usu.Location = new System.Drawing.Point(34, 174);
+            this.txt_usu.Location = new System.Drawing.Point(45, 214);
+            this.txt_usu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_usu.Name = "txt_usu";
-            this.txt_usu.Size = new System.Drawing.Size(288, 40);
+            this.txt_usu.Size = new System.Drawing.Size(384, 46);
             this.txt_usu.TabIndex = 450;
             this.txt_usu.ValidationStyle.PasswordChar = '\0';
             this.txt_usu.Value = "";
@@ -155,9 +160,10 @@
             this.btn_Aceptar.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_Aceptar.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_Aceptar.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Aceptar.Location = new System.Drawing.Point(117, 328);
+            this.btn_Aceptar.Location = new System.Drawing.Point(156, 404);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(50, 50);
+            this.btn_Aceptar.Size = new System.Drawing.Size(67, 62);
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
@@ -184,9 +190,10 @@
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(201, 328);
+            this.btn_Salir.Location = new System.Drawing.Point(268, 404);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(50, 50);
+            this.btn_Salir.Size = new System.Drawing.Size(67, 62);
             this.btn_Salir.TabIndex = 464;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -197,9 +204,10 @@
             this.Label14.BackColor = System.Drawing.Color.Transparent;
             this.Label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label14.ForeColor = System.Drawing.Color.DimGray;
-            this.Label14.Location = new System.Drawing.Point(21, 428);
+            this.Label14.Location = new System.Drawing.Point(28, 527);
+            this.Label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(137, 17);
+            this.Label14.Size = new System.Drawing.Size(178, 21);
             this.Label14.TabIndex = 459;
             this.Label14.Text = "La Grandeza ® 2026";
             this.Label14.Click += new System.EventHandler(this.Label14_Click);
@@ -210,9 +218,10 @@
             this.Label15.BackColor = System.Drawing.Color.Transparent;
             this.Label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label15.ForeColor = System.Drawing.Color.DimGray;
-            this.Label15.Location = new System.Drawing.Point(635, 428);
+            this.Label15.Location = new System.Drawing.Point(847, 527);
+            this.Label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(145, 17);
+            this.Label15.Size = new System.Drawing.Size(190, 21);
             this.Label15.TabIndex = 460;
             this.Label15.Text = "Sistema de Asistencia";
             // 
@@ -220,9 +229,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(328, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(437, 37);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(464, 425);
+            this.pictureBox2.Size = new System.Drawing.Size(619, 523);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -231,9 +241,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(156, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(179, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 465;
             this.pictureBox1.TabStop = false;
@@ -250,10 +261,10 @@
             // 
             // Frm_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(792, 454);
+            this.ClientSize = new System.Drawing.Size(1056, 559);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Label15);
             this.Controls.Add(this.pictureBox2);
@@ -267,6 +278,7 @@
             this.Controls.Add(this.pnl_titulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

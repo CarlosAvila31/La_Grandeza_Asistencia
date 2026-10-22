@@ -83,12 +83,6 @@ namespace MicroSisPlani
             int totalMinutofijo;
             int totaltardnza;
 
-            if (obj.RN_Verificar_Justificacion_Aprobado(Lbl_Idperso.Text) == true)
-            {
-                lbl_justifi.Text = "Tardanza Justificada";
-            }
-            else
-            {
                 lbl_justifi.Text = "Tardanza no justificada";
                 totalMinutofijo = MinuIn + Mntotole; //45
 
@@ -109,7 +103,6 @@ namespace MicroSisPlani
                     lbl_totaltarde.Text = Convert.ToString(totaltardnza);
                 }
             }
-        }
 
         private DPFP.Verification.Verification Verificar;
         private DPFP.Verification.Verification.Result Resultado;
@@ -136,6 +129,10 @@ namespace MicroSisPlani
 
             int horaCaptu = DateTime.Now.Hour;
             int minutoCaptu = DateTime.Now.Minute;
+
+            DateTime fecha = DateTime.Now;
+            string nombreCompleto = fecha.ToString("dddd", new System.Globalization.CultureInfo("es-ES"));
+            nombreCompleto = char.ToUpper(nombreCompleto[0]) + nombreCompleto.Substring(1);
 
             try
             {
@@ -226,7 +223,7 @@ namespace MicroSisPlani
 
                             calcular_Minutos_Tardanza();
                             lbl_IdAsis.Text = RN_Utilitario.RN_NroDoc(3);
-                            objas.RN_Registrar_Entrada_Personal(lbl_IdAsis.Text, Lbl_Idperso.Text, lbl_hora.Text, Convert.ToDouble(lbl_totaltarde.Text), Convert.ToInt32(lbl_TotalHotrabajda.Text), lbl_justifi.Text);
+                            objas.RN_Registrar_Entrada_Personal(lbl_IdAsis.Text, Lbl_Idperso.Text, lbl_hora.Text, Convert.ToDouble(lbl_totaltarde.Text), Convert.ToInt32(lbl_TotalHotrabajda.Text), lbl_justifi.Text, nombreCompleto);
                             if (BD_Asistencia.entrada == true)
                             {
                                 RN_Utilitario.RN_Actualiza_Tipo_Doc(3);
