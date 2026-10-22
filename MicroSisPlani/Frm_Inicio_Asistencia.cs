@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MicroSisPlani.Msm_Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,11 +31,17 @@ namespace MicroSisPlani
 
         private void Tiempo_Tick(object sender, EventArgs e)
         {
-            // 1. La fecha en la etiqueta grande (ej: "miércoles, 21 de octubre de 2026")
-            lbl_Fecha.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy");
+            DateTime fecha = DateTime.Now;
 
-            // 2. La hora en la etiqueta pequeña abajo (ej: "03:51:24 PM")
-            lbl_Hora.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            // Día con mayúscula inicial
+            string nombreCompleto = fecha.ToString("dddd", new System.Globalization.CultureInfo("es-MX"));
+            nombreCompleto = char.ToUpper(nombreCompleto[0]) + nombreCompleto.Substring(1);
+
+            // 1. La fecha en la etiqueta grande (ej: "Miércoles, 21 de octubre de 2026")
+            lbl_Fecha.Text = nombreCompleto + fecha.ToString(", dd 'de' MMMM 'de' yyyy", new System.Globalization.CultureInfo("es-MX"));
+
+            // 2. La hora en la etiqueta pequeña abajo (ej: "15:51:24")
+            lbl_Hora.Text = fecha.ToString("HH:mm:ss");
 
         }
 
@@ -65,6 +72,16 @@ namespace MicroSisPlani
                 u.Mover_formulario(this);
             }
 
+        }
+
+        private void btn_Entrada_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fis = new Frm_Filtro();
+
+            Frm_Marcar_Asistencia asis = new Frm_Marcar_Asistencia();
+            fis.Show();
+            asis.ShowDialog();
+            fis.Hide();
         }
     }
 }

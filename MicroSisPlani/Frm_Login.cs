@@ -114,7 +114,9 @@ namespace MicroSisPlani
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Frm_Inicio_Asistencia nuevoForm = new Frm_Inicio_Asistencia();
+            nuevoForm.Show();
+            this.Hide();
         }
 
         private void pnl_titulo_MouseMove(object sender, MouseEventArgs e)

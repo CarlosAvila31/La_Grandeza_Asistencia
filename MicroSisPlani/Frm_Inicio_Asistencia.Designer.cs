@@ -44,7 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
             this.btn_Entrada = new System.Windows.Forms.Button();
-            this.btn_Salida = new System.Windows.Forms.Button();
             this.Elipse_btn_Entrada = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_btn_Salida = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,7 +88,7 @@
             this.btn_Login.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
             this.btn_Login.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Login.Location = new System.Drawing.Point(1054, 613);
+            this.btn_Login.Location = new System.Drawing.Point(1055, 613);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(50, 50);
             this.btn_Login.TabIndex = 466;
@@ -103,9 +102,9 @@
             // 
             // lbl_Hora
             // 
-            this.lbl_Hora.BackColor = System.Drawing.Color.White;
-            this.lbl_Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Hora.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Hora.BackColor = System.Drawing.Color.Black;
+            this.lbl_Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hora.ForeColor = System.Drawing.Color.White;
             this.lbl_Hora.Location = new System.Drawing.Point(-2, 112);
             this.lbl_Hora.Name = "lbl_Hora";
             this.lbl_Hora.Size = new System.Drawing.Size(1202, 50);
@@ -121,9 +120,9 @@
             // 
             // lbl_Fecha
             // 
-            this.lbl_Fecha.BackColor = System.Drawing.Color.White;
+            this.lbl_Fecha.BackColor = System.Drawing.Color.Black;
             this.lbl_Fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Fecha.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Fecha.ForeColor = System.Drawing.Color.White;
             this.lbl_Fecha.Location = new System.Drawing.Point(-7, 57);
             this.lbl_Fecha.Name = "lbl_Fecha";
             this.lbl_Fecha.Size = new System.Drawing.Size(1207, 46);
@@ -134,9 +133,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(133, 182);
+            this.pictureBox1.Location = new System.Drawing.Point(43, 343);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(803, 657);
+            this.pictureBox1.Size = new System.Drawing.Size(448, 420);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 469;
             this.pictureBox1.TabStop = false;
@@ -170,7 +169,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(-4, 42);
@@ -187,7 +186,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1201, 25);
             this.label1.TabIndex = 473;
-            this.label1.Text = "Seleccione una opción";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label14
@@ -198,7 +196,7 @@
             this.Label14.ForeColor = System.Drawing.Color.DimGray;
             this.Label14.Location = new System.Drawing.Point(1051, 583);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(137, 17);
+            this.Label14.Size = new System.Drawing.Size(178, 21);
             this.Label14.TabIndex = 471;
             this.Label14.Text = "La Grandeza ® 2026";
             this.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -207,28 +205,13 @@
             // 
             this.btn_Entrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
             this.btn_Entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Entrada.Location = new System.Drawing.Point(112, 234);
+            this.btn_Entrada.Location = new System.Drawing.Point(355, 230);
             this.btn_Entrada.Name = "btn_Entrada";
-            this.btn_Entrada.Size = new System.Drawing.Size(332, 116);
+            this.btn_Entrada.Size = new System.Drawing.Size(478, 116);
             this.btn_Entrada.TabIndex = 472;
-            this.btn_Entrada.Text = "ENTRADA";
+            this.btn_Entrada.Text = "REGISTRAR ASISTENCIA";
             this.btn_Entrada.UseVisualStyleBackColor = false;
-            // 
-            // btn_Salida
-            // 
-            this.btn_Salida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.btn_Salida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Salida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Salida.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.btn_Salida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.btn_Salida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.btn_Salida.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Salida.Location = new System.Drawing.Point(731, 238);
-            this.btn_Salida.Name = "btn_Salida";
-            this.btn_Salida.Size = new System.Drawing.Size(332, 116);
-            this.btn_Salida.TabIndex = 473;
-            this.btn_Salida.Text = "SALIDA";
-            this.btn_Salida.UseVisualStyleBackColor = false;
+            this.btn_Entrada.Click += new System.EventHandler(this.btn_Entrada_Click);
             // 
             // Elipse_btn_Entrada
             // 
@@ -238,7 +221,7 @@
             // Elipse_btn_Salida
             // 
             this.Elipse_btn_Salida.ElipseRadius = 10;
-            this.Elipse_btn_Salida.TargetControl = this.btn_Salida;
+            this.Elipse_btn_Salida.TargetControl = this;
             // 
             // Frm_Inicio_Asistencia
             // 
@@ -250,7 +233,6 @@
             this.Controls.Add(this.lbl_Fecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Salida);
             this.Controls.Add(this.btn_Entrada);
             this.Controls.Add(this.Label14);
             this.Controls.Add(this.pnl_titulo);
@@ -284,7 +266,6 @@
         internal System.Windows.Forms.Label Label14;
         private System.Windows.Forms.Label Text1;
         private System.Windows.Forms.Button btn_Entrada;
-        private System.Windows.Forms.Button btn_Salida;
         private Bunifu.Framework.UI.BunifuElipse Elipse_btn_Entrada;
         private Bunifu.Framework.UI.BunifuElipse Elipse_btn_Salida;
         private System.Windows.Forms.Label label1;
