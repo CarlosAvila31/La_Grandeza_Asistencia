@@ -11,14 +11,14 @@ namespace Prj_Capa_Datos
 
         public string Conectar()
         {
-            return @"Data Source=localhost\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;Integrated Security=True;";
-            //return @"Data Source=PC-ADMIN\SQLEXPRESS; Initial Catalog=MicroSisPlani;uid=sa;pwd=admin"; ;
+            //return @"Data Source=localhost\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;Integrated Security=True;";
+            return @"Data Source=192.168.56.1\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;uid=sa;pwd=ContrasenaSQL"; ;
         }
 
         public static string Conectar2()
         {
-            return @"Data Source=localhost\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;Integrated Security=True;";
-            //return @"Data Source=PC-ADMIN\SQLEXPRESS; Initial Catalog=MicroSisPlani;uid=sa;pwd=admin"; ;
+            //return @"Data Source=localhost\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;Integrated Security=True;";
+            return @"Data Source=192.168.56.1\SQLEXPRESS; Initial Catalog=MicroSisPlanifull;uid=sa;pwd=ContrasenaSQL"; ;
         }
 
     }
