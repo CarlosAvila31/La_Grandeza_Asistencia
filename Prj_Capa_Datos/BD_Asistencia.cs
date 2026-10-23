@@ -491,5 +491,54 @@ namespace Prj_Capa_Datos
                 MessageBox.Show("Falla en registrar la falta" + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+        public bool BD_Registrar_Salida_Personal_ConTotal(
+            string idAsis,
+            string idPerso,
+            string hoSalida,
+            double totalHora,
+            out string mensaje)
+        {
+            mensaje = "";
+
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conectar()))
+                using (SqlCommand cmd = new SqlCommand("Sp_Registrar_Salida", cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@IdAsis", SqlDbType.Char, 8).Value =
+                        idAsis.Trim();
+
+                    cmd.Parameters.Add("@Id_Personal", SqlDbType.Char, 10).Value =
+                        idPerso.Trim();
+
+                    cmd.Parameters.Add("@HoSalida", SqlDbType.VarChar, 10).Value =
+                        hoSalida;
+
+                    cmd.Parameters.Add("@TotalHora", SqlDbType.Real).Value =
+                        (float)totalHora;
+
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+
+                mensaje = "Salida registrada correctamente.";
+                return true;
+            }
+            catch (SqlException ex)
+            {
+                mensaje = ex.Message;
+                return false;
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                return false;
+            }
+        }
+
     }
 }

@@ -83,8 +83,28 @@ namespace MicroSisPlani
             int totalMinutofijo;
             int totaltardnza;
 
+            DateTime ahora = DateTime.Now;
+
+            // Siempre inicializar para evitar cadenas vacías
+            lbl_totaltarde.Text = "0";
+            lbl_justifi.Text = "";
+
+
+            // Hora límite sin tardanza = hora de ingreso + minutos de tolerancia
+            DateTime horaIngreso = DateTime.Today
+                .AddHours(dtp_horaIngre.Value.Hour)
+                .AddMinutes(dtp_horaIngre.Value.Minute);
+            DateTime horaTolerada = horaIngreso.AddMinutes(dtp_hora_tolercia.Value.Minute);
+
+
+            if (ahora > horaTolerada)
+            {
+                int minutosTarde = (int)(ahora - horaTolerada).TotalMinutes;
+                lbl_totaltarde.Text = minutosTarde.ToString();
                 lbl_justifi.Text = "Tardanza no justificada";
-                totalMinutofijo = MinuIn + Mntotole; //45
+            }
+            //lbl_justifi.Text = "Tardanza no justificada";
+            totalMinutofijo = MinuIn + Mntotole; //45
 
                 if (horaCaptu == horaIn & minutoCaptu > totalMinutofijo)
                 {
@@ -159,18 +179,9 @@ namespace MicroSisPlani
                         if (File.Exists(rutaFoto) == true) { picSocio.Load(rutaFoto.Trim()); }
                         { picSocio.Load(Application.StartupPath + @"\user.png"); }
 
-                        if (objas.RN_Checar_SiPersonal_YaMarco_Asistencia(Lbl_Idperso.Text.Trim()) == true)
-                        {
-                            lbl_msm.BackColor = Color.MistyRose;
-                            lbl_msm.ForeColor = Color.Red;
-                            lbl_msm.Text = "El sistema Verificó, que el personal ya marcó su asistencia";
-                            //tocar_timbre();
-                            lbl_Cont.Text = "10";
-                            xVerificationControl.Enabled = true;
-                            pnl_Msm.Visible = true;
-                            tmr_Conta.Enabled = true;
-                            return;
-                        }
+
+                        //bool tieneEntrada = objas.RN_Checar_SiPersonal_YaMarco_suEntrada(Lbl_Idperso.Text.Trim());
+
 
                         if (objas.RN_Checar_SiPersonal_YaMarco_suEntrada(Lbl_Idperso.Text.Trim()) == true)
                         {
@@ -183,26 +194,84 @@ namespace MicroSisPlani
 
                             if (Convert.ToString(sino.Tag) == "Si")
                             {
-                                datosAsis = objas.RN_Buscar_Asistencia_deEntrada(Lbl_Idperso.Text);
-                                if (datosAsis.Rows.Count < 1) return;
-                                lbl_IdAsis.Text = Convert.ToString(datosAsis.Rows[0]["Id_asis"]);
-                                objas.RN_Registrar_Salida_Personal(lbl_IdAsis.Text, Lbl_Idperso.Text, lbl_hora.Text, 8);
-                                if (BD_Asistencia.salida == true)
+                                //datosAsis = objas.RN_Buscar_Asistencia_deEntrada(Lbl_Idperso.Text);
+                                //if (datosAsis.Rows.Count < 1) return;
+                                //lbl_IdAsis.Text = Convert.ToString(datosAsis.Rows[0]["Id_asis"]);
+                                //objas.RN_Registrar_Salida_Personal(lbl_IdAsis.Text, Lbl_Idperso.Text, lbl_hora.Text, 8);
+                                //if (BD_Asistencia.salida == true)
+                                //{
+                                //    lbl_msm.BackColor = Color.YellowGreen;
+                                //    lbl_msm.ForeColor = Color.White;
+                                //    lbl_msm.Text = "La salida del Personal fue registrada exitosamente";
+                                //    //tocar_timbre();
+
+                                //    xVerificationControl.Enabled = false;
+                                //    pnl_Msm.Visible = true;
+                                //    tmr_Conta.Enabled = true;
+
+                                //    lbl_Cont.Text = "10";
+                                //    tmr_Conta.Enabled = true;
+
+                                //    TeminarBucle = true;
+                                //}
+
+
+                                if (Convert.ToString(sino.Tag) == "Si")
                                 {
-                                    lbl_msm.BackColor = Color.YellowGreen;
-                                    lbl_msm.ForeColor = Color.White;
-                                    lbl_msm.Text = "La salida del Personal fue registrada exitosamente";
-                                    //tocar_timbre();
+                                    datosAsis = objas.RN_Buscar_Asistencia_deEntrada(
+                                        Lbl_Idperso.Text.Trim()
+                                    );
 
-                                    xVerificationControl.Enabled = false;
-                                    pnl_Msm.Visible = true;
-                                    tmr_Conta.Enabled = true;
+                                    if (datosAsis == null || datosAsis.Rows.Count == 0)
+                                    {
+                                        MessageBox.Show(
+                                            "No se encontró una entrada pendiente para este empleado."
+                                        );
+                                        return;
+                                    }
 
-                                    lbl_Cont.Text = "10";
-                                    tmr_Conta.Enabled = true;
+                                    lbl_IdAsis.Text = Convert.ToString(
+                                        datosAsis.Rows[0]["Id_asis"]
+                                    ).Trim();
 
-                                    TeminarBucle = true;
+                                    string horaSalida = DateTime.Now.ToString("HH:mm:ss");
+
+                                    BD_Asistencia bd = new BD_Asistencia();
+
+                                    string mensaje;
+
+                                    bool registrada = bd.BD_Registrar_Salida_Personal_ConTotal(
+                                        lbl_IdAsis.Text,
+                                        Lbl_Idperso.Text.Trim(),
+                                        horaSalida,
+                                        0,
+                                        out mensaje
+                                    );
+
+                                    if (registrada)
+                                    {
+                                        lbl_msm.BackColor = Color.YellowGreen;
+                                        lbl_msm.ForeColor = Color.White;
+                                        lbl_msm.Text = mensaje;
+
+                                        xVerificationControl.Enabled = false;
+                                        pnl_Msm.Visible = true;
+
+                                        sec = 10;
+                                        lbl_Cont.Text = "10";
+                                        tmr_Conta.Start();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show(
+                                            "No se pudo registrar la salida: " + mensaje,
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error
+                                        );
+                                    }
                                 }
+
                             }
                         }
                         else
@@ -222,6 +291,13 @@ namespace MicroSisPlani
                             }
 
                             calcular_Minutos_Tardanza();
+
+                            double tarde = 0;
+                            double.TryParse(lbl_totaltarde.Text, out tarde);
+
+                            int totalHoras = 0;
+                            int.TryParse(lbl_TotalHotrabajda.Text, out totalHoras);
+
                             lbl_IdAsis.Text = RN_Utilitario.RN_NroDoc(3);
                             objas.RN_Registrar_Entrada_Personal(lbl_IdAsis.Text, Lbl_Idperso.Text, lbl_hora.Text, Convert.ToDouble(lbl_totaltarde.Text), Convert.ToInt32(lbl_TotalHotrabajda.Text), lbl_justifi.Text, nombreCompleto);
                             if (BD_Asistencia.entrada == true)
@@ -243,6 +319,21 @@ namespace MicroSisPlani
                             }
 
                         }
+
+                        if (objas.RN_Checar_SiPersonal_YaMarco_Asistencia(Lbl_Idperso.Text.Trim()) == true)
+                        {
+                            lbl_msm.BackColor = Color.MistyRose;
+                            lbl_msm.ForeColor = Color.Red;
+                            lbl_msm.Text = "El sistema Verificó, que el personal ya marcó su asistencia";
+                            //tocar_timbre();
+                            lbl_Cont.Text = "10";
+                            xVerificationControl.Enabled = true;
+                            pnl_Msm.Visible = true;
+                            tmr_Conta.Enabled = true;
+                            return;
+                        }
+
+                        
                     } //todo es true:
                     else
                     {
@@ -308,7 +399,7 @@ namespace MicroSisPlani
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss");
+            lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

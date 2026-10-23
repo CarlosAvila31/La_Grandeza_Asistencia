@@ -44,7 +44,7 @@ namespace Prj_Capa_Negocio
             obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado, dia);
         }
 
-        public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, double Totalhora)
+        public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, int Totalhora)
         {
             BD_Asistencia obj = new BD_Asistencia();
             obj.BD_Registrar_Salida_Personal(idAsis, idPerso, HoSalida, Totalhora);
