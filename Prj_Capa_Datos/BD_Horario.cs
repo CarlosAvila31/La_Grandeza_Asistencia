@@ -79,5 +79,26 @@ namespace Prj_Capa_Datos
                 return null;
             }
         }
+
+
+        public DataTable BD_Leer_Horario_Personal(string idPersona)
+        {
+            SqlConnection Cn = new SqlConnection(Conectar());
+            try
+            {
+                SqlDataAdapter Da = new SqlDataAdapter("Sp_Horario_Por_Personal", Cn);
+                Da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                Da.SelectCommand.Parameters.AddWithValue("@Id_Personal", idPersona);
+                DataTable Datos = new DataTable();
+                Da.Fill(Datos);
+                return Datos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al consultar el horario: " + ex.Message, "Informe del Sistema",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return null;
+            }
+        }
     }
 }

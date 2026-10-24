@@ -9,10 +9,10 @@ using Prj_Capa_Entidad;
 
 namespace Prj_Capa_Negocio
 {
-   public  class RN_Personal
+    public class RN_Personal
     {
         public void RN_Registrar_Personal(EN_Persona per)
-        { 
+        {
             BD_Personal obj = new BD_Personal();
             obj.BD_Registrar_Personal(per);
         }
@@ -25,7 +25,7 @@ namespace Prj_Capa_Negocio
 
 
         public void RN_Registrar_Huella_Personal(string idper, object finguer)
-        { 
+        {
             BD_Personal obj = new BD_Personal();
             obj.BD_Registrar_Huella_Personal(idper, finguer);
         }
@@ -55,6 +55,12 @@ namespace Prj_Capa_Negocio
         {
             BD_Personal obj = new BD_Personal();
             obj.BD_Registrar_Huella_Personal(idper, finguer);
+        }
+
+
+        public void RN_Eliminar_Personal_SinHuella(string id)
+        {
+            new BD_Personal().BD_Eliminar_Personal_SinHuella(id);
         }
     }
 }

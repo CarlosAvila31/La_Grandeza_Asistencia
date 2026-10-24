@@ -108,7 +108,7 @@ namespace Prj_Capa_Entidad
             set { _Direccion = value; }
         }
 
-
+        public string IdHorario { get; set; }
 
     }
 }

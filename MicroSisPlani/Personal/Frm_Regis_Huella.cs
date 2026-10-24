@@ -112,13 +112,11 @@ namespace MicroSisPlani.Personal
         }
 
         private void EnrollmentControl_OnEnroll(object Control, int FingerMask, DPFP.Template Template, ref DPFP.Gui.EventHandlerStatus EventHandlerStatus)
-        {
-            byte[] bytes = null;
-            RN_Personal obj = new RN_Personal();
+        {            
 
-            if (Template is null)
+            if (Template is null || string.IsNullOrWhiteSpace(lbl_idperso.Text))
             {
-                Template.Serialize(ref bytes);
+                //Template.Serialize(ref bytes);
                 MessageBox.Show("No se pudo realizar la opearción requerida", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 lbl_idperso.Text = "";
                 lbl_nomPersona.Text = "";
@@ -126,26 +124,35 @@ namespace MicroSisPlani.Personal
                 picFoto.Image = null;
                 this.Tag = "";
                 this.Close();
+                return;
 
+            }
+
+            byte[] bytes = null;
+            RN_Personal obj = new RN_Personal();
+
+            Template.Serialize(ref bytes);
+            obj.RN_Registrar_Huella_Personal(lbl_idperso.Text, bytes);
+            EnrollmentControl.Enabled = false;
+            lbl_idperso.Text = "";
+            lbl_nomPersona.Text = "";
+            lbl_nroDni.Text = "";
+            picFoto.Image = null;
+
+            if (BD_Personal.huella == true)
+            {
+                MessageBox.Show("La Huella Dactilar del Personal, Fue Registrada Exitosamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Tag = "A";
+                this.Close();
             }
             else
             {
-                Template.Serialize(ref bytes);
-                obj.RN_Registrar_Huella_Personal(lbl_idperso.Text, bytes);
-                EnrollmentControl.Enabled = false;
-                lbl_idperso.Text = "";
-                lbl_nomPersona.Text = "";
-                lbl_nroDni.Text = "";
-                picFoto.Image = null;
-
-                if (BD_Personal.huella == true)
-                {
-                    MessageBox.Show("La Huella Dactilar del Personal, Fue Registrada Exitosamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Tag = "A";
-                    this.Close();
-                }
-                
+                MessageBox.Show("No se pudo guardar la huella. Intenta de nuevo.", "Aviso del Sistema",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                // el control sigue activo para reintentar
             }
+
+
         }
     }
 }
