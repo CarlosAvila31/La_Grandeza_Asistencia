@@ -37,35 +37,32 @@
             this.lbl_Hora = new System.Windows.Forms.Label();
             this.Tiempo = new System.Windows.Forms.Timer(this.components);
             this.lbl_Fecha = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnl_titulo = new System.Windows.Forms.Panel();
-            this.Text1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
             this.btn_Entrada = new System.Windows.Forms.Button();
             this.Elipse_btn_Entrada = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Elipse_btn_Salida = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_titulo.SuspendLayout();
+            this.Elipse_Frm = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Text1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_Salir
             // 
             this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
+            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Salir.FlatAppearance.BorderSize = 0;
-            this.btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
-            this.btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
+            this.btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
+            this.btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
             this.btn_Salir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Salir.Location = new System.Drawing.Point(1138, 613);
+            this.btn_Salir.Location = new System.Drawing.Point(607, 503);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(50, 50);
+            this.btn_Salir.Size = new System.Drawing.Size(155, 87);
             this.btn_Salir.TabIndex = 465;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click_1);
@@ -78,19 +75,19 @@
             // btn_Login
             // 
             this.btn_Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
             this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
+            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
+            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
             this.btn_Login.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Login.Location = new System.Drawing.Point(1055, 613);
+            this.btn_Login.Location = new System.Drawing.Point(430, 503);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(50, 50);
+            this.btn_Login.Size = new System.Drawing.Size(155, 87);
             this.btn_Login.TabIndex = 466;
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -102,14 +99,14 @@
             // 
             // lbl_Hora
             // 
-            this.lbl_Hora.BackColor = System.Drawing.Color.Black;
-            this.lbl_Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Hora.ForeColor = System.Drawing.Color.White;
-            this.lbl_Hora.Location = new System.Drawing.Point(-2, 112);
+            this.lbl_Hora.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
+            this.lbl_Hora.Location = new System.Drawing.Point(-1, 195);
             this.lbl_Hora.Name = "lbl_Hora";
-            this.lbl_Hora.Size = new System.Drawing.Size(1202, 50);
+            this.lbl_Hora.Size = new System.Drawing.Size(1202, 66);
             this.lbl_Hora.TabIndex = 467;
-            this.lbl_Hora.Text = "Hora";
+            this.lbl_Hora.Text = "I";
             this.lbl_Hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_Hora.Click += new System.EventHandler(this.lbl_Hora_Click);
             // 
@@ -120,52 +117,15 @@
             // 
             // lbl_Fecha
             // 
-            this.lbl_Fecha.BackColor = System.Drawing.Color.Black;
-            this.lbl_Fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Fecha.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Fecha.ForeColor = System.Drawing.Color.White;
-            this.lbl_Fecha.Location = new System.Drawing.Point(-7, 57);
+            this.lbl_Fecha.Location = new System.Drawing.Point(-6, 54);
             this.lbl_Fecha.Name = "lbl_Fecha";
-            this.lbl_Fecha.Size = new System.Drawing.Size(1207, 46);
+            this.lbl_Fecha.Size = new System.Drawing.Size(1207, 74);
             this.lbl_Fecha.TabIndex = 468;
-            this.lbl_Fecha.Text = "Dia";
+            this.lbl_Fecha.Text = "I";
             this.lbl_Fecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(43, 343);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 420);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 469;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnl_titulo
-            // 
-            this.pnl_titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.pnl_titulo.Controls.Add(this.Text1);
-            this.pnl_titulo.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_titulo.ForeColor = System.Drawing.Color.Transparent;
-            this.pnl_titulo.Location = new System.Drawing.Point(0, 0);
-            this.pnl_titulo.Name = "pnl_titulo";
-            this.pnl_titulo.Size = new System.Drawing.Size(1200, 43);
-            this.pnl_titulo.TabIndex = 470;
-            this.pnl_titulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_titulo_Paint);
-            this.pnl_titulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
-            // 
-            // Text1
-            // 
-            this.Text1.BackColor = System.Drawing.Color.Transparent;
-            this.Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text1.ForeColor = System.Drawing.Color.Black;
-            this.Text1.Location = new System.Drawing.Point(-4, 0);
-            this.Text1.Name = "Text1";
-            this.Text1.Size = new System.Drawing.Size(1201, 43);
-            this.Text1.TabIndex = 472;
-            this.Text1.Text = "Sistema Integral de Asistencia";
-            this.Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Text1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
             // 
             // label2
             // 
@@ -178,36 +138,33 @@
             this.label2.TabIndex = 473;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-1, 179);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1201, 25);
-            this.label1.TabIndex = 473;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Label14
             // 
             this.Label14.AutoSize = true;
             this.Label14.BackColor = System.Drawing.Color.Transparent;
             this.Label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label14.ForeColor = System.Drawing.Color.DimGray;
-            this.Label14.Location = new System.Drawing.Point(1051, 583);
+            this.Label14.Location = new System.Drawing.Point(1238, 577);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(178, 21);
+            this.Label14.Size = new System.Drawing.Size(137, 17);
             this.Label14.TabIndex = 471;
             this.Label14.Text = "La Grandeza ® 2026";
             this.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_Entrada
             // 
-            this.btn_Entrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
-            this.btn_Entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Entrada.Location = new System.Drawing.Point(355, 230);
+            this.btn_Entrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
+            this.btn_Entrada.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Entrada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
+            this.btn_Entrada.FlatAppearance.BorderSize = 0;
+            this.btn_Entrada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
+            this.btn_Entrada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(42)))), ((int)(((byte)(67)))));
+            this.btn_Entrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Entrada.Font = new System.Drawing.Font("Lucida Sans Typewriter", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Entrada.ForeColor = System.Drawing.Color.White;
+            this.btn_Entrada.Location = new System.Drawing.Point(430, 298);
             this.btn_Entrada.Name = "btn_Entrada";
-            this.btn_Entrada.Size = new System.Drawing.Size(478, 116);
+            this.btn_Entrada.Size = new System.Drawing.Size(332, 199);
             this.btn_Entrada.TabIndex = 472;
             this.btn_Entrada.Text = "REGISTRAR ASISTENCIA";
             this.btn_Entrada.UseVisualStyleBackColor = false;
@@ -218,35 +175,74 @@
             this.Elipse_btn_Entrada.ElipseRadius = 10;
             this.Elipse_btn_Entrada.TargetControl = this.btn_Entrada;
             // 
-            // Elipse_btn_Salida
+            // Elipse_Frm
             // 
-            this.Elipse_btn_Salida.ElipseRadius = 10;
-            this.Elipse_btn_Salida.TargetControl = this;
+            this.Elipse_Frm.ElipseRadius = 10;
+            this.Elipse_Frm.TargetControl = this;
+            // 
+            // Text1
+            // 
+            this.Text1.BackColor = System.Drawing.Color.Transparent;
+            this.Text1.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Text1.ForeColor = System.Drawing.Color.White;
+            this.Text1.Location = new System.Drawing.Point(0, -1);
+            this.Text1.Name = "Text1";
+            this.Text1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text1.Size = new System.Drawing.Size(1201, 162);
+            this.Text1.TabIndex = 472;
+            this.Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Text1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
+            this.label1.Location = new System.Drawing.Point(4, 607);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1202, 31);
+            this.label1.TabIndex = 474;
+            this.label1.Text = "La Grandeza ® 2026";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(53)))), ((int)(((byte)(83)))));
+            this.label3.Location = new System.Drawing.Point(-2, 635);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1202, 31);
+            this.label3.TabIndex = 475;
+            this.label3.Text = "Sistema de Asistencia";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_Inicio_Asistencia
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.LightYellow;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 675);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Hora);
             this.Controls.Add(this.lbl_Fecha);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Entrada);
             this.Controls.Add(this.Label14);
-            this.Controls.Add(this.pnl_titulo);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.btn_Salir);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Text1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Inicio_Asistencia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Inicio_Asistencia";
             this.Load += new System.EventHandler(this.Frm_Inicio_Asistencia_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnl_titulo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,14 +257,13 @@
         private System.Windows.Forms.Label lbl_Hora;
         private System.Windows.Forms.Timer Tiempo;
         private System.Windows.Forms.Label lbl_Fecha;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        internal System.Windows.Forms.Panel pnl_titulo;
         internal System.Windows.Forms.Label Label14;
-        private System.Windows.Forms.Label Text1;
         private System.Windows.Forms.Button btn_Entrada;
         private Bunifu.Framework.UI.BunifuElipse Elipse_btn_Entrada;
-        private Bunifu.Framework.UI.BunifuElipse Elipse_btn_Salida;
-        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuElipse Elipse_Frm;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Text1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -145,5 +145,10 @@ namespace MicroSisPlani
                 txt_pass.Focus();
             }
         }
+
+        private void Label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

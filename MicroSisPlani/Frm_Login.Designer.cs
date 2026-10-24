@@ -40,15 +40,13 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.Label14 = new System.Windows.Forms.Label();
             this.Label15 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Elipse_btn_Salir = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txt_pass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_usu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -58,13 +56,13 @@
             // 
             // pnl_titulo
             // 
-            this.pnl_titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
+            this.pnl_titulo.BackColor = System.Drawing.Color.Transparent;
             this.pnl_titulo.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titulo.ForeColor = System.Drawing.Color.Transparent;
             this.pnl_titulo.Location = new System.Drawing.Point(0, 0);
             this.pnl_titulo.Name = "pnl_titulo";
-            this.pnl_titulo.Size = new System.Drawing.Size(792, 24);
+            this.pnl_titulo.Size = new System.Drawing.Size(792, 58);
             this.pnl_titulo.TabIndex = 23;
             this.pnl_titulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titulo_MouseMove);
             // 
@@ -74,7 +72,7 @@
             this.Label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label12.ForeColor = System.Drawing.Color.SkyBlue;
             this.Label12.Image = ((System.Drawing.Image)(resources.GetObject("Label12.Image")));
-            this.Label12.Location = new System.Drawing.Point(40, 184);
+            this.Label12.Location = new System.Drawing.Point(46, 232);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(20, 20);
             this.Label12.TabIndex = 452;
@@ -85,10 +83,11 @@
             this.Label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label13.ForeColor = System.Drawing.Color.SkyBlue;
             this.Label13.Image = ((System.Drawing.Image)(resources.GetObject("Label13.Image")));
-            this.Label13.Location = new System.Drawing.Point(40, 258);
+            this.Label13.Location = new System.Drawing.Point(46, 282);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(20, 20);
             this.Label13.TabIndex = 454;
+            this.Label13.Click += new System.EventHandler(this.Label13_Click);
             // 
             // txt_pass
             // 
@@ -103,7 +102,7 @@
             this.txt_pass.EditBoxStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_pass.EditBoxStyle.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.txt_pass.EditBoxStyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_pass.Location = new System.Drawing.Point(34, 248);
+            this.txt_pass.Location = new System.Drawing.Point(40, 272);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(288, 38);
             this.txt_pass.TabIndex = 453;
@@ -128,7 +127,7 @@
             this.txt_usu.EditBoxStyle.ForeColor = System.Drawing.Color.Black;
             this.txt_usu.EditBoxStyle.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.txt_usu.EditBoxStyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_usu.Location = new System.Drawing.Point(34, 174);
+            this.txt_usu.Location = new System.Drawing.Point(40, 222);
             this.txt_usu.Name = "txt_usu";
             this.txt_usu.Size = new System.Drawing.Size(288, 40);
             this.txt_usu.TabIndex = 450;
@@ -142,7 +141,7 @@
             this.btn_Aceptar.BackgroundStyle.GradientEndColor = System.Drawing.Color.BlanchedAlmond;
             this.btn_Aceptar.BackgroundStyle.GradientStartColor = System.Drawing.Color.Black;
             this.btn_Aceptar.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_Aceptar.BackgroundStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
+            this.btn_Aceptar.BackgroundStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(45)))));
             this.btn_Aceptar.BorderStyle.GradientEndColor = System.Drawing.Color.Transparent;
             this.btn_Aceptar.BorderStyle.GradientStartColor = System.Drawing.Color.Transparent;
             this.btn_Aceptar.BorderStyle.SolidColor = System.Drawing.Color.Transparent;
@@ -155,9 +154,9 @@
             this.btn_Aceptar.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_Aceptar.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_Aceptar.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Aceptar.Location = new System.Drawing.Point(117, 328);
+            this.btn_Aceptar.Location = new System.Drawing.Point(40, 332);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(50, 50);
+            this.btn_Aceptar.Size = new System.Drawing.Size(101, 43);
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(180)))), ((int)(((byte)(39)))));
@@ -175,7 +174,7 @@
             // btn_Salir
             // 
             this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
+            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(45)))));
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Salir.FlatAppearance.BorderSize = 0;
@@ -184,9 +183,9 @@
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(201, 328);
+            this.btn_Salir.Location = new System.Drawing.Point(227, 332);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(50, 50);
+            this.btn_Salir.Size = new System.Drawing.Size(101, 43);
             this.btn_Salir.TabIndex = 464;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -196,8 +195,8 @@
             this.Label14.AutoSize = true;
             this.Label14.BackColor = System.Drawing.Color.Transparent;
             this.Label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label14.ForeColor = System.Drawing.Color.DimGray;
-            this.Label14.Location = new System.Drawing.Point(21, 428);
+            this.Label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(45)))));
+            this.Label14.Location = new System.Drawing.Point(413, 428);
             this.Label14.Name = "Label14";
             this.Label14.Size = new System.Drawing.Size(137, 17);
             this.Label14.TabIndex = 459;
@@ -209,34 +208,12 @@
             this.Label15.AutoSize = true;
             this.Label15.BackColor = System.Drawing.Color.Transparent;
             this.Label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.ForeColor = System.Drawing.Color.DimGray;
+            this.Label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(45)))));
             this.Label15.Location = new System.Drawing.Point(635, 428);
             this.Label15.Name = "Label15";
             this.Label15.Size = new System.Drawing.Size(145, 17);
             this.Label15.TabIndex = 460;
             this.Label15.Text = "Sistema de Asistencia";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(328, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(464, 425);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 133);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 465;
-            this.pictureBox1.TabStop = false;
             // 
             // Elipse_btn_Salir
             // 
@@ -248,13 +225,25 @@
             this.bunifuElipse3.ElipseRadius = 10;
             this.bunifuElipse3.TargetControl = this.btn_Aceptar;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(416, 80);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(364, 333);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(130)))), ((int)(((byte)(45)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(792, 454);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Label15);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Salir);
@@ -265,7 +254,9 @@
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.txt_usu);
             this.Controls.Add(this.pnl_titulo);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -275,7 +266,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_usu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,10 +282,9 @@
         internal System.Windows.Forms.Panel pnl_titulo;
         private System.Windows.Forms.Button btn_Salir;
         internal System.Windows.Forms.Label Label14;
-        private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Label Label15;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuElipse Elipse_btn_Salir;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
