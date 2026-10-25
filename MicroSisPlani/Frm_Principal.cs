@@ -17,7 +17,7 @@ using MicroSisPlani.Informes;
 
 namespace MicroSisPlani
 {
-    public partial class Frm_Principal : Form
+    public partial class Frm_Principal : Form   
     {
         public Frm_Principal()
         {
@@ -39,6 +39,7 @@ namespace MicroSisPlani
 
             if (tipo.Trim() == "Si")
             {
+                timerFalta.Interval = 60000;   // <-- línea nueva: revisa cada minuto
                 timerFalta.Start();
                 rdb_ActivarRobot.Checked = true;
             }
@@ -643,66 +644,72 @@ namespace MicroSisPlani
         private void timerFalta_Tick(object sender, EventArgs e)
         {
             RN_Asistencia obj = new RN_Asistencia();
+            RN_Horario objhor = new RN_Horario();
+            RN_Descanso objdes = new RN_Descanso();
             Frm_Filtro fis = new Frm_Filtro();
-            Frm_Advertencia adver = new Frm_Advertencia();
             Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
-            DataTable dataper = new DataTable();
-            RN_Personal objper = new RN_Personal();
 
-            int HoLimite = Dtp_Hora_Limite.Value.Hour;
-            int MiLimite = Dtp_Hora_Limite.Value.Minute;
+            DataTable dataper = new RN_Personal().RN_Leer_todoPersona();
+            if (dataper == null || dataper.Rows.Count == 0) return;
 
-            int horaCaptu = DateTime.Now.Hour;
-            int minutoCaptu = DateTime.Now.Minute;
-            string Dniper = "";
+            DateTime ahora = DateTime.Now;
+            string nombreDia = ahora.ToString("dddd", new System.Globalization.CultureInfo("es-ES"));
+            nombreDia = char.ToUpper(nombreDia[0]) + nombreDia.Substring(1);
 
-            int Cant = 0;
-            int TotalItem = 0;
-            string xidpersona = "";
-            string IdAsistencia = "";
+            int faltas = 0, suspensiones = 0;
 
-            if (horaCaptu >= MiLimite)
+            timerFalta.Stop();   // evita que un mensaje dispare otra pasada encima
+            try
             {
-                dataper = objper.RN_Leer_todoPersona();
-                if (dataper.Rows.Count <= 0) return;
-                TotalItem = dataper.Rows.Count;
-
-                foreach (DataRow Registro in dataper.Rows)
+                foreach (DataRow reg in dataper.Rows)
                 {
-                    Dniper = Convert.ToString(Registro["DNIPR"]);
-                    xidpersona = Convert.ToString(Registro["Id_Pernl"]);
-                    if (obj.RN_Checar_SiPersonal_TieneAsistencia_Registrada(xidpersona.Trim()) == false)
-                        if (obj.RN_Checar_SiPersonal_YaMarco_suFalta(xidpersona.Trim()) == false)
-                        {
-                        RN_Asistencia objA = new RN_Asistencia();
-                        EN_Asistencia asi = new EN_Asistencia();
-                        IdAsistencia = RN_Utilitario.RN_NroDoc(3);
+                    string id = Convert.ToString(reg["Id_Pernl"]).Trim();
 
-                        obj.RN_Registrar_Falta_Personal(IdAsistencia, xidpersona);
-                        if (BD_Asistencia.faltasaved == true)
-                        {
-                            RN_Utilitario.RN_Actualiza_Tipo_Doc(3);
-                            Cant += 1;
-                        }
+                    // 1) ¿Ya tiene algún registro hoy (entrada, falta o suspensión)?
+                    if (obj.RN_Checar_SiPersonal_TieneAsistencia_Registrada(id)) continue;
+
+                    // 2) ¿Hoy le toca trabajar? (1 = sí, 0 = descanso, -1 = sin programar)
+                    if (objdes.RN_Es_Dia_Laboral(id, ahora) != 1) continue;
+
+                    // 3) ¿Ya pasó SU hora límite?
+                    DataTable hor = objhor.RN_Leer_Horario_Personal(id);
+                    if (hor == null || hor.Rows.Count == 0) continue;
+                    DateTime limite = DateTime.Today + Convert.ToDateTime(hor.Rows[0]["HoLimite"]).TimeOfDay;
+                    if (ahora < limite) continue;
+
+                    // 4) Falta, o suspensión si acumuló las tardanzas
+                    bool suspension = obj.RN_Tardanzas_Pendientes(id) >= RN_Asistencia.TardanzasParaSuspension;
+                    obj.RN_Registrar_Falta_Personal(RN_Utilitario.RN_NroDoc(3), id, nombreDia,
+                        suspension ? "Suspensión por acumular " + RN_Asistencia.TardanzasParaSuspension + " tardanzas"
+                                   : "Falta no justificada",
+                        suspension ? "Suspension" : "Falta");
+
+                    if (BD_Asistencia.faltasaved == true)
+                    {
+                        RN_Utilitario.RN_Actualiza_Tipo_Doc(3);
+                        if (suspension) suspensiones++; else faltas++;
                     }
                 }
 
-                if (Cant > 1)
+                if (faltas + suspensiones > 0)
                 {
-                    timerFalta.Stop();
                     fis.Show();
-                    ok.Lbl_msm1.Text = "Un total de: " + Cant.ToString() + "/" + TotalItem + "faltas se han registrado exitosamente";
-                    ok.ShowDialog();
-                    fis.Hide();
-                } else
-                {
-                    timerFalta.Stop();
-                    fis.Show();
-                    ok.Lbl_msm1.Text = "El día de hoy no falto nadie al trabajo, Las: " + TotalItem + "personas marcaron su asistencia";
+                    ok.Lbl_msm1.Text = "Se registraron " + faltas + " falta(s) y " + suspensiones + " suspensión(es)";
                     ok.ShowDialog();
                     fis.Hide();
                 }
             }
+            finally
+            {
+                timerFalta.Start();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Frm_Rol_Descansos rol = new Frm_Rol_Descansos();
+
+            rol.Show();
         }
     }
 }

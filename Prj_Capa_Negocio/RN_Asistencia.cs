@@ -92,5 +92,39 @@ namespace Prj_Capa_Negocio
             BD_Asistencia obj = new BD_Asistencia();
             obj.BD_Registrar_Falta_Personal(idAsis, idPerso);
         }
+
+
+        //public void RN_Registrar_Falta_Personal(string idAsis, string idPerso, string nomdia, string justificacion, string estado)
+        //{
+        //    new BD_Asistencia().BD_Registrar_Falta_Personal(idAsis, idPerso, nomdia, justificacion, estado);
+        //}
+
+        //public int RN_Tardanzas_Pendientes(string idPerso)
+        //{
+        //    return new BD_Asistencia().BD_Tardanzas_Pendientes(idPerso);
+        //}
+
+        //public bool RN_Suspendido_Hoy(string idPerso)
+        //{
+        //    return new BD_Asistencia().BD_Suspendido_Hoy(idPerso);
+        //}
+
+
+        public const int TardanzasParaSuspension = 3;
+
+        public void RN_Registrar_Falta_Personal(string idAsis, string idPerso, string nomdia, string justificacion, string estado)
+        {
+            new BD_Asistencia().BD_Registrar_Falta_Personal(idAsis, idPerso, nomdia, justificacion, estado);
+        }
+
+        public int RN_Tardanzas_Pendientes(string idPerso)
+        {
+            return new BD_Asistencia().BD_Tardanzas_Pendientes(idPerso);
+        }
+
+        public bool RN_Suspendido_Hoy(string idPerso)
+        {
+            return new BD_Asistencia().BD_Suspendido_Hoy(idPerso);
+        }
     }
 }

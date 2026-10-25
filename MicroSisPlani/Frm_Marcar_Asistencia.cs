@@ -228,11 +228,55 @@ namespace MicroSisPlani
             // ---------- B) Ya tiene entrada y salida hoy ----------
             if (objas.RN_Checar_SiPersonal_YaMarco_Asistencia(idPersona) == true)
             {
-                MostrarError("El sistema verificó que el personal ya completó su asistencia de hoy");
+                if (objas.RN_Suspendido_Hoy(idPersona))
+                    MostrarError("Estás suspendido el día de hoy por acumular " +
+                                 RN_Asistencia.TardanzasParaSuspension + " tardanzas");
+                else if (objas.RN_Checar_SiPersonal_YaMarco_suFalta(idPersona))
+                    MostrarError("Hoy se te registró falta por no marcar tu entrada antes de tu hora límite");
+                else
+                    MostrarError("El sistema verificó que el personal ya completó su asistencia de hoy");
                 return;
             }
 
             // ---------- C) Sin registro hoy -> ENTRADA ----------
+            string nombreDia = ahora.ToString("dddd", new System.Globalization.CultureInfo("es-ES"));
+            nombreDia = char.ToUpper(nombreDia[0]) + nombreDia.Substring(1);
+
+            // 1 = día laboral, 0 = día de descanso, -1 = semana sin programar
+            // (VA PRIMERO: antes de validar horas, para que el descanso gane sobre "hora límite")
+            int laboral = new RN_Descanso().RN_Es_Dia_Laboral(idPersona, ahora);
+
+            // a) Día de descanso: no se registra asistencia
+            if (laboral == 0)
+            {
+                MostrarError("Hoy es tu día de descanso, no puedes registrar asistencia");
+                return;
+            }
+
+            // b) Suspensión / tardanzas acumuladas (solo en día laboral)
+            if (laboral == 1)
+            {
+                if (objas.RN_Suspendido_Hoy(idPersona))
+                {
+                    MostrarError("Estás suspendido el día de hoy por acumular " +
+                                 RN_Asistencia.TardanzasParaSuspension + " tardanzas");
+                    return;
+                }
+
+                if (!objas.RN_Checar_SiPersonal_TieneAsistencia_Registrada(idPersona) &&
+                    objas.RN_Tardanzas_Pendientes(idPersona) >= RN_Asistencia.TardanzasParaSuspension)
+                {
+                    objas.RN_Registrar_Falta_Personal(RN_Utilitario.RN_NroDoc(3), idPersona, nombreDia,
+                        "Suspensión por acumular " + RN_Asistencia.TardanzasParaSuspension + " tardanzas", "Suspension");
+                    if (BD_Asistencia.faltasaved == true) RN_Utilitario.RN_Actualiza_Tipo_Doc(3);
+
+                    MostrarError("Estás suspendido el día de hoy por acumular " +
+                                 RN_Asistencia.TardanzasParaSuspension + " tardanzas");
+                    return;
+                }
+            }
+
+            // c) Validaciones de horario
             DateTime desde = hEntrada.AddMinutes(-MinutosAntesPermitidos);
             if (ahora < desde)
             {
@@ -259,8 +303,6 @@ namespace MicroSisPlani
             lbl_totaltarde.Text = tarde.ToString();
             lbl_justifi.Text = justif;
 
-            string nombreDia = ahora.ToString("dddd", new System.Globalization.CultureInfo("es-ES"));
-            nombreDia = char.ToUpper(nombreDia[0]) + nombreDia.Substring(1);
 
             lbl_IdAsis.Text = RN_Utilitario.RN_NroDoc(3);
             objas.RN_Registrar_Entrada_Personal(lbl_IdAsis.Text, idPersona, ahora.ToString("HH:mm:ss"),
