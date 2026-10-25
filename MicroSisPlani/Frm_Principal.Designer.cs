@@ -56,10 +56,6 @@
             this.pnl_titu = new System.Windows.Forms.Panel();
             this.lbl_rolNom = new System.Windows.Forms.Label();
             this.Lbl_NomUsu = new System.Windows.Forms.Label();
-            this.pic_user = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_mini = new System.Windows.Forms.Button();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.elTab1 = new Klik.Windows.Forms.v1.EntryLib.ELTab();
             this.elTabPage1 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,53 +76,31 @@
             this.ElLabel2 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.ElLabel1 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lbl_lupaPerso = new System.Windows.Forms.Label();
             this.txt_Buscar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lsv_person = new System.Windows.Forms.ListView();
             this.SubMenu_Person = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.bt_nuevoPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_editarPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_registrarHuellaDigital = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_eliminarPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_mostrarTodoElPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_copiarNroDNI = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_solicitarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
             this.Lbl_total = new System.Windows.Forms.Label();
-            this.btn_VerTodoPerso = new System.Windows.Forms.Button();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Btn_Cerrar_TabPers = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Btn_EditPerso = new System.Windows.Forms.Button();
             this.Label9 = new System.Windows.Forms.Label();
-            this.Bt_NewPerso = new System.Windows.Forms.Button();
             this.elDivider1 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
             this.elTabPage3 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
             this.dtp_fechadeldia = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lbl_lupaAsis = new System.Windows.Forms.Label();
             this.txt_buscarAsis = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btn_Asis_With_Huella = new System.Windows.Forms.Button();
             this.lsv_asis = new System.Windows.Forms.ListView();
             this.subMenuAsistencia = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bt_imprimirAsistenciaPorPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_imprimirAsistenciaDelMes = new System.Windows.Forms.ToolStripMenuItem();
             this.bt_verAsistenciasDelDiaT = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.elLabel15 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
@@ -138,14 +112,10 @@
             this.elLabel10 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel11 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel12 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_Asis_Manual = new System.Windows.Forms.Button();
-            this.btn_cerrarEx_Asis = new System.Windows.Forms.Button();
             this.elDivider2 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
             this.elTabPage4 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.elDivider4 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -157,7 +127,6 @@
             this.lbl_Cont = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.PictureBox10 = new System.Windows.Forms.PictureBox();
             this.rdb_Desact_Robot = new Klik.Windows.Forms.v1.EntryLib.ELRadioButton();
             this.rdb_ActivarRobot = new Klik.Windows.Forms.v1.EntryLib.ELRadioButton();
             this.btn_Savedrobot = new Klik.Windows.Forms.v1.EntryLib.ELButton();
@@ -180,38 +149,68 @@
             this.elTabPage5 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
             this.dtp_fechajusti = new System.Windows.Forms.DateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbl_lupajusti = new System.Windows.Forms.Label();
             this.txt_buscarjusti = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lbl_totaljusti = new System.Windows.Forms.Label();
-            this.bt_cerrarjusti = new System.Windows.Forms.Button();
             this.elLabel19 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.lbl_Detalle = new System.Windows.Forms.Label();
             this.lsv_justifi = new System.Windows.Forms.ListView();
             this.subMenuJusti = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.bt_aprobarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_editJusti = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_ElimiJusti = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_mostrarJusti = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_CopiarNroJusti = new System.Windows.Forms.ToolStripMenuItem();
             this.aprobarJustificacionToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.bt_desaprobarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
             this.elLabel16 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel17 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel18 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel20 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.elDivider3 = new Klik.Windows.Forms.v1.EntryLib.ELDivider();
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timerFalta = new System.Windows.Forms.Timer(this.components);
+            this.bt_imprimirAsistenciasDelDíaTool = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_lupaPerso = new System.Windows.Forms.Label();
+            this.bt_nuevoPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_editarPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_registrarHuellaDigital = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_eliminarPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_mostrarTodoElPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_copiarNroDNI = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_solicitarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_VerTodoPerso = new System.Windows.Forms.Button();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_Cerrar_TabPers = new System.Windows.Forms.Button();
+            this.Btn_EditPerso = new System.Windows.Forms.Button();
+            this.Bt_NewPerso = new System.Windows.Forms.Button();
+            this.lbl_lupaAsis = new System.Windows.Forms.Label();
+            this.btn_Asis_With_Huella = new System.Windows.Forms.Button();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_imprimirAsistenciaPorPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_imprimirAsistenciaDelMes = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_Asis_Manual = new System.Windows.Forms.Button();
+            this.btn_cerrarEx_Asis = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.PictureBox10 = new System.Windows.Forms.PictureBox();
+            this.lbl_lupajusti = new System.Windows.Forms.Label();
+            this.bt_cerrarjusti = new System.Windows.Forms.Button();
+            this.bt_aprobarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_editJusti = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_ElimiJusti = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_mostrarJusti = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_CopiarNroJusti = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_desaprobarJustificacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pic_user = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_mini = new System.Windows.Forms.Button();
+            this.btn_Salir = new System.Windows.Forms.Button();
             this.pnl_titu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTab1)).BeginInit();
             this.elTab1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage1)).BeginInit();
@@ -230,7 +229,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel1)).BeginInit();
             this.panel4.SuspendLayout();
             this.SubMenu_Person.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage3)).BeginInit();
             this.elTabPage3.SuspendLayout();
@@ -245,18 +243,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage4)).BeginInit();
             this.elTabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider4)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_totalPer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_regFalta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_Cont)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_Desact_Robot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_ActivarRobot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Savedrobot)).BeginInit();
@@ -272,8 +267,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -321,59 +322,6 @@
             this.Lbl_NomUsu.TabIndex = 6;
             this.Lbl_NomUsu.Text = "La Grandeza";
             this.Lbl_NomUsu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pic_user
-            // 
-            this.pic_user.Image = global::MicroSisPlani.Properties.Resources.user;
-            this.pic_user.Location = new System.Drawing.Point(1452, 6);
-            this.pic_user.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_user.Name = "pic_user";
-            this.pic_user.Size = new System.Drawing.Size(68, 66);
-            this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_user.TabIndex = 5;
-            this.pic_user.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, -25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(309, 145);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btn_mini
-            // 
-            this.btn_mini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_mini.FlatAppearance.BorderSize = 0;
-            this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mini.ForeColor = System.Drawing.Color.White;
-            this.btn_mini.Image = ((System.Drawing.Image)(resources.GetObject("btn_mini.Image")));
-            this.btn_mini.Location = new System.Drawing.Point(1548, 6);
-            this.btn_mini.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_mini.Name = "btn_mini";
-            this.btn_mini.Size = new System.Drawing.Size(43, 39);
-            this.btn_mini.TabIndex = 3;
-            this.btn_mini.UseVisualStyleBackColor = true;
-            this.btn_mini.Click += new System.EventHandler(this.btn_mini_Click);
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Salir.FlatAppearance.BorderSize = 0;
-            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(1599, 6);
-            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(43, 39);
-            this.btn_Salir.TabIndex = 2;
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // elTab1
             // 
@@ -825,18 +773,6 @@
             this.panel4.Size = new System.Drawing.Size(341, 47);
             this.panel4.TabIndex = 12;
             // 
-            // lbl_lupaPerso
-            // 
-            this.lbl_lupaPerso.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_lupaPerso.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lupaPerso.ForeColor = System.Drawing.Color.White;
-            this.lbl_lupaPerso.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaPerso.Image")));
-            this.lbl_lupaPerso.Location = new System.Drawing.Point(301, 12);
-            this.lbl_lupaPerso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_lupaPerso.Name = "lbl_lupaPerso";
-            this.lbl_lupaPerso.Size = new System.Drawing.Size(32, 30);
-            this.lbl_lupaPerso.TabIndex = 32;
-            // 
             // txt_Buscar
             // 
             this.txt_Buscar.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -892,96 +828,35 @@
             this.SubMenu_Person.Name = "contextMenuStrip1";
             this.SubMenu_Person.Size = new System.Drawing.Size(247, 222);
             // 
-            // bt_nuevoPersonal
-            // 
-            this.bt_nuevoPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_nuevoPersonal.Image")));
-            this.bt_nuevoPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_nuevoPersonal.Name = "bt_nuevoPersonal";
-            this.bt_nuevoPersonal.Size = new System.Drawing.Size(246, 26);
-            this.bt_nuevoPersonal.Text = "Nuevo Personal";
-            this.bt_nuevoPersonal.Click += new System.EventHandler(this.bt_nuevoPersonal_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(243, 6);
-            // 
-            // bt_editarPersonal
-            // 
-            this.bt_editarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_editarPersonal.Image")));
-            this.bt_editarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_editarPersonal.Name = "bt_editarPersonal";
-            this.bt_editarPersonal.Size = new System.Drawing.Size(246, 26);
-            this.bt_editarPersonal.Text = "Editar Personal";
-            this.bt_editarPersonal.Click += new System.EventHandler(this.bt_editarPersonal_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(243, 6);
             // 
-            // bt_registrarHuellaDigital
-            // 
-            this.bt_registrarHuellaDigital.Image = ((System.Drawing.Image)(resources.GetObject("bt_registrarHuellaDigital.Image")));
-            this.bt_registrarHuellaDigital.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_registrarHuellaDigital.Name = "bt_registrarHuellaDigital";
-            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(246, 26);
-            this.bt_registrarHuellaDigital.Text = "Registrar Huella Digital";
-            this.bt_registrarHuellaDigital.Click += new System.EventHandler(this.bt_registrarHuellaDigital_Click);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(243, 6);
-            // 
-            // bt_eliminarPersonal
-            // 
-            this.bt_eliminarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_eliminarPersonal.Image")));
-            this.bt_eliminarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_eliminarPersonal.Name = "bt_eliminarPersonal";
-            this.bt_eliminarPersonal.Size = new System.Drawing.Size(246, 26);
-            this.bt_eliminarPersonal.Text = "Eliminar Personal";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(243, 6);
             // 
-            // bt_mostrarTodoElPersonal
-            // 
-            this.bt_mostrarTodoElPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarTodoElPersonal.Image")));
-            this.bt_mostrarTodoElPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_mostrarTodoElPersonal.Name = "bt_mostrarTodoElPersonal";
-            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(246, 26);
-            this.bt_mostrarTodoElPersonal.Text = "Mostrar Todo el Personal";
-            this.bt_mostrarTodoElPersonal.Click += new System.EventHandler(this.bt_mostrarTodoElPersonal_Click);
-            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(243, 6);
             // 
-            // bt_copiarNroDNI
-            // 
-            this.bt_copiarNroDNI.Image = ((System.Drawing.Image)(resources.GetObject("bt_copiarNroDNI.Image")));
-            this.bt_copiarNroDNI.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_copiarNroDNI.Name = "bt_copiarNroDNI";
-            this.bt_copiarNroDNI.Size = new System.Drawing.Size(246, 26);
-            this.bt_copiarNroDNI.Text = "Copiar Nro DNI";
-            this.bt_copiarNroDNI.Click += new System.EventHandler(this.bt_copiarNroDNI_Click);
-            // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(243, 6);
-            // 
-            // bt_solicitarJustificacion
-            // 
-            this.bt_solicitarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_solicitarJustificacion.Image")));
-            this.bt_solicitarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_solicitarJustificacion.Name = "bt_solicitarJustificacion";
-            this.bt_solicitarJustificacion.Size = new System.Drawing.Size(246, 26);
-            this.bt_solicitarJustificacion.Text = "Solicitar Justificacion";
             // 
             // Lbl_total
             // 
@@ -996,52 +871,6 @@
             this.Lbl_total.TabIndex = 441;
             this.Lbl_total.Text = "0";
             // 
-            // btn_VerTodoPerso
-            // 
-            this.btn_VerTodoPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_VerTodoPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btn_VerTodoPerso.FlatAppearance.BorderSize = 0;
-            this.btn_VerTodoPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.btn_VerTodoPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_VerTodoPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_VerTodoPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_VerTodoPerso.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodoPerso.Image")));
-            this.btn_VerTodoPerso.Location = new System.Drawing.Point(1161, 279);
-            this.btn_VerTodoPerso.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_VerTodoPerso.Name = "btn_VerTodoPerso";
-            this.btn_VerTodoPerso.Size = new System.Drawing.Size(41, 42);
-            this.btn_VerTodoPerso.TabIndex = 434;
-            this.btn_VerTodoPerso.UseVisualStyleBackColor = true;
-            // 
-            // PictureBox2
-            // 
-            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(15, 21);
-            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(84, 65);
-            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox2.TabIndex = 437;
-            this.PictureBox2.TabStop = false;
-            // 
-            // Btn_Cerrar_TabPers
-            // 
-            this.Btn_Cerrar_TabPers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Cerrar_TabPers.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.Btn_Cerrar_TabPers.FlatAppearance.BorderSize = 0;
-            this.Btn_Cerrar_TabPers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Cerrar_TabPers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.Btn_Cerrar_TabPers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
-            this.Btn_Cerrar_TabPers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cerrar_TabPers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_TabPers.Image")));
-            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1560, 25);
-            this.Btn_Cerrar_TabPers.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_Cerrar_TabPers.Name = "Btn_Cerrar_TabPers";
-            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(41, 42);
-            this.Btn_Cerrar_TabPers.TabIndex = 434;
-            this.Btn_Cerrar_TabPers.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar_TabPers.Click += new System.EventHandler(this.Btn_Cerrar_TabPers_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
@@ -1051,23 +880,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1613, 6);
             this.panel1.TabIndex = 2;
-            // 
-            // Btn_EditPerso
-            // 
-            this.Btn_EditPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_EditPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.Btn_EditPerso.FlatAppearance.BorderSize = 0;
-            this.Btn_EditPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.Btn_EditPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.Btn_EditPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.Btn_EditPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_EditPerso.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EditPerso.Image")));
-            this.Btn_EditPerso.Location = new System.Drawing.Point(1161, 217);
-            this.Btn_EditPerso.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_EditPerso.Name = "Btn_EditPerso";
-            this.Btn_EditPerso.Size = new System.Drawing.Size(41, 42);
-            this.Btn_EditPerso.TabIndex = 433;
-            this.Btn_EditPerso.UseVisualStyleBackColor = true;
             // 
             // Label9
             // 
@@ -1080,23 +892,6 @@
             this.Label9.Size = new System.Drawing.Size(366, 30);
             this.Label9.TabIndex = 2;
             this.Label9.Text = "Listado de Personal Registrado";
-            // 
-            // Bt_NewPerso
-            // 
-            this.Bt_NewPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Bt_NewPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.Bt_NewPerso.FlatAppearance.BorderSize = 0;
-            this.Bt_NewPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.Bt_NewPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.Bt_NewPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.Bt_NewPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_NewPerso.Image = ((System.Drawing.Image)(resources.GetObject("Bt_NewPerso.Image")));
-            this.Bt_NewPerso.Location = new System.Drawing.Point(1161, 167);
-            this.Bt_NewPerso.Margin = new System.Windows.Forms.Padding(4);
-            this.Bt_NewPerso.Name = "Bt_NewPerso";
-            this.Bt_NewPerso.Size = new System.Drawing.Size(41, 42);
-            this.Bt_NewPerso.TabIndex = 432;
-            this.Bt_NewPerso.UseVisualStyleBackColor = true;
             // 
             // elDivider1
             // 
@@ -1163,19 +958,6 @@
             this.panel5.Size = new System.Drawing.Size(341, 47);
             this.panel5.TabIndex = 467;
             // 
-            // lbl_lupaAsis
-            // 
-            this.lbl_lupaAsis.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_lupaAsis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lupaAsis.ForeColor = System.Drawing.Color.White;
-            this.lbl_lupaAsis.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaAsis.Image")));
-            this.lbl_lupaAsis.Location = new System.Drawing.Point(301, 12);
-            this.lbl_lupaAsis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_lupaAsis.Name = "lbl_lupaAsis";
-            this.lbl_lupaAsis.Size = new System.Drawing.Size(32, 30);
-            this.lbl_lupaAsis.TabIndex = 32;
-            this.lbl_lupaAsis.Click += new System.EventHandler(this.lbl_lupaAsis_Click);
-            // 
             // txt_buscarAsis
             // 
             this.txt_buscarAsis.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1196,24 +978,6 @@
             this.txt_buscarAsis.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_buscarAsis.OnValueChanged += new System.EventHandler(this.txt_buscarAsis_OnValueChanged);
             this.txt_buscarAsis.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_buscarAsis_KeyDown);
-            // 
-            // btn_Asis_With_Huella
-            // 
-            this.btn_Asis_With_Huella.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Asis_With_Huella.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btn_Asis_With_Huella.FlatAppearance.BorderSize = 0;
-            this.btn_Asis_With_Huella.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.btn_Asis_With_Huella.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_Asis_With_Huella.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_Asis_With_Huella.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Asis_With_Huella.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_With_Huella.Image")));
-            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1505, 105);
-            this.btn_Asis_With_Huella.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Asis_With_Huella.Name = "btn_Asis_With_Huella";
-            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(41, 42);
-            this.btn_Asis_With_Huella.TabIndex = 465;
-            this.btn_Asis_With_Huella.UseVisualStyleBackColor = true;
-            this.btn_Asis_With_Huella.Click += new System.EventHandler(this.btn_Asis_With_Huella_Click);
             // 
             // lsv_asis
             // 
@@ -1246,70 +1010,30 @@
             this.toolStripSeparator15,
             this.bt_imprimirAsistenciaDelMes,
             this.bt_verAsistenciasDelDiaT,
-            this.toolStripSeparator16});
+            this.toolStripSeparator16,
+            this.bt_imprimirAsistenciasDelDíaTool});
             this.subMenuAsistencia.Name = "contextMenuStrip1";
-            this.subMenuAsistencia.Size = new System.Drawing.Size(296, 274);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(295, 26);
-            this.toolStripMenuItem1.Text = "Marcar Asistencia Manual";
+            this.subMenuAsistencia.Size = new System.Drawing.Size(296, 328);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(292, 6);
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
-            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(295, 26);
-            this.toolStripMenuItem2.Text = "Marcar Asistencia Biometrico";
-            // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(292, 6);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
-            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(295, 26);
-            this.toolStripMenuItem3.Text = "Eliminar Asistencia";
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(292, 6);
             // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
-            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(295, 26);
-            this.toolStripMenuItem4.Text = "Mostrar Todo Asistencia";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
             this.toolStripSeparator14.Size = new System.Drawing.Size(292, 6);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
-            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(295, 26);
-            this.toolStripMenuItem5.Text = "Copiar Nro Dni";
             // 
             // reportesToolStripMenuItem
             // 
@@ -1317,26 +1041,10 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(295, 26);
             this.reportesToolStripMenuItem.Text = "**********Reportes ***************";
             // 
-            // bt_imprimirAsistenciaPorPersonal
-            // 
-            this.bt_imprimirAsistenciaPorPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaPorPersonal.Image")));
-            this.bt_imprimirAsistenciaPorPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_imprimirAsistenciaPorPersonal.Name = "bt_imprimirAsistenciaPorPersonal";
-            this.bt_imprimirAsistenciaPorPersonal.Size = new System.Drawing.Size(295, 26);
-            this.bt_imprimirAsistenciaPorPersonal.Text = "Imprimir Asistencia por Personal";
-            // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
             this.toolStripSeparator15.Size = new System.Drawing.Size(292, 6);
-            // 
-            // bt_imprimirAsistenciaDelMes
-            // 
-            this.bt_imprimirAsistenciaDelMes.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaDelMes.Image")));
-            this.bt_imprimirAsistenciaDelMes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_imprimirAsistenciaDelMes.Name = "bt_imprimirAsistenciaDelMes";
-            this.bt_imprimirAsistenciaDelMes.Size = new System.Drawing.Size(295, 26);
-            this.bt_imprimirAsistenciaDelMes.Text = "Imprimir Asistencia Del Mes";
             // 
             // bt_verAsistenciasDelDiaT
             // 
@@ -1564,17 +1272,6 @@
             this.elLabel12.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.elLabel12.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 14);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(84, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 452;
-            this.pictureBox3.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -1596,42 +1293,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1613, 6);
             this.panel2.TabIndex = 2;
-            // 
-            // btn_Asis_Manual
-            // 
-            this.btn_Asis_Manual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Asis_Manual.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btn_Asis_Manual.FlatAppearance.BorderSize = 0;
-            this.btn_Asis_Manual.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.btn_Asis_Manual.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_Asis_Manual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.btn_Asis_Manual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Asis_Manual.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_Manual.Image")));
-            this.btn_Asis_Manual.Location = new System.Drawing.Point(1505, 23);
-            this.btn_Asis_Manual.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Asis_Manual.Name = "btn_Asis_Manual";
-            this.btn_Asis_Manual.Size = new System.Drawing.Size(41, 42);
-            this.btn_Asis_Manual.TabIndex = 432;
-            this.btn_Asis_Manual.UseVisualStyleBackColor = true;
-            this.btn_Asis_Manual.Click += new System.EventHandler(this.btn_nuevoAsis_Click);
-            // 
-            // btn_cerrarEx_Asis
-            // 
-            this.btn_cerrarEx_Asis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_cerrarEx_Asis.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btn_cerrarEx_Asis.FlatAppearance.BorderSize = 0;
-            this.btn_cerrarEx_Asis.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.btn_cerrarEx_Asis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.btn_cerrarEx_Asis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
-            this.btn_cerrarEx_Asis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrarEx_Asis.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrarEx_Asis.Image")));
-            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1557, 23);
-            this.btn_cerrarEx_Asis.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_cerrarEx_Asis.Name = "btn_cerrarEx_Asis";
-            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(41, 42);
-            this.btn_cerrarEx_Asis.TabIndex = 434;
-            this.btn_cerrarEx_Asis.UseVisualStyleBackColor = true;
-            this.btn_cerrarEx_Asis.Click += new System.EventHandler(this.btn_cerrarEx_Asis_Click);
             // 
             // elDivider2
             // 
@@ -1666,17 +1327,6 @@
             this.elTabPage4.Name = "elTabPage4";
             this.elTabPage4.Size = new System.Drawing.Size(1613, 570);
             this.elTabPage4.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 22);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(84, 65);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 455;
-            this.pictureBox5.TabStop = false;
             // 
             // label17
             // 
@@ -1849,17 +1499,6 @@
             this.label12.Size = new System.Drawing.Size(384, 21);
             this.label12.TabIndex = 56;
             this.label12.Text = "El Robot registra automaticamente las Faltas";
-            // 
-            // PictureBox10
-            // 
-            this.PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox10.Image")));
-            this.PictureBox10.Location = new System.Drawing.Point(176, 181);
-            this.PictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox10.Name = "PictureBox10";
-            this.PictureBox10.Size = new System.Drawing.Size(93, 80);
-            this.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox10.TabIndex = 55;
-            this.PictureBox10.TabStop = false;
             // 
             // rdb_Desact_Robot
             // 
@@ -2184,18 +1823,6 @@
             this.panel6.Size = new System.Drawing.Size(341, 47);
             this.panel6.TabIndex = 466;
             // 
-            // lbl_lupajusti
-            // 
-            this.lbl_lupajusti.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_lupajusti.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lupajusti.ForeColor = System.Drawing.Color.White;
-            this.lbl_lupajusti.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupajusti.Image")));
-            this.lbl_lupajusti.Location = new System.Drawing.Point(301, 12);
-            this.lbl_lupajusti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_lupajusti.Name = "lbl_lupajusti";
-            this.lbl_lupajusti.Size = new System.Drawing.Size(32, 30);
-            this.lbl_lupajusti.TabIndex = 32;
-            // 
             // txt_buscarjusti
             // 
             this.txt_buscarjusti.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -2227,23 +1854,6 @@
             this.lbl_totaljusti.Size = new System.Drawing.Size(21, 22);
             this.lbl_totaljusti.TabIndex = 468;
             this.lbl_totaljusti.Text = "0";
-            // 
-            // bt_cerrarjusti
-            // 
-            this.bt_cerrarjusti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_cerrarjusti.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.bt_cerrarjusti.FlatAppearance.BorderSize = 0;
-            this.bt_cerrarjusti.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
-            this.bt_cerrarjusti.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.bt_cerrarjusti.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
-            this.bt_cerrarjusti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_cerrarjusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_cerrarjusti.Image")));
-            this.bt_cerrarjusti.Location = new System.Drawing.Point(1555, 14);
-            this.bt_cerrarjusti.Margin = new System.Windows.Forms.Padding(4);
-            this.bt_cerrarjusti.Name = "bt_cerrarjusti";
-            this.bt_cerrarjusti.Size = new System.Drawing.Size(41, 42);
-            this.bt_cerrarjusti.TabIndex = 467;
-            this.bt_cerrarjusti.UseVisualStyleBackColor = true;
             // 
             // elLabel19
             // 
@@ -2312,78 +1922,30 @@
             this.subMenuJusti.Name = "contextMenuStrip1";
             this.subMenuJusti.Size = new System.Drawing.Size(278, 190);
             // 
-            // bt_aprobarJustificacion
-            // 
-            this.bt_aprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_aprobarJustificacion.Image")));
-            this.bt_aprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_aprobarJustificacion.Name = "bt_aprobarJustificacion";
-            this.bt_aprobarJustificacion.Size = new System.Drawing.Size(277, 26);
-            this.bt_aprobarJustificacion.Text = "Aprobar Justificacion";
-            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(274, 6);
-            // 
-            // bt_editJusti
-            // 
-            this.bt_editJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_editJusti.Image")));
-            this.bt_editJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_editJusti.Name = "bt_editJusti";
-            this.bt_editJusti.Size = new System.Drawing.Size(277, 26);
-            this.bt_editJusti.Text = "Editar Justificacion";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(274, 6);
             // 
-            // bt_ElimiJusti
-            // 
-            this.bt_ElimiJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_ElimiJusti.Image")));
-            this.bt_ElimiJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_ElimiJusti.Name = "bt_ElimiJusti";
-            this.bt_ElimiJusti.Size = new System.Drawing.Size(277, 26);
-            this.bt_ElimiJusti.Text = "Eliminar Justificacion";
-            // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(274, 6);
-            // 
-            // bt_mostrarJusti
-            // 
-            this.bt_mostrarJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarJusti.Image")));
-            this.bt_mostrarJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_mostrarJusti.Name = "bt_mostrarJusti";
-            this.bt_mostrarJusti.Size = new System.Drawing.Size(277, 26);
-            this.bt_mostrarJusti.Text = "Mostrar Todo las Justificacion";
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(274, 6);
             // 
-            // bt_CopiarNroJusti
-            // 
-            this.bt_CopiarNroJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_CopiarNroJusti.Image")));
-            this.bt_CopiarNroJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_CopiarNroJusti.Name = "bt_CopiarNroJusti";
-            this.bt_CopiarNroJusti.Size = new System.Drawing.Size(277, 26);
-            this.bt_CopiarNroJusti.Text = "Copiar Nro Justificacion";
-            // 
             // aprobarJustificacionToolStripMenuItem
             // 
             this.aprobarJustificacionToolStripMenuItem.Name = "aprobarJustificacionToolStripMenuItem";
             this.aprobarJustificacionToolStripMenuItem.Size = new System.Drawing.Size(274, 6);
-            // 
-            // bt_desaprobarJustificacion
-            // 
-            this.bt_desaprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_desaprobarJustificacion.Image")));
-            this.bt_desaprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.bt_desaprobarJustificacion.Name = "bt_desaprobarJustificacion";
-            this.bt_desaprobarJustificacion.Size = new System.Drawing.Size(277, 26);
-            this.bt_desaprobarJustificacion.Text = "Desaprobar Justificacion";
             // 
             // elLabel16
             // 
@@ -2479,17 +2041,6 @@
             this.elLabel20.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.elLabel20.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(8, 5);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(84, 65);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 455;
-            this.pictureBox4.TabStop = false;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -2532,6 +2083,465 @@
             // 
             this.timerFalta.Tick += new System.EventHandler(this.timerFalta_Tick);
             // 
+            // bt_imprimirAsistenciasDelDíaTool
+            // 
+            this.bt_imprimirAsistenciasDelDíaTool.Name = "bt_imprimirAsistenciasDelDíaTool";
+            this.bt_imprimirAsistenciasDelDíaTool.Size = new System.Drawing.Size(295, 26);
+            this.bt_imprimirAsistenciasDelDíaTool.Text = "Imprimir Asistencias del Día";
+            this.bt_imprimirAsistenciasDelDíaTool.Click += new System.EventHandler(this.bt_imprimirAsistenciasDelDíaTool_Click);
+            // 
+            // lbl_lupaPerso
+            // 
+            this.lbl_lupaPerso.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_lupaPerso.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lupaPerso.ForeColor = System.Drawing.Color.White;
+            this.lbl_lupaPerso.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaPerso.Image")));
+            this.lbl_lupaPerso.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupaPerso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_lupaPerso.Name = "lbl_lupaPerso";
+            this.lbl_lupaPerso.Size = new System.Drawing.Size(32, 30);
+            this.lbl_lupaPerso.TabIndex = 32;
+            // 
+            // bt_nuevoPersonal
+            // 
+            this.bt_nuevoPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_nuevoPersonal.Image")));
+            this.bt_nuevoPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_nuevoPersonal.Name = "bt_nuevoPersonal";
+            this.bt_nuevoPersonal.Size = new System.Drawing.Size(246, 26);
+            this.bt_nuevoPersonal.Text = "Nuevo Personal";
+            this.bt_nuevoPersonal.Click += new System.EventHandler(this.bt_nuevoPersonal_Click);
+            // 
+            // bt_editarPersonal
+            // 
+            this.bt_editarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_editarPersonal.Image")));
+            this.bt_editarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_editarPersonal.Name = "bt_editarPersonal";
+            this.bt_editarPersonal.Size = new System.Drawing.Size(246, 26);
+            this.bt_editarPersonal.Text = "Editar Personal";
+            this.bt_editarPersonal.Click += new System.EventHandler(this.bt_editarPersonal_Click);
+            // 
+            // bt_registrarHuellaDigital
+            // 
+            this.bt_registrarHuellaDigital.Image = ((System.Drawing.Image)(resources.GetObject("bt_registrarHuellaDigital.Image")));
+            this.bt_registrarHuellaDigital.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_registrarHuellaDigital.Name = "bt_registrarHuellaDigital";
+            this.bt_registrarHuellaDigital.Size = new System.Drawing.Size(246, 26);
+            this.bt_registrarHuellaDigital.Text = "Registrar Huella Digital";
+            this.bt_registrarHuellaDigital.Click += new System.EventHandler(this.bt_registrarHuellaDigital_Click);
+            // 
+            // bt_eliminarPersonal
+            // 
+            this.bt_eliminarPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_eliminarPersonal.Image")));
+            this.bt_eliminarPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_eliminarPersonal.Name = "bt_eliminarPersonal";
+            this.bt_eliminarPersonal.Size = new System.Drawing.Size(246, 26);
+            this.bt_eliminarPersonal.Text = "Eliminar Personal";
+            // 
+            // bt_mostrarTodoElPersonal
+            // 
+            this.bt_mostrarTodoElPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarTodoElPersonal.Image")));
+            this.bt_mostrarTodoElPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_mostrarTodoElPersonal.Name = "bt_mostrarTodoElPersonal";
+            this.bt_mostrarTodoElPersonal.Size = new System.Drawing.Size(246, 26);
+            this.bt_mostrarTodoElPersonal.Text = "Mostrar Todo el Personal";
+            this.bt_mostrarTodoElPersonal.Click += new System.EventHandler(this.bt_mostrarTodoElPersonal_Click);
+            // 
+            // bt_copiarNroDNI
+            // 
+            this.bt_copiarNroDNI.Image = ((System.Drawing.Image)(resources.GetObject("bt_copiarNroDNI.Image")));
+            this.bt_copiarNroDNI.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_copiarNroDNI.Name = "bt_copiarNroDNI";
+            this.bt_copiarNroDNI.Size = new System.Drawing.Size(246, 26);
+            this.bt_copiarNroDNI.Text = "Copiar Nro DNI";
+            this.bt_copiarNroDNI.Click += new System.EventHandler(this.bt_copiarNroDNI_Click);
+            // 
+            // bt_solicitarJustificacion
+            // 
+            this.bt_solicitarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_solicitarJustificacion.Image")));
+            this.bt_solicitarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_solicitarJustificacion.Name = "bt_solicitarJustificacion";
+            this.bt_solicitarJustificacion.Size = new System.Drawing.Size(246, 26);
+            this.bt_solicitarJustificacion.Text = "Solicitar Justificacion";
+            // 
+            // btn_VerTodoPerso
+            // 
+            this.btn_VerTodoPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_VerTodoPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_VerTodoPerso.FlatAppearance.BorderSize = 0;
+            this.btn_VerTodoPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.btn_VerTodoPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_VerTodoPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_VerTodoPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_VerTodoPerso.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodoPerso.Image")));
+            this.btn_VerTodoPerso.Location = new System.Drawing.Point(1161, 279);
+            this.btn_VerTodoPerso.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_VerTodoPerso.Name = "btn_VerTodoPerso";
+            this.btn_VerTodoPerso.Size = new System.Drawing.Size(41, 42);
+            this.btn_VerTodoPerso.TabIndex = 434;
+            this.btn_VerTodoPerso.UseVisualStyleBackColor = true;
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
+            this.PictureBox2.Location = new System.Drawing.Point(15, 21);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(84, 65);
+            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox2.TabIndex = 437;
+            this.PictureBox2.TabStop = false;
+            // 
+            // Btn_Cerrar_TabPers
+            // 
+            this.Btn_Cerrar_TabPers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Cerrar_TabPers.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.Btn_Cerrar_TabPers.FlatAppearance.BorderSize = 0;
+            this.Btn_Cerrar_TabPers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.Btn_Cerrar_TabPers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.Btn_Cerrar_TabPers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.Btn_Cerrar_TabPers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cerrar_TabPers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_TabPers.Image")));
+            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1560, 25);
+            this.Btn_Cerrar_TabPers.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_Cerrar_TabPers.Name = "Btn_Cerrar_TabPers";
+            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(41, 42);
+            this.Btn_Cerrar_TabPers.TabIndex = 434;
+            this.Btn_Cerrar_TabPers.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar_TabPers.Click += new System.EventHandler(this.Btn_Cerrar_TabPers_Click);
+            // 
+            // Btn_EditPerso
+            // 
+            this.Btn_EditPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_EditPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.Btn_EditPerso.FlatAppearance.BorderSize = 0;
+            this.Btn_EditPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.Btn_EditPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.Btn_EditPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.Btn_EditPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_EditPerso.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EditPerso.Image")));
+            this.Btn_EditPerso.Location = new System.Drawing.Point(1161, 217);
+            this.Btn_EditPerso.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_EditPerso.Name = "Btn_EditPerso";
+            this.Btn_EditPerso.Size = new System.Drawing.Size(41, 42);
+            this.Btn_EditPerso.TabIndex = 433;
+            this.Btn_EditPerso.UseVisualStyleBackColor = true;
+            // 
+            // Bt_NewPerso
+            // 
+            this.Bt_NewPerso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bt_NewPerso.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.Bt_NewPerso.FlatAppearance.BorderSize = 0;
+            this.Bt_NewPerso.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.Bt_NewPerso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.Bt_NewPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.Bt_NewPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_NewPerso.Image = ((System.Drawing.Image)(resources.GetObject("Bt_NewPerso.Image")));
+            this.Bt_NewPerso.Location = new System.Drawing.Point(1161, 167);
+            this.Bt_NewPerso.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_NewPerso.Name = "Bt_NewPerso";
+            this.Bt_NewPerso.Size = new System.Drawing.Size(41, 42);
+            this.Bt_NewPerso.TabIndex = 432;
+            this.Bt_NewPerso.UseVisualStyleBackColor = true;
+            // 
+            // lbl_lupaAsis
+            // 
+            this.lbl_lupaAsis.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_lupaAsis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lupaAsis.ForeColor = System.Drawing.Color.White;
+            this.lbl_lupaAsis.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaAsis.Image")));
+            this.lbl_lupaAsis.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupaAsis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_lupaAsis.Name = "lbl_lupaAsis";
+            this.lbl_lupaAsis.Size = new System.Drawing.Size(32, 30);
+            this.lbl_lupaAsis.TabIndex = 32;
+            this.lbl_lupaAsis.Click += new System.EventHandler(this.lbl_lupaAsis_Click);
+            // 
+            // btn_Asis_With_Huella
+            // 
+            this.btn_Asis_With_Huella.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Asis_With_Huella.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_Asis_With_Huella.FlatAppearance.BorderSize = 0;
+            this.btn_Asis_With_Huella.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.btn_Asis_With_Huella.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_Asis_With_Huella.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_Asis_With_Huella.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Asis_With_Huella.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_With_Huella.Image")));
+            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1505, 105);
+            this.btn_Asis_With_Huella.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Asis_With_Huella.Name = "btn_Asis_With_Huella";
+            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(41, 42);
+            this.btn_Asis_With_Huella.TabIndex = 465;
+            this.btn_Asis_With_Huella.UseVisualStyleBackColor = true;
+            this.btn_Asis_With_Huella.Click += new System.EventHandler(this.btn_Asis_With_Huella_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(295, 26);
+            this.toolStripMenuItem1.Text = "Marcar Asistencia Manual";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
+            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(295, 26);
+            this.toolStripMenuItem2.Text = "Marcar Asistencia Biometrico";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
+            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(295, 26);
+            this.toolStripMenuItem3.Text = "Eliminar Asistencia";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
+            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(295, 26);
+            this.toolStripMenuItem4.Text = "Mostrar Todo Asistencia";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
+            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(295, 26);
+            this.toolStripMenuItem5.Text = "Copiar Nro Dni";
+            // 
+            // bt_imprimirAsistenciaPorPersonal
+            // 
+            this.bt_imprimirAsistenciaPorPersonal.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaPorPersonal.Image")));
+            this.bt_imprimirAsistenciaPorPersonal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_imprimirAsistenciaPorPersonal.Name = "bt_imprimirAsistenciaPorPersonal";
+            this.bt_imprimirAsistenciaPorPersonal.Size = new System.Drawing.Size(295, 26);
+            this.bt_imprimirAsistenciaPorPersonal.Text = "Imprimir Asistencia por Personal";
+            // 
+            // bt_imprimirAsistenciaDelMes
+            // 
+            this.bt_imprimirAsistenciaDelMes.Image = ((System.Drawing.Image)(resources.GetObject("bt_imprimirAsistenciaDelMes.Image")));
+            this.bt_imprimirAsistenciaDelMes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_imprimirAsistenciaDelMes.Name = "bt_imprimirAsistenciaDelMes";
+            this.bt_imprimirAsistenciaDelMes.Size = new System.Drawing.Size(295, 26);
+            this.bt_imprimirAsistenciaDelMes.Text = "Imprimir Asistencia Del Mes";
+            this.bt_imprimirAsistenciaDelMes.Click += new System.EventHandler(this.bt_imprimirAsistenciaDelMes_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(84, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 452;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btn_Asis_Manual
+            // 
+            this.btn_Asis_Manual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Asis_Manual.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_Asis_Manual.FlatAppearance.BorderSize = 0;
+            this.btn_Asis_Manual.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.btn_Asis_Manual.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_Asis_Manual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_Asis_Manual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Asis_Manual.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_Manual.Image")));
+            this.btn_Asis_Manual.Location = new System.Drawing.Point(1505, 23);
+            this.btn_Asis_Manual.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Asis_Manual.Name = "btn_Asis_Manual";
+            this.btn_Asis_Manual.Size = new System.Drawing.Size(41, 42);
+            this.btn_Asis_Manual.TabIndex = 432;
+            this.btn_Asis_Manual.UseVisualStyleBackColor = true;
+            this.btn_Asis_Manual.Click += new System.EventHandler(this.btn_nuevoAsis_Click);
+            // 
+            // btn_cerrarEx_Asis
+            // 
+            this.btn_cerrarEx_Asis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cerrarEx_Asis.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_cerrarEx_Asis.FlatAppearance.BorderSize = 0;
+            this.btn_cerrarEx_Asis.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.btn_cerrarEx_Asis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.btn_cerrarEx_Asis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.btn_cerrarEx_Asis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrarEx_Asis.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrarEx_Asis.Image")));
+            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1557, 23);
+            this.btn_cerrarEx_Asis.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cerrarEx_Asis.Name = "btn_cerrarEx_Asis";
+            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(41, 42);
+            this.btn_cerrarEx_Asis.TabIndex = 434;
+            this.btn_cerrarEx_Asis.UseVisualStyleBackColor = true;
+            this.btn_cerrarEx_Asis.Click += new System.EventHandler(this.btn_cerrarEx_Asis_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 22);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(84, 65);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 455;
+            this.pictureBox5.TabStop = false;
+            // 
+            // PictureBox10
+            // 
+            this.PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox10.Image")));
+            this.PictureBox10.Location = new System.Drawing.Point(176, 181);
+            this.PictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.PictureBox10.Name = "PictureBox10";
+            this.PictureBox10.Size = new System.Drawing.Size(93, 80);
+            this.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox10.TabIndex = 55;
+            this.PictureBox10.TabStop = false;
+            // 
+            // lbl_lupajusti
+            // 
+            this.lbl_lupajusti.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_lupajusti.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lupajusti.ForeColor = System.Drawing.Color.White;
+            this.lbl_lupajusti.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupajusti.Image")));
+            this.lbl_lupajusti.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupajusti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_lupajusti.Name = "lbl_lupajusti";
+            this.lbl_lupajusti.Size = new System.Drawing.Size(32, 30);
+            this.lbl_lupajusti.TabIndex = 32;
+            // 
+            // bt_cerrarjusti
+            // 
+            this.bt_cerrarjusti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_cerrarjusti.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.bt_cerrarjusti.FlatAppearance.BorderSize = 0;
+            this.bt_cerrarjusti.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.bt_cerrarjusti.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.bt_cerrarjusti.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.bt_cerrarjusti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_cerrarjusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_cerrarjusti.Image")));
+            this.bt_cerrarjusti.Location = new System.Drawing.Point(1555, 14);
+            this.bt_cerrarjusti.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_cerrarjusti.Name = "bt_cerrarjusti";
+            this.bt_cerrarjusti.Size = new System.Drawing.Size(41, 42);
+            this.bt_cerrarjusti.TabIndex = 467;
+            this.bt_cerrarjusti.UseVisualStyleBackColor = true;
+            // 
+            // bt_aprobarJustificacion
+            // 
+            this.bt_aprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_aprobarJustificacion.Image")));
+            this.bt_aprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_aprobarJustificacion.Name = "bt_aprobarJustificacion";
+            this.bt_aprobarJustificacion.Size = new System.Drawing.Size(277, 26);
+            this.bt_aprobarJustificacion.Text = "Aprobar Justificacion";
+            // 
+            // bt_editJusti
+            // 
+            this.bt_editJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_editJusti.Image")));
+            this.bt_editJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_editJusti.Name = "bt_editJusti";
+            this.bt_editJusti.Size = new System.Drawing.Size(277, 26);
+            this.bt_editJusti.Text = "Editar Justificacion";
+            // 
+            // bt_ElimiJusti
+            // 
+            this.bt_ElimiJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_ElimiJusti.Image")));
+            this.bt_ElimiJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_ElimiJusti.Name = "bt_ElimiJusti";
+            this.bt_ElimiJusti.Size = new System.Drawing.Size(277, 26);
+            this.bt_ElimiJusti.Text = "Eliminar Justificacion";
+            // 
+            // bt_mostrarJusti
+            // 
+            this.bt_mostrarJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_mostrarJusti.Image")));
+            this.bt_mostrarJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_mostrarJusti.Name = "bt_mostrarJusti";
+            this.bt_mostrarJusti.Size = new System.Drawing.Size(277, 26);
+            this.bt_mostrarJusti.Text = "Mostrar Todo las Justificacion";
+            // 
+            // bt_CopiarNroJusti
+            // 
+            this.bt_CopiarNroJusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_CopiarNroJusti.Image")));
+            this.bt_CopiarNroJusti.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_CopiarNroJusti.Name = "bt_CopiarNroJusti";
+            this.bt_CopiarNroJusti.Size = new System.Drawing.Size(277, 26);
+            this.bt_CopiarNroJusti.Text = "Copiar Nro Justificacion";
+            // 
+            // bt_desaprobarJustificacion
+            // 
+            this.bt_desaprobarJustificacion.Image = ((System.Drawing.Image)(resources.GetObject("bt_desaprobarJustificacion.Image")));
+            this.bt_desaprobarJustificacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.bt_desaprobarJustificacion.Name = "bt_desaprobarJustificacion";
+            this.bt_desaprobarJustificacion.Size = new System.Drawing.Size(277, 26);
+            this.bt_desaprobarJustificacion.Text = "Desaprobar Justificacion";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(8, 5);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(84, 65);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 455;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pic_user
+            // 
+            this.pic_user.Image = global::MicroSisPlani.Properties.Resources.user;
+            this.pic_user.Location = new System.Drawing.Point(1452, 6);
+            this.pic_user.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_user.Name = "pic_user";
+            this.pic_user.Size = new System.Drawing.Size(68, 66);
+            this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_user.TabIndex = 5;
+            this.pic_user.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, -25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(309, 145);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btn_mini
+            // 
+            this.btn_mini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_mini.FlatAppearance.BorderSize = 0;
+            this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mini.ForeColor = System.Drawing.Color.White;
+            this.btn_mini.Image = ((System.Drawing.Image)(resources.GetObject("btn_mini.Image")));
+            this.btn_mini.Location = new System.Drawing.Point(1548, 6);
+            this.btn_mini.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mini.Name = "btn_mini";
+            this.btn_mini.Size = new System.Drawing.Size(43, 39);
+            this.btn_mini.TabIndex = 3;
+            this.btn_mini.UseVisualStyleBackColor = true;
+            this.btn_mini.Click += new System.EventHandler(this.btn_mini_Click);
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Salir.FlatAppearance.BorderSize = 0;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salir.ForeColor = System.Drawing.Color.White;
+            this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
+            this.btn_Salir.Location = new System.Drawing.Point(1599, 6);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(43, 39);
+            this.btn_Salir.TabIndex = 2;
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2551,8 +2561,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Principal_FormClosing);
             this.Load += new System.EventHandler(this.Frm_Principal_Load);
             this.pnl_titu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTab1)).EndInit();
             this.elTab1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage1)).EndInit();
@@ -2573,7 +2581,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ElLabel1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.SubMenu_Person.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage3)).EndInit();
             this.elTabPage3.ResumeLayout(false);
@@ -2589,12 +2596,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage4)).EndInit();
             this.elTabPage4.ResumeLayout(false);
             this.elTabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider4)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -2603,7 +2608,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lbl_Cont)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_Desact_Robot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_ActivarRobot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Savedrobot)).EndInit();
@@ -2621,8 +2625,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elLabel20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2786,5 +2796,6 @@
         private System.Windows.Forms.DateTimePicker dtp_fechadeldia;
         private System.Windows.Forms.ToolStripMenuItem bt_verAsistenciasDelDiaT;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
+        private System.Windows.Forms.ToolStripMenuItem bt_imprimirAsistenciasDelDíaTool;
     }
 }

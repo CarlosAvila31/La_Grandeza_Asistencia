@@ -1,14 +1,18 @@
-﻿using System;
+﻿using Prj_Capa_Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using System.Xml.Linq;
+using static MetroFramework.Drawing.MetroPaint;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace MicroSisPlani.Informes
 {
@@ -27,14 +31,8 @@ namespace MicroSisPlani.Informes
 
         private void Frm_Print_Asistencia_Load(object sender, EventArgs e)
         {
-          
-
-           
-
+            
         }
-
-
-
 
         private void btn_Cerrar_Click(object sender, EventArgs e)
         {

@@ -704,5 +704,49 @@ namespace MicroSisPlani
                 }
             }
         }
+
+        private void bt_imprimirAsistenciasDelDíaTool_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
+
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (solo.Tag.ToString() == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            fil.Show();
+            asis.tipoInfo = "deldia";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
+        }
+
+        private void bt_imprimirAsistenciaDelMes_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
+
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (solo.Tag.ToString() == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            fil.Show();
+            asis.tipoInfo = "delmes";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
+        }
     }
 }

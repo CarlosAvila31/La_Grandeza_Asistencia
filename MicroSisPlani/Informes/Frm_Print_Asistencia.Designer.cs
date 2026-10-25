@@ -33,7 +33,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnl_titulo = new System.Windows.Forms.Panel();
             this.lbl_Titulo = new System.Windows.Forms.Label();
-            this.Vsr_Asis = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_exportar = new System.Windows.Forms.Button();
             this.btn_Imprimir = new System.Windows.Forms.Button();
@@ -78,19 +77,6 @@
             // 
             // Vsr_Asis
             // 
-            this.Vsr_Asis.ActiveViewIndex = -1;
-            this.Vsr_Asis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Vsr_Asis.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Vsr_Asis.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Vsr_Asis.Location = new System.Drawing.Point(0, 30);
-            this.Vsr_Asis.Name = "Vsr_Asis";
-            this.Vsr_Asis.ShowCloseButton = false;
-            this.Vsr_Asis.ShowGroupTreeButton = false;
-            this.Vsr_Asis.ShowLogo = false;
-            this.Vsr_Asis.ShowParameterPanelButton = false;
-            this.Vsr_Asis.Size = new System.Drawing.Size(986, 643);
-            this.Vsr_Asis.TabIndex = 430;
-            this.Vsr_Asis.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // btn_refresh
             // 
@@ -157,7 +143,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 685);
-            this.Controls.Add(this.Vsr_Asis);
             this.Controls.Add(this.pnl_titulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Print_Asistencia";
@@ -179,6 +164,5 @@
         internal System.Windows.Forms.Button btn_Imprimir;
         internal System.Windows.Forms.Button btn_Cerrar;
         internal System.Windows.Forms.Label lbl_Titulo;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer Vsr_Asis;
     }
 }
