@@ -23,6 +23,11 @@ namespace Prj_Capa_Negocio
             obj.BD_Editar_Personal(per);
         }
 
+        public void RN_Eliminar_Personal(string dni)
+        {
+            BD_Personal obj = new BD_Personal();
+            obj.BD_Eliminar_Personal(dni);
+        }
 
         public void RN_Registrar_Huella_Personal(string idper, object finguer)
         {

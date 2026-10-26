@@ -14,6 +14,8 @@ namespace Prj_Capa_Datos
     {
         public static bool saved = false;
         public static bool edited = false;
+
+        public static bool deleted = false;
         public void BD_Registrar_Personal(EN_Persona per)
         {
 
@@ -103,6 +105,36 @@ namespace Prj_Capa_Datos
         }//FIN
 
 
+        public void BD_Eliminar_Personal(string dni)
+        {
+            using (SqlConnection cn = new SqlConnection(Conectar()))
+            {
+                SqlCommand cmd = new SqlCommand("Sp_Eliminar_Personal", cn);
+                cmd.CommandTimeout = 20;
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Parámetro para el SP
+                cmd.Parameters.AddWithValue("@dni", dni);
+
+                try
+                {
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+
+                    deleted = true; // puedes usar una bandera similar a "edited"
+                }
+                catch (Exception ex)
+                {
+                    deleted = false;
+                    if (cn.State == ConnectionState.Open)
+                        cn.Close();
+
+                    MessageBox.Show("Error al eliminar Personal: " + ex.Message,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
 
         public static bool huella = false;

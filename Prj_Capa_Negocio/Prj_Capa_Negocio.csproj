@@ -57,6 +57,7 @@
     <Compile Include="RN_Distrito.cs" />
     <Compile Include="RN_Horario.cs" />
     <Compile Include="RN_Justificacion.cs" />
+    <Compile Include="RN_Nomina.cs" />
     <Compile Include="RN_Personal.cs" />
     <Compile Include="RN_Rol.cs" />
     <Compile Include="RN_Utilitario.cs" />
