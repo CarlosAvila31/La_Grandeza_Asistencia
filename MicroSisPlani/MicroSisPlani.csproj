@@ -138,7 +138,8 @@
     </Compile>
     <Compile Include="Informes\Frm_PrintAsis_deldia.Designer.cs">
       <DependentUpon>Frm_PrintAsis_deldia.cs</DependentUpon>
-    <Compile Include="Frm_Rol_Descansos.cs">
+	</Compile>
+	<Compile Include="Frm_Rol_Descansos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Rol_Descansos.Designer.cs">
@@ -234,6 +235,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\Frm_PrintAsis_deldia.resx">
       <DependentUpon>Frm_PrintAsis_deldia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Rol_Descansos.resx">
       <DependentUpon>Frm_Rol_Descansos.cs</DependentUpon>
     </EmbeddedResource>
