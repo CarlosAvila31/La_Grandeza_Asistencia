@@ -1,4 +1,5 @@
 ﻿using Klik.Windows.Forms.v1.EntryLib;
+using MicroSisPlani.Informes;
 using MicroSisPlani.Msm_Forms;
 using MicroSisPlani.Personal;
 using Prj_Capa_Datos;
@@ -88,10 +89,6 @@ namespace MicroSisPlani
             }
         }
 
-        private void btn_Inicio_Click(object sender, EventArgs e)
-        {
-           tabControl1.SelectedTab = Tab_Inicio;
-        }
 
         private void btn_Asistencia_Click(object sender, EventArgs e)
         {
@@ -175,7 +172,7 @@ namespace MicroSisPlani
             lis.Items.Clear();
 
             // Tus columnas originales con los anchos correctos
-            lis.Columns.Add("Id Persona", 0, HorizontalAlignment.Left);
+            lis.Columns.Add("Id del Personal", 0, HorizontalAlignment.Left);
             lis.Columns.Add("Dni", 95, HorizontalAlignment.Left);
             lis.Columns.Add("Nombre del Empleado", 316, HorizontalAlignment.Left);
             lis.Columns.Add("Direccion", 120, HorizontalAlignment.Left);
@@ -308,7 +305,33 @@ namespace MicroSisPlani
 
         private void btn_Eliminar_Personal_Click(object sender, EventArgs e)
         {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+            RN_Personal obj = new RN_Personal();
 
+            if (lsv_person.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("Seleccione un personal para eliminar",
+                                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                var lsv = lsv_person.SelectedItems[0];
+                string dni = lsv.SubItems[1].Text; // ojo: depende de qué columna tengas el DNI
+
+                obj.RN_Eliminar_Personal(dni);
+
+                if (BD_Personal.deleted == true)
+                {
+                    fil.Show();
+                    ok.Lbl_msm1.Text = "El personal se ha eliminado correctamente";
+                    ok.ShowDialog();
+                    fil.Hide();
+
+                    Cargar_Todo_Personal(); // refresca la lista
+                }
+
+            }
         }
 
 
@@ -336,15 +359,15 @@ namespace MicroSisPlani
             lis.Columns.Clear();
             lis.Items.Clear();
 
-            lis.Columns.Add("Id Asis", 0, HorizontalAlignment.Left);
+            lis.Columns.Add("Id de Asistencia", 0, HorizontalAlignment.Left);
             lis.Columns.Add("Dni", 85, HorizontalAlignment.Left);
-            lis.Columns.Add("Nombres del personal", 240, HorizontalAlignment.Left);
+            lis.Columns.Add("Empleado", 240, HorizontalAlignment.Left);
             lis.Columns.Add("Fecha", 90, HorizontalAlignment.Center);
             lis.Columns.Add("Día", 80, HorizontalAlignment.Left);
-            lis.Columns.Add("Ho Ingreso", 90, HorizontalAlignment.Center);
+            lis.Columns.Add("Hora de Ingreso", 90, HorizontalAlignment.Center);
             lis.Columns.Add("Tardanza", 75, HorizontalAlignment.Center);
-            lis.Columns.Add("Ho Salida", 90, HorizontalAlignment.Center);
-            lis.Columns.Add("Adelant", 80, HorizontalAlignment.Center);
+            lis.Columns.Add("Hora de Salida", 90, HorizontalAlignment.Center);
+            lis.Columns.Add("Adelanto", 80, HorizontalAlignment.Center);
             lis.Columns.Add("Justificacion", 120, HorizontalAlignment.Left);
             lis.Columns.Add("Estado", 100, HorizontalAlignment.Left);
         }
@@ -611,12 +634,63 @@ namespace MicroSisPlani
 
         private void btn_Reporte_Dia_Click(object sender, EventArgs e)
         {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
 
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (Convert.ToString(solo.Tag) == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            // Verificamos si existen asistencias para ese día
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = obj.RN_Ver_Todas_Asistencias_Deldia(xdia);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "No hay asistencias registradas para este día.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                return;
+            }
+
+            // Solo abre el formulario de impresión si hay asistencias
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+
+            fil.Show();
+            asis.tipoInfo = "deldia";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
         }
 
         private void btn_Reporte_Mes_Click(object sender, EventArgs e)
         {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
 
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (solo.Tag.ToString() == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            fil.Show();
+            asis.tipoInfo = "delmes";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
         }
 
         private void btn_Cargar_Asistencias_Click(object sender, EventArgs e)
@@ -702,6 +776,54 @@ namespace MicroSisPlani
                     return;
                 {
                     Cargar_Todo_Personal();
+                }
+            }
+        }
+
+        private void btn_Nomina_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            fil.Show();
+            new Frm_Nomina().ShowDialog();
+            fil.Hide();
+        }
+
+        private void btn_Descanso_Click(object sender, EventArgs e)
+        {
+            Frm_Rol_Descansos rol = new Frm_Rol_Descansos();
+
+            rol.Show();
+        }
+
+
+        private void btn_AsistenciaBot_Click(object sender, EventArgs e)
+        {
+            RN_Utilitario uti = new RN_Utilitario();
+
+            if (rdb_ActivarRobot.Checked == true)
+            {
+                uti.RN_Actualizar_RobotFalta(5, "Si");
+                if (BD_Utilitario.falta == true)
+                {
+                    Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+                    ok.Lbl_msm1.Text = "El Robot de Faltas fue Activado";
+                    ok.ShowDialog();
+
+                    Tab_Config.Visible = true;
+                    tabControl1.SelectedTab = tabControl1.TabPages[3];
+                }
+            }
+            else if (rdb_Desact_Robot.Checked == true)
+            {
+                uti.RN_Actualizar_RobotFalta(5, "No");
+
+                if (BD_Utilitario.falta == true)
+                {
+                    Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+                    ok.Lbl_msm1.Text = "El Robot de Faltas fue Desactivado";
+                    ok.ShowDialog();
+                    Tab_Config.Visible = true;
+                    tabControl1.SelectedTab = tabControl1.TabPages[3];
                 }
             }
         }

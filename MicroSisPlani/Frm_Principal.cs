@@ -841,6 +841,9 @@ namespace MicroSisPlani
             fil.Hide();
         }
 
-        
+        private void btn_apagar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

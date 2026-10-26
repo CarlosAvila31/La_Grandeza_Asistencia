@@ -150,8 +150,8 @@
     </Compile>
     <Compile Include="Informes\Frm_PrintAsis_deldia.Designer.cs">
       <DependentUpon>Frm_PrintAsis_deldia.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Frm_Rol_Descansos.cs">
+    </Compile>
+    <Compile Include="Frm_Rol_Descansos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Rol_Descansos.Designer.cs">
@@ -176,6 +176,7 @@
       <DependentUpon>Frm_Solo_Personal_Fecha.cs</DependentUpon>
     </Compile>
     <Compile Include="Informes\Helpers\UtilidadesTiempo.cs" />
+    <Compile Include="Informes\NominaPdf.cs" />
     <Compile Include="Msm_Forms\Frm_Filtro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +206,12 @@
     </Compile>
     <Compile Include="Personal\Frm_Explorador_Personal.Designer.cs">
       <DependentUpon>Frm_Explorador_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\Frm_Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\Frm_Nomina.Designer.cs">
+      <DependentUpon>Frm_Nomina.cs</DependentUpon>
     </Compile>
     <Compile Include="Personal\Frm_Registro_Personal.cs">
       <SubType>Form</SubType>
@@ -280,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personal\Frm_Explorador_Personal.resx">
       <DependentUpon>Frm_Explorador_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\Frm_Nomina.resx">
+      <DependentUpon>Frm_Nomina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personal\Frm_Registro_Personal.resx">
       <DependentUpon>Frm_Registro_Personal.cs</DependentUpon>
