@@ -90,7 +90,7 @@ namespace MicroSisPlani
                 }
 
                 this.Hide();
-                Frm_Principal xMenuPrincipal = new Frm_Principal();
+                Frm_Admin_Home xMenuPrincipal = new Frm_Admin_Home();
                 xMenuPrincipal.Show();
                 xMenuPrincipal.Cargar_Datos_Usuario();
             }

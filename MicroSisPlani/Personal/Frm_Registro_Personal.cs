@@ -357,7 +357,20 @@ namespace MicroSisPlani.Personal
                     txt_correo.Text = Convert.ToString(data.Rows[0]["Correo"]);
                     txt_NroCelular.Text = Convert.ToString(data.Rows[0]["Celular"]);
                     dtp_fechaNaci.Value = Convert.ToDateTime(data.Rows[0]["Fec_Naci"]);
-                    cbo_sexo.Text = Convert.ToString(data.Rows[0]["Sexo"]);
+                    string sexoGuardado = Convert.ToString(data.Rows[0]["Sexo"]).Trim();
+
+                    if (sexoGuardado == "M")
+                    {
+                        cbo_sexo.Text = "Masculino";
+                    }
+                    else if (sexoGuardado == "F")
+                    {
+                        cbo_sexo.Text = "Femenino";
+                    }
+                    else
+                    {
+                        cbo_sexo.Text = sexoGuardado;
+                    }
                     cbo_rol.SelectedValue = data.Rows[0]["Id_rol"];
                     cbo_Distrito.SelectedValue = data.Rows[0]["Id_Distrito"];
                     txt_IdPersona.Text = Convert.ToString(data.Rows[0]["Id_Pernl"]);
