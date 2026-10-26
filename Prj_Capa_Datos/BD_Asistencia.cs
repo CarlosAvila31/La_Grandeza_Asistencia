@@ -540,5 +540,55 @@ namespace Prj_Capa_Datos
             }
         }
 
+        public void BD_Registrar_Falta_Personal(string idAsis, string idPerso, string nomdia, string justificacion, string estado)
+        {
+            SqlConnection cn = new SqlConnection(Conectar());
+            SqlCommand Cmd = new SqlCommand("Sp_Registrar_Falta", cn);
+            try
+            {
+                Cmd.CommandTimeout = 20;
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("@IdAsis", idAsis);
+                Cmd.Parameters.AddWithValue("@Id_Personal", idPerso);
+                Cmd.Parameters.AddWithValue("@nomdia", nomdia);
+                Cmd.Parameters.AddWithValue("@justificacion", justificacion);
+                Cmd.Parameters.AddWithValue("@estado", estado);   // "Falta" o "Suspension"
+                cn.Open();
+                Cmd.ExecuteNonQuery();
+                cn.Close();
+                faltasaved = true;
+            }
+            catch (Exception ex)
+            {
+                faltasaved = false;
+                if (cn.State == ConnectionState.Open) cn.Close();
+                MessageBox.Show("Falla en registrar la falta: " + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public int BD_Tardanzas_Pendientes(string idPerso)
+        {
+            using (SqlConnection cn = new SqlConnection(Conectar()))
+            using (SqlCommand cmd = new SqlCommand("Sp_Tardanzas_Pendientes", cn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Personal", idPerso.Trim());
+                cn.Open();
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
+
+        public bool BD_Suspendido_Hoy(string idPerso)
+        {
+            using (SqlConnection cn = new SqlConnection(Conectar()))
+            using (SqlCommand cmd = new SqlCommand("Sp_Suspension_Hoy", cn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Personal", idPerso.Trim());
+                cn.Open();
+                return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+            }
+        }
+
     }
 }
