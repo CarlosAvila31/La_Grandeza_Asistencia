@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle1 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle2 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle3 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle4 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle5 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle6 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle7 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle8 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle9 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle10 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle11 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle12 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle13 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle14 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle15 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle16 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle17 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle18 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle19 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle20 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle21 = new Klik.Windows.Forms.v1.Common.PaintStyle();
-            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle22 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle23 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle24 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle25 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle26 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle27 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle28 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle29 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle30 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle31 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle32 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle33 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle34 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle35 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle36 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle37 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle38 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle39 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle40 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle41 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle42 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle43 = new Klik.Windows.Forms.v1.Common.PaintStyle();
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle44 = new Klik.Windows.Forms.v1.Common.PaintStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnl_titu = new System.Windows.Forms.Panel();
             this.lbl_rolNom = new System.Windows.Forms.Label();
@@ -62,17 +62,18 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.elTab1 = new Klik.Windows.Forms.v1.EntryLib.ELTab();
             this.elTabPage1 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bt_Config = new Klik.Windows.Forms.v1.EntryLib.ELButton();
-            this.bt_exploJusti = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.bt_Explo_Asis = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.bt_personal = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_titulo1 = new System.Windows.Forms.Panel();
             this.elTabPage2 = new Klik.Windows.Forms.v1.EntryLib.ELTabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.ElLabel7 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.ElLabel6 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.ElLabel5 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
@@ -129,6 +130,7 @@
             this.bt_imprimirAsistenciaDelMes = new System.Windows.Forms.ToolStripMenuItem();
             this.bt_verAsistenciasDelDiaT = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.bt_imprimirAsistenciasDelDíaTool = new System.Windows.Forms.ToolStripMenuItem();
             this.elLabel15 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel14 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.elLabel13 = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
@@ -209,6 +211,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timerFalta = new System.Windows.Forms.Timer(this.components);
+            this.bt_nomina1 = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.pnl_titu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -217,7 +220,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage1)).BeginInit();
             this.elTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_Config)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bt_exploJusti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_Explo_Asis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_personal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage2)).BeginInit();
@@ -274,6 +276,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_nomina1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -293,7 +296,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1040, 70);
+            this.pnl_titu.Size = new System.Drawing.Size(1242, 56);
             this.pnl_titu.TabIndex = 5;
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
             // 
@@ -321,9 +324,11 @@
             // 
             // pic_user
             // 
-            this.pic_user.Location = new System.Drawing.Point(1089, 5);
+            this.pic_user.Image = global::MicroSisPlani.Properties.Resources.user;
+            this.pic_user.Location = new System.Drawing.Point(1452, 6);
+            this.pic_user.Margin = new System.Windows.Forms.Padding(4);
             this.pic_user.Name = "pic_user";
-            this.pic_user.Size = new System.Drawing.Size(51, 54);
+            this.pic_user.Size = new System.Drawing.Size(68, 66);
             this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_user.TabIndex = 5;
             this.pic_user.TabStop = false;
@@ -331,9 +336,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, -20);
+            this.pictureBox1.Location = new System.Drawing.Point(4, -25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(232, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(309, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -346,9 +352,10 @@
             this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mini.ForeColor = System.Drawing.Color.White;
             this.btn_mini.Image = ((System.Drawing.Image)(resources.GetObject("btn_mini.Image")));
-            this.btn_mini.Location = new System.Drawing.Point(959, 5);
+            this.btn_mini.Location = new System.Drawing.Point(1548, 6);
+            this.btn_mini.Margin = new System.Windows.Forms.Padding(4);
             this.btn_mini.Name = "btn_mini";
-            this.btn_mini.Size = new System.Drawing.Size(32, 32);
+            this.btn_mini.Size = new System.Drawing.Size(43, 39);
             this.btn_mini.TabIndex = 3;
             this.btn_mini.UseVisualStyleBackColor = true;
             this.btn_mini.Click += new System.EventHandler(this.btn_mini_Click);
@@ -360,9 +367,10 @@
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(997, 5);
+            this.btn_Salir.Location = new System.Drawing.Point(1599, 6);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(32, 32);
+            this.btn_Salir.Size = new System.Drawing.Size(43, 39);
             this.btn_Salir.TabIndex = 2;
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -411,12 +419,13 @@
             this.elTabPage1.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage1.CaptionTextStyle.Text = "    Inicio";
             this.elTabPage1.CaptionTextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elTabPage1.Controls.Add(this.bt_nomina1);
+            this.elTabPage1.Controls.Add(this.button2);
             this.elTabPage1.Controls.Add(this.label5);
             this.elTabPage1.Controls.Add(this.label4);
             this.elTabPage1.Controls.Add(this.label3);
             this.elTabPage1.Controls.Add(this.label2);
             this.elTabPage1.Controls.Add(this.bt_Config);
-            this.elTabPage1.Controls.Add(this.bt_exploJusti);
             this.elTabPage1.Controls.Add(this.bt_Explo_Asis);
             this.elTabPage1.Controls.Add(this.bt_personal);
             this.elTabPage1.Controls.Add(this.label1);
@@ -425,6 +434,16 @@
             this.elTabPage1.Name = "elTabPage1";
             this.elTabPage1.Size = new System.Drawing.Size(1209, 456);
             this.elTabPage1.Click += new System.EventHandler(this.elTabPage1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(595, 366);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -442,11 +461,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(716, 281);
+            this.label4.Location = new System.Drawing.Point(732, 285);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 19);
+            this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Justificaciones";
+            this.label4.Text = "Nomina";
             // 
             // label3
             // 
@@ -484,6 +503,7 @@
             this.bt_Config.DropDownArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.bt_Config.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.bt_Config.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.bt_Config.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.confi;
             this.bt_Config.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bt_Config.Location = new System.Drawing.Point(904, 149);
             this.bt_Config.Name = "bt_Config";
@@ -502,37 +522,6 @@
             this.bt_Config.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
             this.bt_Config.Click += new System.EventHandler(this.bt_Config_Click);
             // 
-            // bt_exploJusti
-            // 
-            this.bt_exploJusti.BackgroundStyle.GradientEndColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exploJusti.BackgroundStyle.GradientStartColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exploJusti.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
-            this.bt_exploJusti.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
-            this.bt_exploJusti.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
-            this.bt_exploJusti.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
-            this.bt_exploJusti.BorderStyle.EdgeRadius = 7;
-            this.bt_exploJusti.BorderStyle.SmoothingMode = Klik.Windows.Forms.v1.Common.SmoothingModes.AntiAlias;
-            this.bt_exploJusti.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exploJusti.DropDownArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.bt_exploJusti.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.bt_exploJusti.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.bt_exploJusti.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_exploJusti.Location = new System.Drawing.Point(706, 149);
-            this.bt_exploJusti.Name = "bt_exploJusti";
-            this.bt_exploJusti.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
-            this.bt_exploJusti.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_exploJusti.Size = new System.Drawing.Size(126, 126);
-            this.bt_exploJusti.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_exploJusti.TabIndex = 10;
-            this.bt_exploJusti.TextStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.bt_exploJusti.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_exploJusti.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-            // 
             // bt_Explo_Asis
             // 
             this.bt_Explo_Asis.BackgroundStyle.GradientEndColor = System.Drawing.Color.WhiteSmoke;
@@ -547,6 +536,7 @@
             this.bt_Explo_Asis.DropDownArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.bt_Explo_Asis.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.bt_Explo_Asis.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.bt_Explo_Asis.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.huella;
             this.bt_Explo_Asis.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bt_Explo_Asis.Location = new System.Drawing.Point(478, 149);
             this.bt_Explo_Asis.Name = "bt_Explo_Asis";
@@ -579,6 +569,7 @@
             this.bt_personal.DropDownArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.bt_personal.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.bt_personal.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.bt_personal.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.personal;
             this.bt_personal.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bt_personal.Location = new System.Drawing.Point(251, 149);
             this.bt_personal.Name = "bt_personal";
@@ -625,6 +616,7 @@
             this.elTabPage2.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage2.CaptionTextStyle.Text = "     Personal";
             this.elTabPage2.CaptionTextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.elTabPage2.Controls.Add(this.button1);
             this.elTabPage2.Controls.Add(this.ElLabel7);
             this.elTabPage2.Controls.Add(this.ElLabel6);
             this.elTabPage2.Controls.Add(this.ElLabel5);
@@ -647,6 +639,23 @@
             this.elTabPage2.Size = new System.Drawing.Size(1209, 456);
             this.elTabPage2.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(917, 255);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 34);
+            this.button1.TabIndex = 452;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // ElLabel7
             // 
             this.ElLabel7.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
@@ -656,9 +665,9 @@
             this.ElLabel7.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel7.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel7.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle1.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle1.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel7.FlashStyle = paintStyle1;
+            paintStyle23.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle23.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel7.FlashStyle = paintStyle23;
             this.ElLabel7.Location = new System.Drawing.Point(650, 109);
             this.ElLabel7.Name = "ElLabel7";
             this.ElLabel7.Size = new System.Drawing.Size(100, 24);
@@ -678,9 +687,9 @@
             this.ElLabel6.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel6.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel6.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle2.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle2.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel6.FlashStyle = paintStyle2;
+            paintStyle24.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle24.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel6.FlashStyle = paintStyle24;
             this.ElLabel6.Location = new System.Drawing.Point(751, 109);
             this.ElLabel6.Name = "ElLabel6";
             this.ElLabel6.Size = new System.Drawing.Size(133, 24);
@@ -701,9 +710,9 @@
             this.ElLabel5.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel5.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel5.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle3.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle3.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel5.FlashStyle = paintStyle3;
+            paintStyle25.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle25.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel5.FlashStyle = paintStyle25;
             this.ElLabel5.Location = new System.Drawing.Point(530, 109);
             this.ElLabel5.Name = "ElLabel5";
             this.ElLabel5.Size = new System.Drawing.Size(120, 24);
@@ -724,9 +733,9 @@
             this.ElLabel4.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel4.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle4.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle4.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel4.FlashStyle = paintStyle4;
+            paintStyle26.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle26.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel4.FlashStyle = paintStyle26;
             this.ElLabel4.Location = new System.Drawing.Point(420, 109);
             this.ElLabel4.Name = "ElLabel4";
             this.ElLabel4.Size = new System.Drawing.Size(110, 24);
@@ -747,9 +756,9 @@
             this.ElLabel2.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel2.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle5.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle5.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel2.FlashStyle = paintStyle5;
+            paintStyle27.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle27.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel2.FlashStyle = paintStyle27;
             this.ElLabel2.Location = new System.Drawing.Point(104, 109);
             this.ElLabel2.Name = "ElLabel2";
             this.ElLabel2.Size = new System.Drawing.Size(316, 24);
@@ -769,9 +778,9 @@
             this.ElLabel1.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel1.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.ElLabel1.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle6.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle6.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.ElLabel1.FlashStyle = paintStyle6;
+            paintStyle28.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle28.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.ElLabel1.FlashStyle = paintStyle28;
             this.ElLabel1.Location = new System.Drawing.Point(9, 109);
             this.ElLabel1.Name = "ElLabel1";
             this.ElLabel1.Size = new System.Drawing.Size(95, 24);
@@ -799,9 +808,10 @@
             this.lbl_lupaPerso.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupaPerso.ForeColor = System.Drawing.Color.White;
             this.lbl_lupaPerso.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaPerso.Image")));
-            this.lbl_lupaPerso.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupaPerso.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupaPerso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupaPerso.Name = "lbl_lupaPerso";
-            this.lbl_lupaPerso.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupaPerso.Size = new System.Drawing.Size(32, 30);
             this.lbl_lupaPerso.TabIndex = 32;
             // 
             // txt_Buscar
@@ -856,7 +866,7 @@
             this.toolStripSeparator7,
             this.bt_solicitarJustificacion});
             this.SubMenu_Person.Name = "contextMenuStrip1";
-            this.SubMenu_Person.Size = new System.Drawing.Size(209, 222);
+            this.SubMenu_Person.Size = new System.Drawing.Size(209, 244);
             // 
             // bt_nuevoPersonal
             // 
@@ -907,6 +917,7 @@
             this.bt_eliminarPersonal.Name = "bt_eliminarPersonal";
             this.bt_eliminarPersonal.Size = new System.Drawing.Size(208, 26);
             this.bt_eliminarPersonal.Text = "Eliminar Personal";
+            this.bt_eliminarPersonal.Click += new System.EventHandler(this.bt_eliminarPersonal_Click_1);
             // 
             // toolStripSeparator3
             // 
@@ -971,18 +982,20 @@
             this.btn_VerTodoPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_VerTodoPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_VerTodoPerso.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodoPerso.Image")));
-            this.btn_VerTodoPerso.Location = new System.Drawing.Point(871, 227);
+            this.btn_VerTodoPerso.Location = new System.Drawing.Point(1161, 279);
+            this.btn_VerTodoPerso.Margin = new System.Windows.Forms.Padding(4);
             this.btn_VerTodoPerso.Name = "btn_VerTodoPerso";
-            this.btn_VerTodoPerso.Size = new System.Drawing.Size(31, 34);
+            this.btn_VerTodoPerso.Size = new System.Drawing.Size(41, 42);
             this.btn_VerTodoPerso.TabIndex = 434;
             this.btn_VerTodoPerso.UseVisualStyleBackColor = true;
             // 
             // PictureBox2
             // 
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(11, 17);
+            this.PictureBox2.Location = new System.Drawing.Point(15, 21);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(63, 53);
+            this.PictureBox2.Size = new System.Drawing.Size(84, 65);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox2.TabIndex = 437;
             this.PictureBox2.TabStop = false;
@@ -997,9 +1010,10 @@
             this.Btn_Cerrar_TabPers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.Btn_Cerrar_TabPers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cerrar_TabPers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_TabPers.Image")));
-            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1170, 20);
+            this.Btn_Cerrar_TabPers.Location = new System.Drawing.Point(1560, 25);
+            this.Btn_Cerrar_TabPers.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Cerrar_TabPers.Name = "Btn_Cerrar_TabPers";
-            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(31, 34);
+            this.Btn_Cerrar_TabPers.Size = new System.Drawing.Size(41, 42);
             this.Btn_Cerrar_TabPers.TabIndex = 434;
             this.Btn_Cerrar_TabPers.UseVisualStyleBackColor = true;
             this.Btn_Cerrar_TabPers.Click += new System.EventHandler(this.Btn_Cerrar_TabPers_Click);
@@ -1023,9 +1037,10 @@
             this.Btn_EditPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.Btn_EditPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_EditPerso.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EditPerso.Image")));
-            this.Btn_EditPerso.Location = new System.Drawing.Point(871, 176);
+            this.Btn_EditPerso.Location = new System.Drawing.Point(1161, 217);
+            this.Btn_EditPerso.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_EditPerso.Name = "Btn_EditPerso";
-            this.Btn_EditPerso.Size = new System.Drawing.Size(31, 34);
+            this.Btn_EditPerso.Size = new System.Drawing.Size(41, 42);
             this.Btn_EditPerso.TabIndex = 433;
             this.Btn_EditPerso.UseVisualStyleBackColor = true;
             // 
@@ -1050,9 +1065,10 @@
             this.Bt_NewPerso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.Bt_NewPerso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bt_NewPerso.Image = ((System.Drawing.Image)(resources.GetObject("Bt_NewPerso.Image")));
-            this.Bt_NewPerso.Location = new System.Drawing.Point(871, 136);
+            this.Bt_NewPerso.Location = new System.Drawing.Point(1161, 167);
+            this.Bt_NewPerso.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_NewPerso.Name = "Bt_NewPerso";
-            this.Bt_NewPerso.Size = new System.Drawing.Size(31, 34);
+            this.Bt_NewPerso.Size = new System.Drawing.Size(41, 42);
             this.Bt_NewPerso.TabIndex = 432;
             this.Bt_NewPerso.UseVisualStyleBackColor = true;
             // 
@@ -1123,9 +1139,10 @@
             this.lbl_lupaAsis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupaAsis.ForeColor = System.Drawing.Color.White;
             this.lbl_lupaAsis.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupaAsis.Image")));
-            this.lbl_lupaAsis.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupaAsis.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupaAsis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupaAsis.Name = "lbl_lupaAsis";
-            this.lbl_lupaAsis.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupaAsis.Size = new System.Drawing.Size(32, 30);
             this.lbl_lupaAsis.TabIndex = 32;
             this.lbl_lupaAsis.Click += new System.EventHandler(this.lbl_lupaAsis_Click);
             // 
@@ -1160,9 +1177,10 @@
             this.btn_Asis_With_Huella.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_Asis_With_Huella.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Asis_With_Huella.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_With_Huella.Image")));
-            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1129, 85);
+            this.btn_Asis_With_Huella.Location = new System.Drawing.Point(1505, 105);
+            this.btn_Asis_With_Huella.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Asis_With_Huella.Name = "btn_Asis_With_Huella";
-            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(31, 34);
+            this.btn_Asis_With_Huella.Size = new System.Drawing.Size(41, 42);
             this.btn_Asis_With_Huella.TabIndex = 465;
             this.btn_Asis_With_Huella.UseVisualStyleBackColor = true;
             this.btn_Asis_With_Huella.Click += new System.EventHandler(this.btn_Asis_With_Huella_Click);
@@ -1197,9 +1215,10 @@
             this.toolStripSeparator15,
             this.bt_imprimirAsistenciaDelMes,
             this.bt_verAsistenciasDelDiaT,
-            this.toolStripSeparator16});
+            this.toolStripSeparator16,
+            this.bt_imprimirAsistenciasDelDíaTool});
             this.subMenuAsistencia.Name = "contextMenuStrip1";
-            this.subMenuAsistencia.Size = new System.Drawing.Size(253, 274);
+            this.subMenuAsistencia.Size = new System.Drawing.Size(253, 300);
             // 
             // toolStripMenuItem1
             // 
@@ -1288,6 +1307,7 @@
             this.bt_imprimirAsistenciaDelMes.Name = "bt_imprimirAsistenciaDelMes";
             this.bt_imprimirAsistenciaDelMes.Size = new System.Drawing.Size(252, 26);
             this.bt_imprimirAsistenciaDelMes.Text = "Imprimir Asistencia Del Mes";
+            this.bt_imprimirAsistenciaDelMes.Click += new System.EventHandler(this.bt_imprimirAsistenciaDelMes_Click);
             // 
             // bt_verAsistenciasDelDiaT
             // 
@@ -1301,6 +1321,13 @@
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(249, 6);
             // 
+            // bt_imprimirAsistenciasDelDíaTool
+            // 
+            this.bt_imprimirAsistenciasDelDíaTool.Name = "bt_imprimirAsistenciasDelDíaTool";
+            this.bt_imprimirAsistenciasDelDíaTool.Size = new System.Drawing.Size(252, 26);
+            this.bt_imprimirAsistenciasDelDíaTool.Text = "Imprimir Asistencias del Día";
+            this.bt_imprimirAsistenciasDelDíaTool.Click += new System.EventHandler(this.bt_imprimirAsistenciasDelDíaTool_Click);
+            // 
             // elLabel15
             // 
             this.elLabel15.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
@@ -1310,9 +1337,9 @@
             this.elLabel15.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel15.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel15.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle7.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle7.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel15.FlashStyle = paintStyle7;
+            paintStyle29.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle29.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel15.FlashStyle = paintStyle29;
             this.elLabel15.Location = new System.Drawing.Point(671, 90);
             this.elLabel15.Name = "elLabel15";
             this.elLabel15.Size = new System.Drawing.Size(70, 24);
@@ -1333,9 +1360,9 @@
             this.elLabel14.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel14.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel14.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle8.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle8.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel14.FlashStyle = paintStyle8;
+            paintStyle30.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle30.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel14.FlashStyle = paintStyle30;
             this.elLabel14.Location = new System.Drawing.Point(742, 90);
             this.elLabel14.Name = "elLabel14";
             this.elLabel14.Size = new System.Drawing.Size(90, 24);
@@ -1356,9 +1383,9 @@
             this.elLabel13.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel13.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel13.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle9.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle9.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel13.FlashStyle = paintStyle9;
+            paintStyle31.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle31.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel13.FlashStyle = paintStyle31;
             this.elLabel13.Location = new System.Drawing.Point(580, 90);
             this.elLabel13.Name = "elLabel13";
             this.elLabel13.Size = new System.Drawing.Size(90, 24);
@@ -1379,9 +1406,9 @@
             this.elLabel3.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel3.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel3.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle10.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle10.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel3.FlashStyle = paintStyle10;
+            paintStyle32.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle32.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel3.FlashStyle = paintStyle32;
             this.elLabel3.Location = new System.Drawing.Point(833, 90);
             this.elLabel3.Name = "elLabel3";
             this.elLabel3.Size = new System.Drawing.Size(90, 24);
@@ -1401,9 +1428,9 @@
             this.elLabel8.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel8.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel8.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle11.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle11.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel8.FlashStyle = paintStyle11;
+            paintStyle33.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle33.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel8.FlashStyle = paintStyle33;
             this.elLabel8.Location = new System.Drawing.Point(923, 90);
             this.elLabel8.Name = "elLabel8";
             this.elLabel8.Size = new System.Drawing.Size(110, 24);
@@ -1424,9 +1451,9 @@
             this.elLabel9.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel9.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel9.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle12.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle12.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel9.FlashStyle = paintStyle12;
+            paintStyle34.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle34.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel9.FlashStyle = paintStyle34;
             this.elLabel9.Location = new System.Drawing.Point(499, 90);
             this.elLabel9.Name = "elLabel9";
             this.elLabel9.Size = new System.Drawing.Size(80, 24);
@@ -1447,9 +1474,9 @@
             this.elLabel10.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel10.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel10.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle13.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle13.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel10.FlashStyle = paintStyle13;
+            paintStyle35.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle35.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel10.FlashStyle = paintStyle35;
             this.elLabel10.Location = new System.Drawing.Point(408, 90);
             this.elLabel10.Name = "elLabel10";
             this.elLabel10.Size = new System.Drawing.Size(90, 24);
@@ -1470,9 +1497,9 @@
             this.elLabel11.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel11.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel11.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle14.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle14.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel11.FlashStyle = paintStyle14;
+            paintStyle36.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle36.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel11.FlashStyle = paintStyle36;
             this.elLabel11.Location = new System.Drawing.Point(90, 90);
             this.elLabel11.Name = "elLabel11";
             this.elLabel11.Size = new System.Drawing.Size(316, 24);
@@ -1492,9 +1519,9 @@
             this.elLabel12.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel12.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel12.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle15.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle15.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel12.FlashStyle = paintStyle15;
+            paintStyle37.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle37.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel12.FlashStyle = paintStyle37;
             this.elLabel12.Location = new System.Drawing.Point(9, 90);
             this.elLabel12.Name = "elLabel12";
             this.elLabel12.Size = new System.Drawing.Size(80, 24);
@@ -1509,9 +1536,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox3.Size = new System.Drawing.Size(84, 65);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 452;
             this.pictureBox3.TabStop = false;
@@ -1546,9 +1574,10 @@
             this.btn_Asis_Manual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btn_Asis_Manual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Asis_Manual.Image = ((System.Drawing.Image)(resources.GetObject("btn_Asis_Manual.Image")));
-            this.btn_Asis_Manual.Location = new System.Drawing.Point(1129, 19);
+            this.btn_Asis_Manual.Location = new System.Drawing.Point(1505, 23);
+            this.btn_Asis_Manual.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Asis_Manual.Name = "btn_Asis_Manual";
-            this.btn_Asis_Manual.Size = new System.Drawing.Size(31, 34);
+            this.btn_Asis_Manual.Size = new System.Drawing.Size(41, 42);
             this.btn_Asis_Manual.TabIndex = 432;
             this.btn_Asis_Manual.UseVisualStyleBackColor = true;
             this.btn_Asis_Manual.Click += new System.EventHandler(this.btn_nuevoAsis_Click);
@@ -1563,9 +1592,10 @@
             this.btn_cerrarEx_Asis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btn_cerrarEx_Asis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrarEx_Asis.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrarEx_Asis.Image")));
-            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1168, 19);
+            this.btn_cerrarEx_Asis.Location = new System.Drawing.Point(1557, 23);
+            this.btn_cerrarEx_Asis.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cerrarEx_Asis.Name = "btn_cerrarEx_Asis";
-            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(31, 34);
+            this.btn_cerrarEx_Asis.Size = new System.Drawing.Size(41, 42);
             this.btn_cerrarEx_Asis.TabIndex = 434;
             this.btn_cerrarEx_Asis.UseVisualStyleBackColor = true;
             this.btn_cerrarEx_Asis.Click += new System.EventHandler(this.btn_cerrarEx_Asis_Click);
@@ -1585,7 +1615,6 @@
             this.elTabPage4.BackgroundStyle.GradientAngle = 45F;
             this.elTabPage4.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.elTabPage4.BackgroundStyle.SolidColor = System.Drawing.Color.White;
-            this.elTabPage4.CaptionImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.elTabPage4.CaptionImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.elTabPage4.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage4.CaptionTextStyle.Text = "     Configuracion";
@@ -1606,9 +1635,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(9, 18);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 22);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox5.Size = new System.Drawing.Size(84, 65);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 455;
             this.pictureBox5.TabStop = false;
@@ -1663,9 +1693,9 @@
             this.lbl_totalPer.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.lbl_totalPer.BackgroundStyle.SolidColor = System.Drawing.Color.White;
             this.lbl_totalPer.BorderStyle.SolidColor = System.Drawing.Color.Gainsboro;
-            paintStyle16.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle16.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.lbl_totalPer.FlashStyle = paintStyle16;
+            paintStyle38.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle38.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.lbl_totalPer.FlashStyle = paintStyle38;
             this.lbl_totalPer.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbl_totalPer.Location = new System.Drawing.Point(101, 147);
             this.lbl_totalPer.Name = "lbl_totalPer";
@@ -1733,9 +1763,9 @@
             this.lbl_Cont.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.lbl_Cont.BackgroundStyle.SolidColor = System.Drawing.Color.White;
             this.lbl_Cont.BorderStyle.SolidColor = System.Drawing.Color.Gainsboro;
-            paintStyle17.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle17.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.lbl_Cont.FlashStyle = paintStyle17;
+            paintStyle39.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle39.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.lbl_Cont.FlashStyle = paintStyle39;
             this.lbl_Cont.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbl_Cont.Location = new System.Drawing.Point(16, 147);
             this.lbl_Cont.Name = "lbl_Cont";
@@ -1775,9 +1805,10 @@
             // PictureBox10
             // 
             this.PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox10.Image")));
-            this.PictureBox10.Location = new System.Drawing.Point(132, 147);
+            this.PictureBox10.Location = new System.Drawing.Point(176, 181);
+            this.PictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox10.Name = "PictureBox10";
-            this.PictureBox10.Size = new System.Drawing.Size(70, 65);
+            this.PictureBox10.Size = new System.Drawing.Size(93, 80);
             this.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox10.TabIndex = 55;
             this.PictureBox10.TabStop = false;
@@ -1833,6 +1864,7 @@
             this.btn_Savedrobot.TextStyle.Text = "Listo";
             this.btn_Savedrobot.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Savedrobot.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_Savedrobot.Click += new System.EventHandler(this.btn_Savedrobot_Click);
             // 
             // label11
             // 
@@ -2042,7 +2074,6 @@
             // 
             this.elTabPage5.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.elTabPage5.BackgroundStyle.SolidColor = System.Drawing.Color.White;
-            this.elTabPage5.CaptionImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.elTabPage5.CaptionTextStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elTabPage5.CaptionTextStyle.Text = "Justificaciones";
             this.elTabPage5.Controls.Add(this.dtp_fechajusti);
@@ -2088,9 +2119,10 @@
             this.lbl_lupajusti.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lupajusti.ForeColor = System.Drawing.Color.White;
             this.lbl_lupajusti.Image = ((System.Drawing.Image)(resources.GetObject("lbl_lupajusti.Image")));
-            this.lbl_lupajusti.Location = new System.Drawing.Point(226, 10);
+            this.lbl_lupajusti.Location = new System.Drawing.Point(301, 12);
+            this.lbl_lupajusti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lupajusti.Name = "lbl_lupajusti";
-            this.lbl_lupajusti.Size = new System.Drawing.Size(24, 24);
+            this.lbl_lupajusti.Size = new System.Drawing.Size(32, 30);
             this.lbl_lupajusti.TabIndex = 32;
             // 
             // txt_buscarjusti
@@ -2134,9 +2166,10 @@
             this.bt_cerrarjusti.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.bt_cerrarjusti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cerrarjusti.Image = ((System.Drawing.Image)(resources.GetObject("bt_cerrarjusti.Image")));
-            this.bt_cerrarjusti.Location = new System.Drawing.Point(1166, 11);
+            this.bt_cerrarjusti.Location = new System.Drawing.Point(1555, 14);
+            this.bt_cerrarjusti.Margin = new System.Windows.Forms.Padding(4);
             this.bt_cerrarjusti.Name = "bt_cerrarjusti";
-            this.bt_cerrarjusti.Size = new System.Drawing.Size(31, 34);
+            this.bt_cerrarjusti.Size = new System.Drawing.Size(41, 42);
             this.bt_cerrarjusti.TabIndex = 467;
             this.bt_cerrarjusti.UseVisualStyleBackColor = true;
             // 
@@ -2149,9 +2182,9 @@
             this.elLabel19.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel19.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel19.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle18.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle18.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel19.FlashStyle = paintStyle18;
+            paintStyle40.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle40.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel19.FlashStyle = paintStyle40;
             this.elLabel19.Location = new System.Drawing.Point(563, 90);
             this.elLabel19.Name = "elLabel19";
             this.elLabel19.Size = new System.Drawing.Size(120, 24);
@@ -2285,9 +2318,9 @@
             this.elLabel16.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel16.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel16.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle19.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle19.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel16.FlashStyle = paintStyle19;
+            paintStyle41.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle41.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel16.FlashStyle = paintStyle41;
             this.elLabel16.Location = new System.Drawing.Point(684, 90);
             this.elLabel16.Name = "elLabel16";
             this.elLabel16.Size = new System.Drawing.Size(120, 24);
@@ -2308,9 +2341,9 @@
             this.elLabel17.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel17.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel17.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle20.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle20.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel17.FlashStyle = paintStyle20;
+            paintStyle42.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle42.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel17.FlashStyle = paintStyle42;
             this.elLabel17.Location = new System.Drawing.Point(442, 90);
             this.elLabel17.Name = "elLabel17";
             this.elLabel17.Size = new System.Drawing.Size(120, 24);
@@ -2331,9 +2364,9 @@
             this.elLabel18.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel18.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel18.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle21.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle21.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel18.FlashStyle = paintStyle21;
+            paintStyle43.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle43.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel18.FlashStyle = paintStyle43;
             this.elLabel18.Location = new System.Drawing.Point(332, 90);
             this.elLabel18.Name = "elLabel18";
             this.elLabel18.Size = new System.Drawing.Size(110, 24);
@@ -2353,9 +2386,9 @@
             this.elLabel20.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel20.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Rectangle;
             this.elLabel20.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
-            paintStyle22.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            paintStyle22.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.elLabel20.FlashStyle = paintStyle22;
+            paintStyle44.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle44.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.elLabel20.FlashStyle = paintStyle44;
             this.elLabel20.Location = new System.Drawing.Point(15, 90);
             this.elLabel20.Name = "elLabel20";
             this.elLabel20.Size = new System.Drawing.Size(316, 24);
@@ -2370,9 +2403,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(8, 5);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 53);
+            this.pictureBox4.Size = new System.Drawing.Size(84, 65);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 455;
             this.pictureBox4.TabStop = false;
@@ -2402,9 +2436,9 @@
             // 
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(202)))), ((int)(((byte)(39)))));
             this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label8.Location = new System.Drawing.Point(0, 595);
+            this.label8.Location = new System.Drawing.Point(0, 596);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1040, 5);
+            this.label8.Size = new System.Drawing.Size(1242, 4);
             this.label8.TabIndex = 7;
             this.label8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -2412,13 +2446,50 @@
             // 
             this.toolTip1.IsBalloon = true;
             // 
+            // timerFalta
+            // 
+            this.timerFalta.Tick += new System.EventHandler(this.timerFalta_Tick);
+            // 
+            // bt_nomina1
+            // 
+            this.bt_nomina1.BackgroundStyle.GradientEndColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_nomina1.BackgroundStyle.GradientStartColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_nomina1.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.bt_nomina1.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.bt_nomina1.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.bt_nomina1.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Circle;
+            this.bt_nomina1.BorderStyle.EdgeRadius = 7;
+            this.bt_nomina1.BorderStyle.SmoothingMode = Klik.Windows.Forms.v1.Common.SmoothingModes.AntiAlias;
+            this.bt_nomina1.BorderStyle.SolidColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_nomina1.DropDownArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.bt_nomina1.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.bt_nomina1.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.bt_nomina1.ForegroundImageStyle.Image = global::MicroSisPlani.Properties.Resources.justifi2;
+            this.bt_nomina1.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bt_nomina1.Location = new System.Drawing.Point(706, 149);
+            this.bt_nomina1.Name = "bt_nomina1";
+            this.bt_nomina1.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
+            this.bt_nomina1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bt_nomina1.Size = new System.Drawing.Size(126, 126);
+            this.bt_nomina1.StateStyles.HoverStyle.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.StateStyles.HoverStyle.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.StateStyles.HoverStyle.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.StateStyles.HoverStyle.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_nomina1.TabIndex = 19;
+            this.bt_nomina1.TextStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.bt_nomina1.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bt_nomina1.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.bt_nomina1.Click += new System.EventHandler(this.bt_nomina1_Click);
+            // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1040, 600);
+            this.ClientSize = new System.Drawing.Size(1242, 600);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.elTab1);
             this.Controls.Add(this.pnl_titu);
@@ -2438,7 +2509,6 @@
             this.elTabPage1.ResumeLayout(false);
             this.elTabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_Config)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bt_exploJusti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_Explo_Asis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_personal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elTabPage2)).EndInit();
@@ -2502,6 +2572,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.elLabel20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elDivider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_nomina1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2525,7 +2596,6 @@
         private System.Windows.Forms.Label label1;
         private Klik.Windows.Forms.v1.EntryLib.ELButton bt_personal;
         private Klik.Windows.Forms.v1.EntryLib.ELButton bt_Config;
-        private Klik.Windows.Forms.v1.EntryLib.ELButton bt_exploJusti;
         private Klik.Windows.Forms.v1.EntryLib.ELButton bt_Explo_Asis;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -2665,5 +2735,9 @@
         private System.Windows.Forms.DateTimePicker dtp_fechadeldia;
         private System.Windows.Forms.ToolStripMenuItem bt_verAsistenciasDelDiaT;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
+        internal System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem bt_imprimirAsistenciasDelDíaTool;
+        private System.Windows.Forms.Button button2;
+        private Klik.Windows.Forms.v1.EntryLib.ELButton bt_nomina1;
     }
 }

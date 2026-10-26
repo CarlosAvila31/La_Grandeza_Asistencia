@@ -14,6 +14,7 @@ using Prj_Capa_Negocio;
 using MicroSisPlani.Msm_Forms;
 using System.IO;
 using MicroSisPlani.Informes;
+using MicroSisPlani.Personal;
 
 namespace MicroSisPlani
 {
@@ -350,6 +351,37 @@ namespace MicroSisPlani
             }
         }
 
+
+        private void bt_eliminarPersonal_Click_1(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+            RN_Personal obj = new RN_Personal();
+
+            if (lsv_person.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("Seleccione un personal para eliminar",
+                                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                var lsv = lsv_person.SelectedItems[0];
+                string dni = lsv.SubItems[1].Text; // ojo: depende de qué columna tengas el DNI
+
+                obj.RN_Eliminar_Personal(dni);
+
+                if (BD_Personal.deleted == true)
+                {
+                    fil.Show();
+                    ok.Lbl_msm1.Text = "El personal se ha eliminado correctamente";
+                    ok.ShowDialog();
+                    fil.Hide();
+
+                    Cargar_Todo_Personal(); // refresca la lista
+                }
+
+            }
+        }
         private void btn_SaveHorario_Click(object sender, EventArgs e)
         {
             try
@@ -540,6 +572,7 @@ namespace MicroSisPlani
         }
 
 
+
         private void bt_verAsistenciasDelDiaT_Click(object sender, EventArgs e)
         {
             Frm_Filtro fil = new Frm_Filtro();
@@ -553,8 +586,23 @@ namespace MicroSisPlani
 
             DateTime xfecha = solo.dtp_fecha.Value;
 
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = obj.RN_Ver_Todas_Asistencias_Deldia(xfecha);
+
+            if (dt != null && dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "No hay asistencias registradas en este día.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                return;
+            }
+
             Cargar_Asistencias_delDia(xfecha);
         }
+
 
         #endregion
 
@@ -712,19 +760,37 @@ namespace MicroSisPlani
             rol.Show();
         }
 
+
         private void bt_imprimirAsistenciasDelDíaTool_Click(object sender, EventArgs e)
         {
             Frm_Filtro fil = new Frm_Filtro();
-            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
             Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
 
             fil.Show();
             solo.ShowDialog();
             fil.Hide();
 
-            if (solo.Tag.ToString() == "") return;
+            if (Convert.ToString(solo.Tag) == "") return;
 
             DateTime xdia = solo.dtp_fecha.Value;
+
+            // Verificamos si existen asistencias para ese día
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = obj.RN_Ver_Todas_Asistencias_Deldia(xdia);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "No hay asistencias registradas para este día.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                return;
+            }
+
+            // Solo abre el formulario de impresión si hay asistencias
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
 
             fil.Show();
             asis.tipoInfo = "deldia";
@@ -733,6 +799,7 @@ namespace MicroSisPlani
 
             fil.Hide();
         }
+
 
         private void bt_imprimirAsistenciaDelMes_Click(object sender, EventArgs e)
         {
@@ -755,5 +822,25 @@ namespace MicroSisPlani
 
             fil.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fis = new Frm_Filtro();
+
+            Frm_Marcar_Asistencia asis = new Frm_Marcar_Asistencia();
+            fis.Show();
+            asis.ShowDialog();
+            fis.Hide();
+        }
+
+        private void bt_nomina1_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            fil.Show();
+            new Frm_Nomina().ShowDialog();
+            fil.Hide();
+        }
+
+        
     }
 }
