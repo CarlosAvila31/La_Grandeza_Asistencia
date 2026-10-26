@@ -540,6 +540,7 @@ namespace MicroSisPlani
         }
 
 
+
         private void bt_verAsistenciasDelDiaT_Click(object sender, EventArgs e)
         {
             Frm_Filtro fil = new Frm_Filtro();
@@ -553,8 +554,23 @@ namespace MicroSisPlani
 
             DateTime xfecha = solo.dtp_fecha.Value;
 
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = obj.RN_Ver_Todas_Asistencias_Deldia(xfecha);
+
+            if (dt != null && dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "No hay asistencias registradas en este día.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                return;
+            }
+
             Cargar_Asistencias_delDia(xfecha);
         }
+
 
         #endregion
 
@@ -712,19 +728,37 @@ namespace MicroSisPlani
             rol.Show();
         }
 
+
         private void bt_imprimirAsistenciasDelDíaTool_Click(object sender, EventArgs e)
         {
             Frm_Filtro fil = new Frm_Filtro();
-            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
             Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
 
             fil.Show();
             solo.ShowDialog();
             fil.Hide();
 
-            if (solo.Tag.ToString() == "") return;
+            if (Convert.ToString(solo.Tag) == "") return;
 
             DateTime xdia = solo.dtp_fecha.Value;
+
+            // Verificamos si existen asistencias para ese día
+            RN_Asistencia obj = new RN_Asistencia();
+            DataTable dt = obj.RN_Ver_Todas_Asistencias_Deldia(xdia);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "No hay asistencias registradas para este día.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                return;
+            }
+
+            // Solo abre el formulario de impresión si hay asistencias
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
 
             fil.Show();
             asis.tipoInfo = "deldia";
@@ -733,6 +767,7 @@ namespace MicroSisPlani
 
             fil.Hide();
         }
+
 
         private void bt_imprimirAsistenciaDelMes_Click(object sender, EventArgs e)
         {
