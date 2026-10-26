@@ -31,8 +31,10 @@ namespace MicroSisPlani.Personal
         {
             if (SeVaEditar == false)
             {
+                Cargar_Horario();
                 Cargar_rol();
                 Cargar_Distrito();
+                
             }
             
         }
@@ -152,6 +154,12 @@ namespace MicroSisPlani.Personal
                 fil.Show(); ver.Lbl_Msm1.Text = "Debe seleccionar una foto del personal"; ver.ShowDialog(); fil.Hide(); Pic_persona.Focus(); return false;
             }
 
+            if (cbo_horario.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecciona un horario para el empleado");
+                return false;   // ajusta al estilo de tu validador
+            }
+
 
             return true;
         }
@@ -205,13 +213,45 @@ namespace MicroSisPlani.Personal
                 per.IdRol = Convert.ToString(cbo_rol.SelectedValue);
                 per.xImagen = xFotoRuta;
                 per.IdDistrito = Convert.ToString(cbo_Distrito.SelectedValue);
+                per.IdHorario = Convert.ToString(cbo_horario.SelectedValue);
 
                 obj.RN_Registrar_Personal(per);
 
                 if (BD_Personal.saved == true)
                 {
+                    // El empleado ya existe en la BD: ahora es obligatorio registrar su huella
+                    string idNuevo = txt_IdPersona.Text;
+                    bool huellaOk = false;
+
+                    while (!huellaOk)
+                    {
+                        Frm_Regis_Huella frmH = new Frm_Regis_Huella();
+                        frmH.Buscar_Personal_ParaEditar(idNuevo);
+                        fil.Show();
+                        frmH.ShowDialog();
+                        fil.Hide();
+
+                        huellaOk = (Convert.ToString(frmH.Tag) == "A");
+
+                        if (!huellaOk)
+                        {
+                            DialogResult r = MessageBox.Show(
+                                "El empleado necesita su huella para poder marcar asistencia.\n¿Deseas intentarlo de nuevo?\n\n" +
+                                "Si eliges No, se cancelará el registro del empleado.",
+                                "Huella requerida", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                            if (r == DialogResult.No)
+                            {
+                                obj.RN_Eliminar_Personal_SinHuella(idNuevo);
+                                MessageBox.Show("Registro cancelado: el empleado no fue guardado.");
+                                return;   // el formulario sigue abierto con los datos capturados
+                            }
+                        }
+                    }
+
+
                     fil.Show();
-                    ok.Lbl_msm1.Text = "los datos del personal se han guardado de forma correcta";
+                    ok.Lbl_msm1.Text = "los datos y la huella del personal se han guardado de forma correcta";
                     ok.ShowDialog();
                     fil.Hide();
 
@@ -254,6 +294,7 @@ namespace MicroSisPlani.Personal
                 per.IdRol = Convert.ToString(cbo_rol.SelectedValue);
                 per.xImagen = xFotoRuta;
                 per.IdDistrito = Convert.ToString(cbo_Distrito.SelectedValue);
+                per.IdHorario = Convert.ToString(cbo_horario.SelectedValue);
 
                 obj.RN_Editar_Personal(per);
 
@@ -347,6 +388,7 @@ namespace MicroSisPlani.Personal
 
                 Cargar_rol();
                 Cargar_Distrito();
+                Cargar_Horario();
 
                 data = obj.RN_Buscar_Personal_xValor(idpersonal);
                 if (data.Rows.Count == 0) return;
@@ -375,6 +417,7 @@ namespace MicroSisPlani.Personal
                     cbo_Distrito.SelectedValue = data.Rows[0]["Id_Distrito"];
                     txt_IdPersona.Text = Convert.ToString(data.Rows[0]["Id_Pernl"]);
                     xFotoRuta = Convert.ToString(data.Rows[0]["Foto"]);
+                    cbo_horario.SelectedValue = Convert.ToString(data.Rows[0]["Id_Horario"]).Trim();
 
                 }
 
@@ -386,6 +429,39 @@ namespace MicroSisPlani.Personal
             {
                 MessageBox.Show("Error al buscar los datos: " + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+
+        //private void Cargar_Horario()
+        //{
+        //    DataTable dt = new RN_Horario().RN_Leer_Horarios();   // Sp_Buscar_Todos_Horarios
+        //    cbo_horario.DataSource = dt;
+        //    cbo_horario.DisplayMember = "ResumenHora";   // lo que se ve
+        //    cbo_horario.ValueMember = "IdHorario";       // lo que se guarda
+        //    cbo_horario.SelectedIndex = -1;              // empieza vacío
+        //}
+
+        private void Cargar_Horario()
+        {
+            DataTable dt = new RN_Horario().RN_Leer_Horarios();   // Sp_Buscar_Todos_Horarios
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay horarios registrados. Crea al menos uno primero.");
+                return;
+            }
+
+            dt.Columns.Add("Texto", typeof(string));
+            foreach (DataRow r in dt.Rows)
+            {
+                r["Texto"] = Convert.ToDateTime(r["HoEntrada"]).ToString("HH:mm") + " - " +
+                             Convert.ToDateTime(r["HoSalida"]).ToString("HH:mm");
+                r["IdHorario"] = Convert.ToString(r["IdHorario"]).Trim();   // quita espacios del char(8)
+            }
+
+            cbo_horario.DisplayMember = "Texto";
+            cbo_horario.ValueMember = "IdHorario";
+            cbo_horario.DataSource = dt;
+            cbo_horario.SelectedIndex = -1;
         }
     }
 }

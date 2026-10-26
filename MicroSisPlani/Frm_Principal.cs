@@ -17,7 +17,7 @@ using MicroSisPlani.Informes;
 
 namespace MicroSisPlani
 {
-    public partial class Frm_Principal : Form
+    public partial class Frm_Principal : Form   
     {
         public Frm_Principal()
         {
@@ -28,6 +28,26 @@ namespace MicroSisPlani
         {
             ConfigurationListView();
             ConfigurarListview_Asis();
+            CargarHorarios();
+            Verificar_Robot_de_Faltas();
+        }
+
+        private void Verificar_Robot_de_Faltas()
+        {
+            string tipo;
+            tipo = RN_Utilitario.RN_Listar_TipoFalta(5);
+
+            if (tipo.Trim() == "Si")
+            {
+                timerFalta.Interval = 60000;   // <-- línea nueva: revisa cada minuto
+                timerFalta.Start();
+                rdb_ActivarRobot.Checked = true;
+            }
+            else if (tipo.Trim() == "No")
+            {
+                timerFalta.Stop();
+                rdb_Desact_Robot.Checked = true;
+            }
         }
 
         public void Cargar_Datos_Usuario()
@@ -586,7 +606,154 @@ namespace MicroSisPlani
 
         private void txt_buscarAsis_OnValueChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btn_Savedrobot_Click(object sender, EventArgs e)
+        {
+            RN_Utilitario uti = new RN_Utilitario();
+
+            if (rdb_ActivarRobot.Checked == true)
+            {
+                uti.RN_Actualizar_RobotFalta(5, "Si");
+                if (BD_Utilitario.falta == true)
+                {
+                    Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+                    ok.Lbl_msm1.Text = "El Robot de Faltas fue Activado";
+                    ok.ShowDialog();
+
+                    elTab1.SelectedTabPageIndex = 0;
+                    elTabPage4.Visible = false;
+                }
+            }
+            else if (rdb_Desact_Robot.Checked == true)
+            {
+                uti.RN_Actualizar_RobotFalta(5, "No");
+
+                if (BD_Utilitario.falta == true)
+                {
+                    Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+                    ok.Lbl_msm1.Text = "El Robot de Faltas fue Desactivado";
+                    ok.ShowDialog();
+                    elTab1.SelectedTabPageIndex = 0;
+                    elTabPage4.Visible = false;
+                }
+            }
+        }
+
+        private void timerFalta_Tick(object sender, EventArgs e)
+        {
+            RN_Asistencia obj = new RN_Asistencia();
+            RN_Horario objhor = new RN_Horario();
+            RN_Descanso objdes = new RN_Descanso();
+            Frm_Filtro fis = new Frm_Filtro();
+            Frm_Msm_Bueno ok = new Frm_Msm_Bueno();
+
+            DataTable dataper = new RN_Personal().RN_Leer_todoPersona();
+            if (dataper == null || dataper.Rows.Count == 0) return;
+
+            DateTime ahora = DateTime.Now;
+            string nombreDia = ahora.ToString("dddd", new System.Globalization.CultureInfo("es-ES"));
+            nombreDia = char.ToUpper(nombreDia[0]) + nombreDia.Substring(1);
+
+            int faltas = 0, suspensiones = 0;
+
+            timerFalta.Stop();   // evita que un mensaje dispare otra pasada encima
+            try
+            {
+                foreach (DataRow reg in dataper.Rows)
+                {
+                    string id = Convert.ToString(reg["Id_Pernl"]).Trim();
+
+                    // 1) ¿Ya tiene algún registro hoy (entrada, falta o suspensión)?
+                    if (obj.RN_Checar_SiPersonal_TieneAsistencia_Registrada(id)) continue;
+
+                    // 2) ¿Hoy le toca trabajar? (1 = sí, 0 = descanso, -1 = sin programar)
+                    if (objdes.RN_Es_Dia_Laboral(id, ahora) != 1) continue;
+
+                    // 3) ¿Ya pasó SU hora límite?
+                    DataTable hor = objhor.RN_Leer_Horario_Personal(id);
+                    if (hor == null || hor.Rows.Count == 0) continue;
+                    DateTime limite = DateTime.Today + Convert.ToDateTime(hor.Rows[0]["HoLimite"]).TimeOfDay;
+                    if (ahora < limite) continue;
+
+                    // 4) Falta, o suspensión si acumuló las tardanzas
+                    bool suspension = obj.RN_Tardanzas_Pendientes(id) >= RN_Asistencia.TardanzasParaSuspension;
+                    obj.RN_Registrar_Falta_Personal(RN_Utilitario.RN_NroDoc(3), id, nombreDia,
+                        suspension ? "Suspensión por acumular " + RN_Asistencia.TardanzasParaSuspension + " tardanzas"
+                                   : "Falta no justificada",
+                        suspension ? "Suspension" : "Falta");
+
+                    if (BD_Asistencia.faltasaved == true)
+                    {
+                        RN_Utilitario.RN_Actualiza_Tipo_Doc(3);
+                        if (suspension) suspensiones++; else faltas++;
+                    }
+                }
+
+                if (faltas + suspensiones > 0)
+                {
+                    fis.Show();
+                    ok.Lbl_msm1.Text = "Se registraron " + faltas + " falta(s) y " + suspensiones + " suspensión(es)";
+                    ok.ShowDialog();
+                    fis.Hide();
+                }
+            }
+            finally
+            {
+                timerFalta.Start();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Frm_Rol_Descansos rol = new Frm_Rol_Descansos();
+
+            rol.Show();
+        }
+
+        private void bt_imprimirAsistenciasDelDíaTool_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
+
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (solo.Tag.ToString() == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            fil.Show();
+            asis.tipoInfo = "deldia";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
+        }
+
+        private void bt_imprimirAsistenciaDelMes_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_PrintAsis_deldia asis = new Frm_PrintAsis_deldia();
+            Frm_Solo_Fecha solo = new Frm_Solo_Fecha();
+
+            fil.Show();
+            solo.ShowDialog();
+            fil.Hide();
+
+            if (solo.Tag.ToString() == "") return;
+
+            DateTime xdia = solo.dtp_fecha.Value;
+
+            fil.Show();
+            asis.tipoInfo = "delmes";
+            asis.Tag = xdia;
+            asis.ShowDialog();
+
+            fil.Hide();
         }
     }
 }

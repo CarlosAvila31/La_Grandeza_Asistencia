@@ -7,10 +7,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Web;
 
 namespace Prj_Capa_Datos
 {
-   public  class BD_Utilitario : BD_Conexion 
+    public class BD_Utilitario : BD_Conexion
     {
         public static string BD_NroDoc(int Id_Tipo)
         {
@@ -66,10 +67,61 @@ namespace Prj_Capa_Datos
             }
         }
 
+        public static string BD_Listar_TipoFalta(int Id_Tipo)
+        {
+            SqlConnection Cn = new SqlConnection();
+            try
+            {
+                Cn.ConnectionString = Conectar2();
+                SqlCommand cmd = new SqlCommand("Sp_Listado_TipoFalta", Cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Tipo", Id_Tipo);
+                string tipofalta;
 
+                Cn.Open();
+                tipofalta = Convert.ToString(cmd.ExecuteScalar());
+                Cn.Close();
+                return tipofalta;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Advertencia de Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (Cn.State == ConnectionState.Open) Cn.Close();
+                Cn.Dispose();
+                Cn = null;
+                return null;
+            }
+        }
 
+        public static bool falta = false;
 
+        public void BD_Actualizar_RobotFalta(int IdTipo, string serie)
+        {
+            SqlConnection cn = new SqlConnection(Conectar());
+            SqlCommand cmd = new SqlCommand("Sp_Activar_Desac_RobotFalta", cn);
+            try
+            {
+                cmd.CommandTimeout = 20;/*Si pasa los 20 segundos va a saltar a la excepcion*/
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = cn;
 
+                //parametros
+                cmd.Parameters.AddWithValue("@IdTipo", IdTipo);
+                cmd.Parameters.AddWithValue("@serie", serie);
 
+                //Abrimos la cadena de conexion y ejecutamos el comando
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                
+                falta = true;
+            }
+            catch (Exception ex)
+            {
+                falta = false;
+                MessageBox.Show("Error al actualizar robot falta: " + ex.Message, "Informe del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                if (cn.State == ConnectionState.Open) cn.Close();
+            }
+        }
     }
 }

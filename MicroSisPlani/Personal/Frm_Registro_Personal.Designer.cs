@@ -61,6 +61,8 @@
             this.btn_aceptar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_cancelar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cbo_horario = new System.Windows.Forms.ComboBox();
             this.pnl_titulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_persona)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_aceptar)).BeginInit();
@@ -485,12 +487,32 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(386, 346);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 50;
+            this.label13.Text = "Horario";
+            // 
+            // cbo_horario
+            // 
+            this.cbo_horario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_horario.FormattingEnabled = true;
+            this.cbo_horario.Location = new System.Drawing.Point(390, 363);
+            this.cbo_horario.Name = "cbo_horario";
+            this.cbo_horario.Size = new System.Drawing.Size(121, 21);
+            this.cbo_horario.TabIndex = 51;
+            // 
             // Frm_Registro_Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(797, 553);
+            this.Controls.Add(this.cbo_horario);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -528,6 +550,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_aceptar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancelar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -564,5 +587,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         public Klik.Windows.Forms.v1.EntryLib.ELButton btn_aceptar;
         public Klik.Windows.Forms.v1.EntryLib.ELButton btn_cancelar;
+        private System.Windows.Forms.ComboBox cbo_horario;
+        private System.Windows.Forms.Label label13;
     }
 }

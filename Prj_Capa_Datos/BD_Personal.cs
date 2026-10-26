@@ -36,6 +36,7 @@ namespace Prj_Capa_Datos
                 cmd.Parameters.AddWithValue("@Id_rol", per.IdRol);
                 cmd.Parameters.AddWithValue("@Foto", per.xImagen);
                 cmd.Parameters.AddWithValue("@Id_Distrito", per.IdDistrito);
+                cmd.Parameters.AddWithValue("@Id_Horario", per.IdHorario ?? (object)DBNull.Value);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
@@ -81,6 +82,7 @@ namespace Prj_Capa_Datos
                 cmd.Parameters.AddWithValue("@Id_rol", per.IdRol);
                 cmd.Parameters.AddWithValue("@Foto", per.xImagen);
                 cmd.Parameters.AddWithValue("@Id_Distrito", per.IdDistrito);
+                cmd.Parameters.AddWithValue("@Id_Horario", per.IdHorario ?? (object)DBNull.Value);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
@@ -242,8 +244,25 @@ namespace Prj_Capa_Datos
             return functionReturnValue;
         } //Fin de la funcion BD_Verificar_Acceso
 
+        public void BD_Eliminar_Personal_SinHuella(string id)
+        {
+            SqlConnection Cn = new SqlConnection(Conectar());
+            try
+            {
+                SqlCommand Cmd = new SqlCommand("Sp_Eliminar_Personal_SinHuella", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("@Id", id);
+                Cn.Open();
+                Cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cancelar el registro: " + ex.Message);
+            }
+            finally { Cn.Close(); }
+        }
 
 
     }
-    }
+}
 

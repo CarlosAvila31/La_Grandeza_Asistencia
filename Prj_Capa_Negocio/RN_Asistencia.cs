@@ -38,13 +38,13 @@ namespace Prj_Capa_Negocio
         }
 
 
-        public void RN_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado)
+        public void RN_Registrar_Entrada_Personal(string idAsis, string idPerso, string HoIngreso, double tarde, int Totalhora, string justificado, string dia)
         {
             BD_Asistencia obj = new BD_Asistencia();
-            obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado);
+            obj.BD_Registrar_Entrada_Personal(idAsis, idPerso, HoIngreso, tarde, Totalhora, justificado, dia);
         }
 
-        public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, double Totalhora)
+        public void RN_Registrar_Salida_Personal(string idAsis, string idPerso, string HoSalida, int Totalhora)
         {
             BD_Asistencia obj = new BD_Asistencia();
             obj.BD_Registrar_Salida_Personal(idAsis, idPerso, HoSalida, Totalhora);
@@ -75,6 +75,56 @@ namespace Prj_Capa_Negocio
             return obj.BD_Buscar_Asistencia_deEntrada(idperso);
         }
 
+        public bool RN_Checar_SiPersonal_TieneAsistencia_Registrada(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_TieneAsistencia_Registrada(xidPerso);
+        }
 
+        public bool RN_Checar_SiPersonal_YaMarco_suFalta(string xidPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            return obj.BD_Checar_SiPersonal_YaMarco_suFalta(xidPerso);
+        }
+
+        public void RN_Registrar_Falta_Personal(string idAsis, string idPerso)
+        {
+            BD_Asistencia obj = new BD_Asistencia();
+            obj.BD_Registrar_Falta_Personal(idAsis, idPerso);
+        }
+
+
+        //public void RN_Registrar_Falta_Personal(string idAsis, string idPerso, string nomdia, string justificacion, string estado)
+        //{
+        //    new BD_Asistencia().BD_Registrar_Falta_Personal(idAsis, idPerso, nomdia, justificacion, estado);
+        //}
+
+        //public int RN_Tardanzas_Pendientes(string idPerso)
+        //{
+        //    return new BD_Asistencia().BD_Tardanzas_Pendientes(idPerso);
+        //}
+
+        //public bool RN_Suspendido_Hoy(string idPerso)
+        //{
+        //    return new BD_Asistencia().BD_Suspendido_Hoy(idPerso);
+        //}
+
+
+        public const int TardanzasParaSuspension = 3;
+
+        public void RN_Registrar_Falta_Personal(string idAsis, string idPerso, string nomdia, string justificacion, string estado)
+        {
+            new BD_Asistencia().BD_Registrar_Falta_Personal(idAsis, idPerso, nomdia, justificacion, estado);
+        }
+
+        public int RN_Tardanzas_Pendientes(string idPerso)
+        {
+            return new BD_Asistencia().BD_Tardanzas_Pendientes(idPerso);
+        }
+
+        public bool RN_Suspendido_Hoy(string idPerso)
+        {
+            return new BD_Asistencia().BD_Suspendido_Hoy(idPerso);
+        }
     }
 }

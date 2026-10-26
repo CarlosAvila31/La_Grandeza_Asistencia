@@ -26,11 +26,11 @@ namespace Prj_Capa_Datos
                 cmd.CommandTimeout = 20; /*Si pasa los 20 segundos va a saltar a la excepcion*/
 
                 //parametros
-                cmd.Parameters.AddWithValue("@Idhora", P.Idhora);
+                cmd.Parameters.AddWithValue("@Idhor", P.Idhora);
                 cmd.Parameters.AddWithValue("@HoEntrada", P.HoEntrada);
-                cmd.Parameters.AddWithValue("@HoTole", P.HoTole);
-                cmd.Parameters.AddWithValue("@HoLimite", P.HoLimite);
-                cmd.Parameters.AddWithValue("@HoSalida", P.HoSalida);
+                cmd.Parameters.AddWithValue("@HoTolere", P.HoTole);
+                cmd.Parameters.AddWithValue("@Holimite", P.HoLimite);
+                cmd.Parameters.AddWithValue("@HoraSalida", P.HoSalida);
 
                 //Abrimos la cadena de conexion y ejecutamos el comando
                 cn.Open();
@@ -76,6 +76,27 @@ namespace Prj_Capa_Datos
                 if (Cn.State == ConnectionState.Open) Cn.Close();
                 Cn.Dispose();
                 Cn = null;
+                return null;
+            }
+        }
+
+
+        public DataTable BD_Leer_Horario_Personal(string idPersona)
+        {
+            SqlConnection Cn = new SqlConnection(Conectar());
+            try
+            {
+                SqlDataAdapter Da = new SqlDataAdapter("Sp_Horario_Por_Personal", Cn);
+                Da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                Da.SelectCommand.Parameters.AddWithValue("@Id_Personal", idPersona);
+                DataTable Datos = new DataTable();
+                Da.Fill(Datos);
+                return Datos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al consultar el horario: " + ex.Message, "Informe del Sistema",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return null;
             }
         }

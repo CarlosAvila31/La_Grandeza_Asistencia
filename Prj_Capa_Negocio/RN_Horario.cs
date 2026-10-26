@@ -23,5 +23,11 @@ namespace Prj_Capa_Negocio
             BD_Horario obj = new BD_Horario();
             return obj.BD_Leer_Horarios();
         }
+
+        public DataTable RN_Leer_Horario_Personal(string idPersona)
+        {
+            BD_Horario obj = new BD_Horario();
+            return obj.BD_Leer_Horario_Personal(idPersona);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,9 +13,11 @@
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -34,13 +37,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\Proyectos 2017\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=11.3.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -63,6 +65,9 @@
       <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
     </Reference>
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=5.5.13.6, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.6\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Klik.Windows.Forms.EntryLib.V2.2005">
       <HintPath>D:\Archviso de Visual estudio\Archivos de Visual\Klik.Windows.Forms.EntryLib.V2.2005.dll</HintPath>
     </Reference>
@@ -70,6 +75,9 @@
       <HintPath>D:\Archviso de Visual estudio\Proyectos 2017\metroframework\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -137,6 +145,18 @@
     <Compile Include="Frm_Reg_Justificacion.Designer.cs">
       <DependentUpon>Frm_Reg_Justificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Informes\Frm_PrintAsis_deldia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\Frm_PrintAsis_deldia.Designer.cs">
+      <DependentUpon>Frm_PrintAsis_deldia.cs</DependentUpon>
+	</Compile>
+	<Compile Include="Frm_Rol_Descansos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rol_Descansos.Designer.cs">
+      <DependentUpon>Frm_Rol_Descansos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Informes\Frm_Print_Asistencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,18 +175,7 @@
     <Compile Include="Informes\Frm_Solo_Personal_Fecha.Designer.cs">
       <DependentUpon>Frm_Solo_Personal_Fecha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Informes\Rpte_Asistencia_delMes.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Rpte_Asistencia_delMes.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Informes\Rpte_Asistencia_porPersona.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Rpte_Asistencia_porPersona.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Informes\Helpers\UtilidadesTiempo.cs" />
     <Compile Include="Msm_Forms\Frm_Filtro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +251,12 @@
     <EmbeddedResource Include="Frm_Reg_Justificacion.resx">
       <DependentUpon>Frm_Reg_Justificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Frm_PrintAsis_deldia.resx">
+      <DependentUpon>Frm_PrintAsis_deldia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rol_Descansos.resx">
+      <DependentUpon>Frm_Rol_Descansos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Informes\Frm_Print_Asistencia.resx">
       <DependentUpon>Frm_Print_Asistencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,14 +265,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\Frm_Solo_Personal_Fecha.resx">
       <DependentUpon>Frm_Solo_Personal_Fecha.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Informes\Rpte_Asistencia_delMes.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Rpte_Asistencia_delMes.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Informes\Rpte_Asistencia_porPersona.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Rpte_Asistencia_porPersona.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Msm_Forms\Frm_Filtro.resx">
       <DependentUpon>Frm_Filtro.cs</DependentUpon>
@@ -294,6 +301,7 @@
     <EmbeddedResource Include="Msm_Forms\Frm_Advertencia.resx">
       <DependentUpon>Frm_Advertencia.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -343,4 +351,10 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props'))" />
+  </Target>
 </Project>
