@@ -19,7 +19,7 @@ namespace MicroSisPlani.Personal
         private class FilaInfo
         {
             public HashSet<int> Permitidos = new HashSet<int>();
-            public int Cantidad = 1;          // dias de descanso exactos por semana
+            public int Cantidad = 1;          // MAXIMO de dias de descanso por semana (minimo 1)
             public bool Programada;           // la semana ya estaba capturada en BD
             public bool Modificada;           // cambios sin guardar
         }
@@ -43,7 +43,8 @@ namespace MicroSisPlani.Personal
 
         private void ConfigurarGrid()
         {
-            lbl_ayuda.Text = "Gris oscuro = dia no permitido para su rol (asistencia obligatoria). " +
+            lbl_ayuda.Text = "Marca de 1 hasta el maximo de dias de descanso de su rol. " +
+                             "Gris oscuro = dia no permitido (asistencia obligatoria). " +
                              "Una semana registrada queda BLOQUEADA y ya no se puede modificar.";
 
             dgv.AllowUserToAddRows = false;
@@ -127,7 +128,7 @@ namespace MicroSisPlani.Personal
                         row.Tag = info;
                         row.Cells["Id"].Value = Convert.ToString(r["Id_Pernl"]).Trim();
                         row.Cells["Nombre"].Value = Convert.ToString(r["Nombre_Completo"]);
-                        row.Cells["Rol"].Value = Convert.ToString(r["NomRol"]);
+                        row.Cells["Rol"].Value = Convert.ToString(r["NomRol"]) + "  (max. " + info.Cantidad + ")";
 
                         for (int i = 1; i <= 7; i++)
                         {
@@ -195,7 +196,7 @@ namespace MicroSisPlani.Personal
                 est.Value = "Bloqueada";
                 est.Style.ForeColor = Color.DimGray;
             }
-            else if (ContarMarcados(row) != info.Cantidad)
+            else if (ContarMarcados(row) < 1)
             {
                 est.Value = "Falta elegir";
                 est.Style.ForeColor = Color.Red;
@@ -245,7 +246,7 @@ namespace MicroSisPlani.Personal
                     else if (ContarMarcados(row) > info.Cantidad)
                     {
                         row.Cells[e.ColumnIndex].Value = false;
-                        MessageBox.Show("Este empleado solo puede tener " + info.Cantidad + " dias de descanso por semana.",
+                        MessageBox.Show("Este empleado puede tener maximo " + info.Cantidad + " dia(s) de descanso por semana.",
                                         "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
@@ -321,7 +322,7 @@ namespace MicroSisPlani.Personal
                 FilaInfo info = row.Tag as FilaInfo;
                 if (info == null || info.Programada) continue;   // ya registrada y bloqueada
 
-                if (ContarMarcados(row) != info.Cantidad) { incompletas++; continue; }
+                if (ContarMarcados(row) < 1) { incompletas++; continue; }
 
                 listas.Add(row);
                 if (!info.Modificada) heredadas++;

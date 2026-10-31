@@ -31,6 +31,7 @@ namespace MicroSisPlani
             ConfigurarListview_Asis();
             CargarHorarios();
             Verificar_Robot_de_Faltas();
+            IniciarAutoSalida();
         }
 
         private void Verificar_Robot_de_Faltas()
@@ -689,6 +690,35 @@ namespace MicroSisPlani
             }
         }
 
+        // ---------------- HORAS EXTRA / SALIDA AUTOMATICA ----------------
+        private Timer timerAutoSalida;
+
+        // Revisa cada 30 segundos y cierra la salida de quien ya paso su hora
+        // (menos a quien tiene horas extra autorizadas)
+        private void IniciarAutoSalida()
+        {
+            if (timerAutoSalida != null) return;
+            timerAutoSalida = new Timer();
+            timerAutoSalida.Interval = 30000;
+            timerAutoSalida.Tick += delegate
+            {
+                try { new RN_HorasExtra().RN_AutoSalida(); }
+                catch (Exception) { }     // se reintenta en el siguiente ciclo
+            };
+            timerAutoSalida.Start();
+        }
+
+        // Abre la pantalla de horas extra (lo llama el boton)
+        private void AbrirHorasExtra()
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_Horas_Extra frm = new Frm_Horas_Extra();
+            fil.Show();
+            frm.ShowDialog();
+            fil.Hide();
+        }
+        // -----------------------------------------------------------------
+
         private void timerFalta_Tick(object sender, EventArgs e)
         {
             RN_Asistencia obj = new RN_Asistencia();
@@ -844,6 +874,11 @@ namespace MicroSisPlani
         private void btn_apagar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirHorasExtra();
         }
     }
 }

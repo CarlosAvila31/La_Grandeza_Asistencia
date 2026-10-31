@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RN_HorasExtra.cs" />
     <Compile Include="RN_Descanso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RN_Asistencia.cs" />

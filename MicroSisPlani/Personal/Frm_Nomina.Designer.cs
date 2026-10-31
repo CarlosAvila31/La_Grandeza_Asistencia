@@ -47,6 +47,8 @@ namespace MicroSisPlani.Personal
             this.pnl_cfg = new System.Windows.Forms.Panel();
             this.lbl_ayuda = new System.Windows.Forms.Label();
             this.btn_guardar = new System.Windows.Forms.Button();
+            this.tabGasto = new System.Windows.Forms.TabPage();
+            this.dgv_gasto = new System.Windows.Forms.DataGridView();
             this.pnl_titulo.SuspendLayout();
             this.tabs.SuspendLayout();
             this.tabRep.SuspendLayout();
@@ -56,6 +58,8 @@ namespace MicroSisPlani.Personal
             this.tabCfg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cfg)).BeginInit();
             this.pnl_cfg.SuspendLayout();
+            this.tabGasto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_gasto)).BeginInit();
             this.SuspendLayout();
             //
             // pnl_titulo
@@ -115,6 +119,7 @@ namespace MicroSisPlani.Personal
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabs.Controls.Add(this.tabRep);
             this.tabs.Controls.Add(this.tabCfg);
+            this.tabs.Controls.Add(this.tabGasto);
             this.tabs.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabs.Location = new System.Drawing.Point(12, 60);
             this.tabs.Name = "tabs";
@@ -352,6 +357,27 @@ namespace MicroSisPlani.Personal
             this.btn_guardar.UseVisualStyleBackColor = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             //
+            // tabGasto
+            //
+            this.tabGasto.BackColor = System.Drawing.Color.White;
+            this.tabGasto.Controls.Add(this.dgv_gasto);
+            this.tabGasto.Location = new System.Drawing.Point(4, 28);
+            this.tabGasto.Name = "tabGasto";
+            this.tabGasto.Size = new System.Drawing.Size(1168, 576);
+            this.tabGasto.TabIndex = 2;
+            this.tabGasto.Text = "Gasto por sucursal";
+            //
+            // dgv_gasto
+            //
+            this.dgv_gasto.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_gasto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_gasto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_gasto.Location = new System.Drawing.Point(0, 0);
+            this.dgv_gasto.MultiSelect = false;
+            this.dgv_gasto.Name = "dgv_gasto";
+            this.dgv_gasto.Size = new System.Drawing.Size(1168, 576);
+            this.dgv_gasto.TabIndex = 0;
+            //
             // Frm_Nomina
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +402,8 @@ namespace MicroSisPlani.Personal
             this.tabCfg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cfg)).EndInit();
             this.pnl_cfg.ResumeLayout(false);
+            this.tabGasto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_gasto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,5 +434,7 @@ namespace MicroSisPlani.Personal
         private System.Windows.Forms.Label lbl_ayuda;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.DataGridView dgv_cfg;
+        private System.Windows.Forms.TabPage tabGasto;
+        private System.Windows.Forms.DataGridView dgv_gasto;
     }
 }

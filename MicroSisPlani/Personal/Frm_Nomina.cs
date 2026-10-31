@@ -15,6 +15,7 @@ namespace MicroSisPlani.Personal
 
         private DateTime lunes, domingo;
         private DataTable datosReporte;
+        private DataTable datosGasto;
         private readonly HashSet<string> modificados = new HashSet<string>();
         private bool cargando = false;
 
@@ -67,6 +68,7 @@ namespace MicroSisPlani.Personal
             {
                 ConfigurarGrid(dgv_rep, false);
                 ConfigurarGrid(dgv_cfg, true);
+                ConfigurarGrid(dgv_gasto, false);
                 CargarSucursales();
                 CargarConfig();
 
@@ -156,6 +158,10 @@ namespace MicroSisPlani.Personal
                 dgv_rep.DataSource = dt;
                 FormatearReporte();
 
+                datosGasto = rn.RN_Gasto_Por_Sucursal(dt);
+                dgv_gasto.DataSource = datosGasto;
+                FormatearGasto();
+
                 object suma = dt.Compute("SUM(Sueldo_Bruto)", "");
                 decimal total = (suma == null || suma == DBNull.Value) ? 0 : Convert.ToDecimal(suma);
                 int sinSueldo = dt.Select("Horas_Por_Trabajar = 0").Length;
@@ -174,19 +180,22 @@ namespace MicroSisPlani.Personal
         {
             Cfg(dgv_rep, "Id_Pernl", null, null, false, 0);
             Cfg(dgv_rep, "Pago_Extra", null, null, false, 0);          // solo para el recibo
-            Cfg(dgv_rep, "Sucursal", "Sucursal", null, true, 11);
-            Cfg(dgv_rep, "Empleado", "Empleado", null, true, 20);
-            Cfg(dgv_rep, "Horario", "Horario", null, true, 12);
-            Cfg(dgv_rep, "Sueldo_Fijo", "Sueldo fijo", "C2", true, 9);
-            Cfg(dgv_rep, "Horas_Por_Trabajar", "Horas por trabajar", "N2", true, 8);
-            Cfg(dgv_rep, "Pago_Por_Hora", "Pago por hora", "C2", true, 8);
-            Cfg(dgv_rep, "Horas_Trabajadas", "Horas trabajadas", "N2", true, 8);
-            Cfg(dgv_rep, "Horas_Extra", "Horas extra", "N2", true, 7);
+            Cfg(dgv_rep, "Descansos", null, null, false, 0);           // dato de apoyo
+            Cfg(dgv_rep, "Dias_Completos", null, null, false, 0);      // dato de apoyo
+            Cfg(dgv_rep, "Sucursal", "Sucursal", null, true, 10);
+            Cfg(dgv_rep, "Empleado", "Empleado", null, true, 18);
+            Cfg(dgv_rep, "Horario", "Horario", null, true, 11);
+            Cfg(dgv_rep, "Sueldo_Fijo", "Sueldo fijo", "C2", true, 8);
+            Cfg(dgv_rep, "Horas_Por_Trabajar", "Horas por trabajar", "N2", true, 7);
+            Cfg(dgv_rep, "Pago_Por_Hora", "Pago por hora", "C2", true, 7);
+            Cfg(dgv_rep, "Horas_Trabajadas", "Horas trabajadas", "N2", true, 7);
+            Cfg(dgv_rep, "Horas_Extra", "Horas extra", "N2", true, 6);
             Cfg(dgv_rep, "Faltas", "Faltas", "N0", true, 5);
             Cfg(dgv_rep, "Suspensiones", "Susp.", "N0", true, 5);
             Cfg(dgv_rep, "Tardanzas", "Tardanzas", "N0", true, 6);
-            Cfg(dgv_rep, "Descuento", "Descuento", "C2", true, 9);
-            Cfg(dgv_rep, "Sueldo_Bruto", "Sueldo bruto", "C2", true, 10);
+            Cfg(dgv_rep, "Descuento", "Descuento", "C2", true, 8);
+            Cfg(dgv_rep, "Pago_Septimo", "7mo día", "C2", true, 8);
+            Cfg(dgv_rep, "Sueldo_Bruto", "Sueldo bruto", "C2", true, 9);
 
             // Alinear números a la derecha y resaltar el sueldo bruto
             foreach (DataGridViewColumn c in dgv_rep.Columns)
@@ -201,6 +210,27 @@ namespace MicroSisPlani.Personal
             {
                 decimal horas = Convert.ToDecimal(r.Cells["Horas_Por_Trabajar"].Value);
                 if (horas == 0) r.DefaultCellStyle.BackColor = Color.LemonChiffon;
+            }
+        }
+
+        // Gasto total por sucursal (la última fila es el TOTAL general)
+        private void FormatearGasto()
+        {
+            Cfg(dgv_gasto, "Sucursal", "Sucursal", null, true, 30);
+            Cfg(dgv_gasto, "Empleados", "Empleados", "N0", true, 12);
+            Cfg(dgv_gasto, "Horas_Trabajadas", "Horas trabajadas", "N2", true, 18);
+            Cfg(dgv_gasto, "Sueldo_Bruto", "Gasto total (a pagar)", "C2", true, 22);
+            Cfg(dgv_gasto, "Porcentaje", "% del gasto", "N1", true, 14);
+
+            foreach (DataGridViewColumn c in dgv_gasto.Columns)
+                if (c.DefaultCellStyle.Format != "")
+                    c.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            if (dgv_gasto.Rows.Count > 0)
+            {
+                DataGridViewRow total = dgv_gasto.Rows[dgv_gasto.Rows.Count - 1];
+                total.DefaultCellStyle.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold);
+                total.DefaultCellStyle.BackColor = Color.WhiteSmoke;
             }
         }
 
@@ -227,7 +257,7 @@ namespace MicroSisPlani.Personal
             {
                 string ruta = recibos
                     ? NominaPdf.GenerarRecibos(datosReporte, lunes, domingo)
-                    : NominaPdf.GenerarReporte(datosReporte, lunes, domingo, cbo_sucursal.Text);
+                    : NominaPdf.GenerarReporte(datosReporte, datosGasto, lunes, domingo, cbo_sucursal.Text);
 
                 NominaPdf.Abrir(ruta);    // se abre en el visor de PDF de Windows; desde ahí se imprime
             }

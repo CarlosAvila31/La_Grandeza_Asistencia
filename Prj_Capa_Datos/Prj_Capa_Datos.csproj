@@ -63,6 +63,7 @@
     <Compile Include="BD_Conexion.cs" />
     <Compile Include="BD_usuario.cs" />
     <Compile Include="BD_Descanso.cs" />
+    <Compile Include="BD_HorasExtra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

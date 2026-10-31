@@ -21,7 +21,7 @@ namespace MicroSisPlani.Informes
         // ------------------------------------------------------------
         // REPORTE GENERAL (una fila por empleado, con columna de firma)
         // ------------------------------------------------------------
-        public static string GenerarReporte(DataTable dt, DateTime lunes, DateTime domingo, string sucursal)
+        public static string GenerarReporte(DataTable dt, DataTable gasto, DateTime lunes, DateTime domingo, string sucursal)
         {
             string ruta = Path.Combine(Carpeta(),
                 "Nomina_" + lunes.ToString("yyyyMMdd") + "_" + domingo.ToString("yyyyMMdd") + ".pdf");
@@ -34,15 +34,15 @@ namespace MicroSisPlani.Informes
 
                 Encabezado(doc, "NÓMINA SEMANAL", lunes, domingo, sucursal);
 
-                // Sucursal, Empleado, Horas trab., Horas extra, Faltas, Susp., Tardanzas, Descuento, Total, Firma
-                float[] anchos = { 15, 24, 9, 8, 7, 7, 9, 11, 12, 18 };
+                // Sucursal, Empleado, Horas trab., Horas extra, Faltas, Susp., Tardanzas, Descuento, 7mo día, Total, Firma
+                float[] anchos = { 14, 22, 8, 7, 6, 5, 8, 10, 10, 12, 16 };
                 PdfPTable t = new PdfPTable(anchos.Length);
                 t.WidthPercentage = 100;
                 t.SpacingBefore = 10f;
                 t.SetWidths(anchos);
 
                 string[] titulos = { "Sucursal", "Empleado", "Horas trab.", "Horas extra", "Faltas", "Susp.",
-                                     "Tardanzas", "Descuento", "Total a pagar", "Firma" };
+                                     "Tardanzas", "Descuento", "7mo día", "Total a pagar", "Firma" };
                 foreach (string h in titulos)
                     t.AddCell(Celda(h, F(9, true, BaseColor.WHITE), Element.ALIGN_CENTER, Azul));
 
@@ -62,22 +62,55 @@ namespace MicroSisPlani.Informes
                     t.AddCell(Celda(S(r, "Suspensiones"), F(9), Element.ALIGN_CENTER, fondo));
                     t.AddCell(Celda(S(r, "Tardanzas"), F(9), Element.ALIGN_CENTER, fondo));
                     t.AddCell(Celda(D(r, "Descuento").ToString("C2", Mx), F(9), Element.ALIGN_RIGHT, fondo));
+                    t.AddCell(Celda(D(r, "Pago_Septimo").ToString("C2", Mx), F(9), Element.ALIGN_RIGHT, fondo));
                     t.AddCell(Celda(bruto.ToString("C2", Mx), F(9, true), Element.ALIGN_RIGHT, fondo));
                     t.AddCell(Celda("", F(9), Element.ALIGN_LEFT, fondo));
                     i++;
                 }
 
                 PdfPCell lbl = Celda("TOTAL A PAGAR", F(10, true), Element.ALIGN_RIGHT, Gris);
-                lbl.Colspan = 8;
+                lbl.Colspan = 9;
                 t.AddCell(lbl);
                 t.AddCell(Celda(total.ToString("C2", Mx), F(10, true), Element.ALIGN_RIGHT, Gris));
                 t.AddCell(Celda("", F(9), Element.ALIGN_LEFT, Gris));
 
                 doc.Add(t);
 
+                // ---------- Gasto total por sucursal ----------
+                if (gasto != null && gasto.Rows.Count > 0)
+                {
+                    Paragraph tg = new Paragraph("GASTO TOTAL POR SUCURSAL", F(11, true, Azul));
+                    tg.SpacingBefore = 16f;
+                    doc.Add(tg);
+
+                    float[] ag = { 34, 14, 18, 22, 12 };
+                    PdfPTable g = new PdfPTable(ag.Length);
+                    g.WidthPercentage = 70;
+                    g.HorizontalAlignment = Element.ALIGN_LEFT;
+                    g.SpacingBefore = 6f;
+                    g.SetWidths(ag);
+
+                    string[] tituloG = { "Sucursal", "Empleados", "Horas trab.", "Gasto total", "% del gasto" };
+                    foreach (string h in tituloG)
+                        g.AddCell(Celda(h, F(9, true, BaseColor.WHITE), Element.ALIGN_CENTER, Azul));
+
+                    foreach (DataRow r in gasto.Rows)
+                    {
+                        bool esTotal = S(r, "Sucursal") == "TOTAL";
+                        BaseColor bg = esTotal ? Gris : null;
+
+                        g.AddCell(Celda(S(r, "Sucursal"), F(9, esTotal), Element.ALIGN_LEFT, bg));
+                        g.AddCell(Celda(S(r, "Empleados"), F(9, esTotal), Element.ALIGN_CENTER, bg));
+                        g.AddCell(Celda(D(r, "Horas_Trabajadas").ToString("N2", Mx), F(9, esTotal), Element.ALIGN_RIGHT, bg));
+                        g.AddCell(Celda(D(r, "Sueldo_Bruto").ToString("C2", Mx), F(9, esTotal), Element.ALIGN_RIGHT, bg));
+                        g.AddCell(Celda(D(r, "Porcentaje").ToString("N1", Mx) + " %", F(9, esTotal), Element.ALIGN_RIGHT, bg));
+                    }
+                    doc.Add(g);
+                }
+
                 Paragraph nota = new Paragraph(
                     "Se paga por horas trabajadas. Faltas y suspensiones no se pagan; las horas extra se pagan al mismo " +
-                    "pago por hora. Sin deducciones.", F(8));
+                    "pago por hora. Si trabaja sus 6 días completos se paga además el día de descanso (7mo día). Sin deducciones.", F(8));
                 nota.SpacingBefore = 8f;
                 doc.Add(nota);
 
@@ -148,6 +181,10 @@ namespace MicroSisPlani.Informes
             Fila(t, "Horas trabajadas", D(r, "Horas_Trabajadas").ToString("N2", Mx), false);
             Fila(t, "Horas extra (" + horasExtra.ToString("N2", Mx) + " h)",
                  "+ " + D(r, "Pago_Extra").ToString("C2", Mx), false);
+            decimal septimo = D(r, "Pago_Septimo");
+            if (septimo > 0)
+                Fila(t, "Pago del día de descanso (7mo día: trabajó sus 6 días completos)",
+                     "+ " + septimo.ToString("C2", Mx), false);
             Fila(t, "Descuento por horas no trabajadas (faltas: " + S(r, "Faltas") +
                     ", suspensiones: " + S(r, "Suspensiones") + ")",
                  "- " + descuento.ToString("C2", Mx), false);

@@ -29,7 +29,7 @@ namespace MicroSisPlani
 
         private DPFP.Verification.Verification Verificar;
         private DPFP.Verification.Verification.Result Resultado;
-        private int sec = 10;
+        private int sec = 5;
 
         private void pnl_titulo_MouseMove(object sender, MouseEventArgs e)
         {
@@ -76,8 +76,8 @@ namespace MicroSisPlani
             lbl_msm.BackColor = Color.MistyRose;
             lbl_msm.ForeColor = Color.Red;
             lbl_msm.Text = texto;
-            sec = 10;
-            lbl_Cont.Text = "10";
+            sec = 5;
+            lbl_Cont.Text = "5";
             xVerificationControl.Enabled = true;
             pnl_Msm.Visible = true;
             tmr_Conta.Enabled = true;
@@ -88,8 +88,8 @@ namespace MicroSisPlani
             lbl_msm.BackColor = Color.YellowGreen;
             lbl_msm.ForeColor = Color.White;
             lbl_msm.Text = texto;
-            sec = 10;
-            lbl_Cont.Text = "10";
+            sec = 5;
+            lbl_Cont.Text = "5";
             xVerificationControl.Enabled = false;
             pnl_Msm.Visible = true;
             tmr_Conta.Enabled = true;
@@ -173,10 +173,19 @@ namespace MicroSisPlani
             {
                 TimeSpan faltan = hSalida - ahora.TimeOfDay;
 
+                // Pasó su hora de salida: ¿el admin autorizó horas extra para él hoy?
+                bool horasExtraAutorizadas = false;
+                bool pasoDeSuHora = faltan < TimeSpan.Zero;
+                if (pasoDeSuHora)
+                    horasExtraAutorizadas = new RN_HorasExtra().RN_Esta_Autorizado(idPersona, ahora);
+
                 Frm_Sinox sino = new Frm_Sinox();
                 if (faltan > TimeSpan.Zero)
                     sino.Lbl_msm1.Text = "Tu horario de salida es a las " + hSalida.ToString(@"hh\:mm") +
                                          " (faltan " + (int)faltan.TotalMinutes + " min).\n¿Seguro que deseas registrar tu salida?";
+                else if (pasoDeSuHora && !horasExtraAutorizadas)
+                    sino.Lbl_msm1.Text = "Tu horario de salida era a las " + hSalida.ToString(@"hh\:mm") +
+                                         ".\nNo tienes horas extra autorizadas: solo se contarán hasta esa hora.\n¿Registrar tu salida?";
                 else
                     sino.Lbl_msm1.Text = "¿Estás seguro de registrar tu salida?";
 
@@ -199,12 +208,17 @@ namespace MicroSisPlani
 
                 lbl_IdAsis.Text = Convert.ToString(datosAsis.Rows[0]["Id_asis"]).Trim();
 
-                // Horas trabajadas = hora actual - hora de entrada guardada
+                // Horas trabajadas = (hora de corte) - hora de entrada guardada.
+                // Hora de corte = ahora, salvo que pasó su salida sin horas extra autorizadas.
+                TimeSpan corte = ahora.TimeOfDay;
+                bool recortada = pasoDeSuHora && !horasExtraAutorizadas;
+                if (recortada) corte = hSalida;
+
                 double totalHoras = 0;
                 TimeSpan horaEntrada;
                 if (TimeSpan.TryParse(Convert.ToString(datosAsis.Rows[0]["HoIngreso"]), out horaEntrada))
                 {
-                    totalHoras = Math.Round((ahora.TimeOfDay - horaEntrada).TotalHours, 2);
+                    totalHoras = Math.Round((corte - horaEntrada).TotalHours, 2);
                     if (totalHoras < 0) totalHoras = 0;
                 }
 
@@ -218,7 +232,9 @@ namespace MicroSisPlani
                     out mensaje);
 
                 if (registrada)
-                    MostrarOk(mensaje);
+                    MostrarOk(recortada
+                        ? "Salida registrada. Horas extra no autorizadas: solo se contaron hasta las " + hSalida.ToString(@"hh\:mm")
+                        : mensaje);
                 else
                     MessageBox.Show("No se pudo registrar la salida: " + mensaje, "Error",
                                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -329,11 +345,11 @@ namespace MicroSisPlani
             if (sec == 0)
             {
                 LimpiarFormulario();
-                sec = 10;
+                sec = 5;
                 tmr_Conta.Stop();
                 pnl_Msm.Visible = false;
                 xVerificationControl.Enabled = true;
-                lbl_Cont.Text = "10";
+                lbl_Cont.Text = "5";
             }
         }
 

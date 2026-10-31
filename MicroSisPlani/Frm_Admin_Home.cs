@@ -27,6 +27,8 @@ namespace MicroSisPlani
             ConfigurationListview_Asis();
             Cargar_todas_Asistencias();
             CargarHorarios();
+            IniciarAutoSalida();
+            CrearBotonHorasExtra();
         }
 
         public void Cargar_Datos_Usuario()
@@ -780,6 +782,58 @@ namespace MicroSisPlani
             }
         }
 
+        // ---------------- HORAS EXTRA / SALIDA AUTOMATICA ----------------
+        private System.Windows.Forms.Timer timerAutoSalida;
+
+        // Revisa cada 30 segundos y cierra la salida de quien ya paso su hora
+        // (menos a quien tiene horas extra autorizadas)
+        private void IniciarAutoSalida()
+        {
+            if (timerAutoSalida != null) return;
+            timerAutoSalida = new System.Windows.Forms.Timer();
+            timerAutoSalida.Interval = 30000;
+            timerAutoSalida.Tick += delegate
+            {
+                try { new RN_HorasExtra().RN_AutoSalida(); }
+                catch (Exception) { }     // se reintenta en el siguiente ciclo
+            };
+            timerAutoSalida.Start();
+        }
+
+
+        // Abre la pantalla de horas extra (lo llama el boton)
+        private void AbrirHorasExtra()
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            fil.Show();
+            new Frm_Horas_Extra().ShowDialog();
+            fil.Hide();
+        }
+        // -----------------------------------------------------------------
+
+
+
+        private void CrearBotonHorasExtra()
+        {
+            Button b = new Button();
+            b.Text = "Horas extra";
+            b.Size = new Size(130, 36);
+            b.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold);
+            b.FlatStyle = FlatStyle.Flat;
+            b.FlatAppearance.BorderSize = 0;
+            b.BackColor = Color.FromArgb(255, 128, 0);
+            b.ForeColor = Color.White;
+            b.Cursor = Cursors.Hand;
+            b.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            int ancho = Tab_Asistencia.ClientSize.Width > 300 ? Tab_Asistencia.ClientSize.Width : 800;
+            b.Location = new Point(ancho - b.Width - 10, 8);
+            b.Click += delegate { AbrirHorasExtra(); };
+            Tab_Asistencia.Controls.Add(b);
+            b.BringToFront();
+        }
+
+
+
         private void btn_Nomina_Click(object sender, EventArgs e)
         {
             Frm_Filtro fil = new Frm_Filtro();
@@ -826,6 +880,11 @@ namespace MicroSisPlani
                     tabControl1.SelectedTab = tabControl1.TabPages[3];
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
